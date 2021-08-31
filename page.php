@@ -13,6 +13,8 @@
  */
 
 get_header();
+
+<p>bonjour</p>
 ?>
 
 	<main id="primary" class="site-main">
