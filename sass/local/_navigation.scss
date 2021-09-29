@@ -1,0 +1,24 @@
+header{
+    display: flex;
+}
+.menu
+{  
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #616161;
+}
+
+.custom-logo-link
+{
+    background-color: #616161;
+
+}
+
+.page_item a
+{
+ padding: 2vw;
+ margin-left: 1vw;
+ margin-right: 1vw;
+ border: 1px solid #212121;
+}
+
