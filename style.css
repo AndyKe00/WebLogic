@@ -965,6 +965,10 @@ header {
 }
 
 .page_item a {
+<<<<<<< HEAD
   padding: 30%;
+=======
+  padding: 20%;
+>>>>>>> 85f72f121847cff62408caf9b1a729f2129a4c4a
 }
 /*# sourceMappingURL=style.css.map */
