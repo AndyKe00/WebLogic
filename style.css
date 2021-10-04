@@ -457,7 +457,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-  background: #fff;
+  background: #292929;
 }
 
 hr {
@@ -546,7 +546,7 @@ input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
-  background: #e6e6e6;
+  background: #dc0084;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   padding: 0.6em 1em 0.4em;
@@ -938,8 +938,15 @@ textarea {
 /* Local
 --------------------------------------------- */
 .custom-background {
-  background-size: 100vw !important;
+  background-size: 100vw  !important;
   background-repeat: no-repeat !important;
+}
+
+#primary h2 {
+  font-size: 8em;
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
 }
 
 header {
@@ -952,14 +959,12 @@ header {
   background-color: #616161;
 }
 
-.custom-logo-link {
+.custom-logo {
   background-color: #616161;
+  padding: 10%;
 }
 
 .page_item a {
-  padding: 2vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  border: 1px solid #212121;
+  padding: 30%;
 }
 /*# sourceMappingURL=style.css.map */
