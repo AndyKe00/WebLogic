@@ -457,7 +457,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-  background: #fff;
+  background: #292929;
 }
 
 hr {
@@ -952,14 +952,12 @@ header {
   background-color: #616161;
 }
 
-.custom-logo-link {
+.custom-logo {
   background-color: #616161;
+  padding: 10%;
 }
 
 .page_item a {
-  padding: 2vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  border: 1px solid #212121;
+  padding: 20%;
 }
 /*# sourceMappingURL=style.css.map */
