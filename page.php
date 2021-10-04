@@ -21,10 +21,7 @@ get_header();
 	<h2>d'intégration</h2>
 	<h2>multimédia</h2>
 		<?php
-<<<<<<< HEAD
 		//VOIR LE PROBLEME DE LOOP ? ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL (Lag au niveau ed laffichage)
-=======
->>>>>>> 85f72f121847cff62408caf9b1a729f2129a4c4a
 		/*while ( have_posts() ) :
 			//the_post();
 
