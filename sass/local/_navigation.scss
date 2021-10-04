@@ -5,20 +5,19 @@ header{
 {  
     display: flex;
     justify-content: space-evenly;
-    background-color: #616161;
+    background-color: $color__background-nav;
+    
 }
 
-.custom-logo-link
+.custom-logo
 {
-    background-color: #616161;
+    background-color: $color__background-nav;
+    padding: 10%;
 
 }
 
 .page_item a
 {
- padding: 2vw;
- margin-left: 1vw;
- margin-right: 1vw;
- border: 1px solid #212121;
+ padding: 30%;
 }
 
