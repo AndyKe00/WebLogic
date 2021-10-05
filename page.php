@@ -22,8 +22,8 @@ get_header();
 	<h2>multimédia</h2>
 		<?php
 		//VOIR LE PROBLEME DE LOOP ? ACCUEIL ACCUEIL ACCUEIL ACCUEIL ACCUEIL (Lag au niveau ed laffichage)
-		/*while ( have_posts() ) :
-			//the_post();
+		while ( have_posts() ) :
+			the_post();
 
 			get_template_part( 'template-parts/content', 'page' );
 
@@ -32,7 +32,7 @@ get_header();
 				comments_template();
 			endif;
 
-		endwhile; // End of the loop.*/
+		endwhile; // End of the loop.
 		?>
 
 	</main><!-- #main -->
