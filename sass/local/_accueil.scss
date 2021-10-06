@@ -71,6 +71,7 @@ p:nth-child(odd) {
   }
 }
 //even number borders
+
 p:nth-child(even) {
   border-left: 3px solid;
   padding-right: 0;
@@ -86,7 +87,9 @@ p:first-child {
   border-top-right-radius:0;
   border-top-left-radius:0;
 }
+
 p:last-child {
+
   border-bottom-right-radius:0;
   border-bottom-left-radius:0;
 }
