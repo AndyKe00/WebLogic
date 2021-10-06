@@ -1000,23 +1000,23 @@ p:nth-child(odd):before {
   margin-left: -20px;
 }
 
-.ligneTemps p:nth-child(even) {
+p:nth-child(even) {
   border-left: 3px solid;
   padding-right: 0;
 }
 
-.ligneTemps p:nth-child(even):before {
+p:nth-child(even):before {
   right: 100%;
   margin-right: -20px;
 }
 
-.ligneTemps p:first-child {
+p:first-child {
   border-top: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-.ligneTemps p:last-child {
+p:last-child {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -1028,11 +1028,11 @@ header {
 .menu {
   display: flex;
   justify-content: space-evenly;
-  background-color: #616161;
+  background-color: #29292958;
 }
 
 .custom-logo {
-  background-color: #616161;
+  background-color: #29292958;
   padding: 10%;
 }
 

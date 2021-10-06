@@ -71,7 +71,8 @@ p:nth-child(odd) {
   }
 }
 //even number borders
-.ligneTemps p:nth-child(even) {
+
+p:nth-child(even) {
   border-left: 3px solid;
   padding-right: 0;
   
@@ -81,12 +82,14 @@ p:nth-child(odd) {
   }
 }
 //handle first and last
-.ligneTemps p:first-child {
+p:first-child {
   border-top: 0;
   border-top-right-radius:0;
   border-top-left-radius:0;
 }
-.ligneTemps p:last-child {
+
+p:last-child {
+
   border-bottom-right-radius:0;
   border-bottom-left-radius:0;
 }
