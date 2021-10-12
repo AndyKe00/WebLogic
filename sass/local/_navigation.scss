@@ -4,7 +4,8 @@ header{
 .menu
 {  
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
     background-color: $color__background-nav;
     
 }
@@ -21,3 +22,8 @@ header{
  padding: 30%;
 }
 
+li:hover
+{
+    font-weight: bold;
+    
+}

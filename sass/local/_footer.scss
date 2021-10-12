@@ -1,0 +1,42 @@
+footer
+{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    h3
+    {
+        color:#707070;
+        font-family: $font__titles;
+        
+    }
+    a{
+        color:#707070 !important;
+        text-decoration: none;
+        margin-left: 10%;
+        margin-bottom: 3%;
+    }
+
+    .colonne-footer
+    {
+        display: flex;
+        flex-direction: column;
+        width:300px;
+    }
+
+}
+.ensemble-colonne-footer
+{
+    display: flex;
+    margin: 10%;
+    margin-bottom: 0;
+
+}
+
+.footer-section-bas
+{
+    h3{
+        text-align: center;
+    }
+    
+}
+
