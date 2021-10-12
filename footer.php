@@ -39,10 +39,12 @@
 			<div class="footer-section-bas">
 				<h3>Suivez-nous</h3>
 			<!--ce sera des img au lieu de divs, mais ce nest qu'à titre indicatif-->
+			<div class="ensemble-icon-footer">
 			<div class="icon-footer"></div>
 			<div class="icon-footer"></div>
 			<div class="icon-footer"></div>
 			<div class="icon-footer"></div>
+			</div>
 			</div>
 			
 			

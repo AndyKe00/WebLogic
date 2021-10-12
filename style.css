@@ -1065,8 +1065,7 @@ li:hover {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
+  margin-bottom: 0;
   background-color: white;
 }
 
@@ -1088,13 +1087,33 @@ footer .colonne-footer {
   width: 300px;
 }
 
-.ensemble-colonne-footer {
+footer .ensemble-colonne-footer {
   display: flex;
-  margin: 10%;
-  margin-bottom: 0;
+  justify-content: space-between;
+  padding: 5%;
+  padding-top: 1%;
+  padding-bottom: 0;
+}
+
+.footer-section-bas {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-section-bas h3 {
   text-align: center;
+}
+
+.footer-section-bas .ensemble-icon-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-section-bas .icon-footer {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */
