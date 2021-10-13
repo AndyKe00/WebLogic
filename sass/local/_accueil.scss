@@ -12,10 +12,6 @@
     text-transform: uppercase;
 }
 
-/*=============================================================
-                        LIGNE DU TEMPS
-=============================================================*/
-
 //Text Styles 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 $font-sans: 'Open Sans', sans-serif;
@@ -24,14 +20,19 @@ $font-sans: 'Open Sans', sans-serif;
 $black: #34435E;
 $white: #ffffff;
 
+body {
+  font-family: $font-sans;
+  margin: 0;
+  padding: 0 4em;
+}
 
 .ligneTemps {
-  min-width: 1000px;
+  min-width: 300px;
   max-width: 500px;
   margin: auto;
 }
 
-.ligneTemps div {
+.ligneTemps p {
   font-size: 1em;
   line-height: 1.75em;
   border-top: 3px solid;
@@ -44,10 +45,23 @@ $white: #ffffff;
   position: relative;
   color: $black;
   
-
+  //numbers
+  &:before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 1.25em;
+    width: 1.25em;
+    background-color: $black;
+    text-align: center;
+    line-height: 1.25em;
+    color: $white;
+    font-size: 1em;
+  }
 }
 //odd number borders
-.ligneTemps div:nth-child(odd) {
+p:nth-child(odd) {
   border-right: 3px solid;
   padding-left: 0;
   
@@ -57,7 +71,8 @@ $white: #ffffff;
   }
 }
 //even number borders
-.ligneTemps div:nth-child(even) {
+
+p:nth-child(even) {
   border-left: 3px solid;
   padding-right: 0;
   
@@ -67,54 +82,14 @@ $white: #ffffff;
   }
 }
 //handle first and last
-.ligneTemps div:first-child {
+p:first-child {
   border-top: 0;
   border-top-right-radius:0;
   border-top-left-radius:0;
 }
-.ligneTemps div:last-child {
+
+p:last-child {
+
   border-bottom-right-radius:0;
   border-bottom-left-radius:0;
-}
-
-/*=============================================================
-                    HOVER SUR LES COURS
-=============================================================*/
-
-.carte {
-  position:relative;
-  
-  padding:10px 20px;
-  
-  clip-path: circle(1% at 85% 5%);
-  transition: all ease-in-out .3s;
-  background-color:#ffffff;
-  
-  &__titre{
-    margin:0;
-    
-    font-size: 3em;
-    line-height:1.8;
-  }
-  &__description{
-    margin:0;
-    
-    font-size: 1.1em;
-    line-height:1.6;
-  }
-  
-  &:hover, &:focus{
-    clip-path: circle(75%);
-    border-radius:20px;
-    box-shadow: 0px 3px 9px rgba(0,0,0,0.12),
-                0px 3px 18px rgba(0,0,0,0.08);
-    background:#ffffff;
-    
-    outline:none;
-  }
-  &:focus{
-    box-shadow: 0px 3px 9px rgba(0,0,0,0.12), 
-                0px 3px 18px rgba(0,0,0,0.08), 
-                0px 0px 0px 4px rgba(0,0,0,0.2);
-  }
 }
