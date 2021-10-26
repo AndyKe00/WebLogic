@@ -48,16 +48,12 @@
 			)
 		);
 
-		wp_link_pages(
+	/*	wp_link_pages(
 			array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'weblogic' ),
 				'after'  => '</div>',
 			)
-		);
+		);*/
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php weblogic_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
