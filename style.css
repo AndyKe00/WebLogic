@@ -1106,6 +1106,7 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: rgba(41, 41, 41, 0.78);
+  width: 100vw;
 }
 
 .custom-logo {
