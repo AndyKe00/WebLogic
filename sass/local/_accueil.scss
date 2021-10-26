@@ -39,7 +39,7 @@ $white: #ffffff;
   border-image-slice: 1;
   border-width: 3px;
   margin: 0;
-  padding: 40px;
+  padding: 5px;
   counter-increment: section;
   position: relative;
   color: $black;
@@ -81,12 +81,50 @@ $white: #ffffff;
                     HOVER SUR LES COURS
 =============================================================*/
 
-.carte {
+.carteDroite {
+  position:relative;
+  
+  padding:1px 2px;
+  
+  clip-path: circle(1% at 85% 5%);
+  transition: all ease-in-out .3s;
+  background-color:#ffffff;
+  
+  &__titre{
+    margin:0;
+    
+    font-size: 3em;
+    line-height:1.8;
+  }
+  &__description{
+    margin:0;
+    
+    font-size: 1.1em;
+    line-height:1.6;
+  }
+  
+  &:hover, &:focus{
+    clip-path: circle(75%);
+    border-radius:20px;
+    box-shadow: 0px 3px 9px rgba(0,0,0,0.12),
+                0px 3px 18px rgba(0,0,0,0.08);
+    background:#ffffff;
+    
+    outline:none;
+  }
+  &:focus{
+    box-shadow: 0px 3px 9px rgba(0,0,0,0.12), 
+                0px 3px 18px rgba(0,0,0,0.08), 
+                0px 0px 0px 4px rgba(0,0,0,0.2);
+  }
+}
+
+.carteGauche {
   position:relative;
   
   padding:10px 20px;
   
-  clip-path: circle(1% at 85% 5%);
+  clip-path: circle(1% at 10% 5%);
   transition: all ease-in-out .3s;
   background-color:#ffffff;
   

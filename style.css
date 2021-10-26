@@ -968,7 +968,7 @@ textarea {
   border-image-slice: 1;
   border-width: 3px;
   margin: 0;
-  padding: 40px;
+  padding: 5px;
   counter-increment: section;
   position: relative;
   color: #34435E;
@@ -1008,27 +1008,27 @@ textarea {
 /*=============================================================
                     HOVER SUR LES COURS
 =============================================================*/
-.carte {
+.carteDroite {
   position: relative;
-  padding: 10px 20px;
+  padding: 1px 2px;
   clip-path: circle(1% at 85% 5%);
   transition: all ease-in-out .3s;
   background-color: #ffffff;
 }
 
-.carte__titre {
+.carteDroite__titre {
   margin: 0;
   font-size: 3em;
   line-height: 1.8;
 }
 
-.carte__description {
+.carteDroite__description {
   margin: 0;
   font-size: 1.1em;
   line-height: 1.6;
 }
 
-.carte:hover, .carte:focus {
+.carteDroite:hover, .carteDroite:focus {
   clip-path: circle(75%);
   border-radius: 20px;
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
@@ -1036,7 +1036,39 @@ textarea {
   outline: none;
 }
 
-.carte:focus {
+.carteDroite:focus {
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.carteGauche {
+  position: relative;
+  padding: 10px 20px;
+  clip-path: circle(1% at 10% 5%);
+  transition: all ease-in-out .3s;
+  background-color: #ffffff;
+}
+
+.carteGauche__titre {
+  margin: 0;
+  font-size: 3em;
+  line-height: 1.8;
+}
+
+.carteGauche__description {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.carteGauche:hover, .carteGauche:focus {
+  clip-path: circle(75%);
+  border-radius: 20px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  outline: none;
+}
+
+.carteGauche:focus {
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -1049,6 +1081,7 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: rgba(41, 41, 41, 0.78);
+  width: 100vw;
 }
 
 .custom-logo {
