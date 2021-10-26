@@ -1116,4 +1116,11 @@ footer .ensemble-colonne-footer {
   background-color: black;
   margin-bottom: 30px;
 }
+
+.bloc-texte {
+  z-index: 999;
+  width: 400px;
+  height: 200px;
+  background-color: blue;
+}
 /*# sourceMappingURL=style.css.map */
