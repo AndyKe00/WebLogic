@@ -118,3 +118,31 @@ $white: #ffffff;
                 0px 0px 0px 4px rgba(0,0,0,0.2);
   }
 }
+
+
+/*=============================================================
+                    BLOC DES COLONNES
+=============================================================*/
+
+.condAdminConteneur{
+  margin-right: 5%;
+  border: 2px solid black;
+  border-radius: 10%;
+}
+
+.titreCondAdmin{
+  text-align: center;
+}
+
+.listeCondAdmin{
+  list-style: none;
+  border: 2px solid black;
+  border-radius: 10%;
+  margin-right: 30px;
+}
+
+.entry-title:nth-of-type(1) a
+{
+  color: aqua;
+  font-size: 1rem;
+}
