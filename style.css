@@ -940,7 +940,7 @@ textarea {
 /* Local
 --------------------------------------------- */
 .custom-background {
-  background-size: 100vw  !important;
+  background-size: 100vw 100vh !important;
   background-repeat: no-repeat !important;
 }
 
@@ -1117,10 +1117,70 @@ footer .ensemble-colonne-footer {
   margin-bottom: 30px;
 }
 
+hr {
+  background-color: #dc0084;
+  height: 3px;
+  border: 0;
+  width: 60%;
+}
+
+.header_etudiante {
+  padding-left: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #292929;
+}
+
 .bloc-texte {
   z-index: 999;
-  width: 400px;
-  height: 200px;
-  background-color: blue;
+  width: 50%;
+  height: 300px;
+  padding: 2%;
+  background-color: rgba(130, 130, 130, 0.1);
+  color: white;
+}
+
+.menu-galerie {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  margin-bottom: 4vh;
+  padding-left: 20px;
+  width: 60%;
+  height: 7vh;
+  justify-content: space-between;
+  background-color: rgba(130, 130, 130, 0.1);
+}
+
+.menu-galerie a {
+  text-decoration: none;
+}
+
+.menu-galerie a:active {
+  font-weight: bold;
+}
+
+.menu-galerie a:hover {
+  color: #dc0084;
+}
+
+.galerie-projet {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  flex-wrap: wrap;
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 100vw;
+  height: 90vh;
+}
+
+.galerie-projet div {
+  text-align: center;
+  padding: 20px;
+  width: 25vw;
+  height: 25vh;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
