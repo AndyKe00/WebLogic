@@ -951,19 +951,16 @@ textarea {
   text-transform: uppercase;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  padding: 0 4em;
-}
-
+/*=============================================================
+                        LIGNE DU TEMPS
+=============================================================*/
 .ligneTemps {
-  min-width: 300px;
+  min-width: 1000px;
   max-width: 500px;
   margin: auto;
 }
 
-.ligneTemps p {
+.ligneTemps div {
   font-size: 1em;
   line-height: 1.75em;
   border-top: 3px solid;
@@ -971,55 +968,108 @@ body {
   border-image-slice: 1;
   border-width: 3px;
   margin: 0;
-  padding: 40px;
+  padding: 5px;
   counter-increment: section;
   position: relative;
   color: #34435E;
 }
 
-.ligneTemps p:before {
-  content: counter(section);
-  position: absolute;
-  border-radius: 50%;
-  padding: 10px;
-  height: 1.25em;
-  width: 1.25em;
-  background-color: #34435E;
-  text-align: center;
-  line-height: 1.25em;
-  color: #ffffff;
-  font-size: 1em;
-}
-
-p:nth-child(odd) {
+.ligneTemps div:nth-child(odd) {
   border-right: 3px solid;
   padding-left: 0;
 }
 
-p:nth-child(odd):before {
+.ligneTemps div:nth-child(odd):before {
   left: 100%;
   margin-left: -20px;
 }
 
-p:nth-child(even) {
+.ligneTemps div:nth-child(even) {
   border-left: 3px solid;
   padding-right: 0;
 }
 
-p:nth-child(even):before {
+.ligneTemps div:nth-child(even):before {
   right: 100%;
   margin-right: -20px;
 }
 
-p:first-child {
+.ligneTemps div:first-child {
   border-top: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-p:last-child {
+.ligneTemps div:last-child {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+/*=============================================================
+                    HOVER SUR LES COURS
+=============================================================*/
+.carteDroite {
+  position: relative;
+  padding: 1px 2px;
+  clip-path: circle(1% at 85% 5%);
+  transition: all ease-in-out .3s;
+  background-color: #ffffff;
+}
+
+.carteDroite__titre {
+  margin: 0;
+  font-size: 3em;
+  line-height: 1.8;
+}
+
+.carteDroite__description {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.carteDroite:hover, .carteDroite:focus {
+  clip-path: circle(75%);
+  border-radius: 20px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  outline: none;
+}
+
+.carteDroite:focus {
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.carteGauche {
+  position: relative;
+  padding: 10px 20px;
+  clip-path: circle(1% at 10% 5%);
+  transition: all ease-in-out .3s;
+  background-color: #ffffff;
+}
+
+.carteGauche__titre {
+  margin: 0;
+  font-size: 3em;
+  line-height: 1.8;
+}
+
+.carteGauche__description {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.carteGauche:hover, .carteGauche:focus {
+  clip-path: circle(75%);
+  border-radius: 20px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  outline: none;
+}
+
+.carteGauche:focus {
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
 header {
