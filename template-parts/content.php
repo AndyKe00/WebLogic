@@ -22,8 +22,8 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				weblogic_posted_on();
-				weblogic_posted_by();
+				//weblogic_posted_on();
+				//weblogic_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>

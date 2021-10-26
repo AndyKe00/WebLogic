@@ -17,9 +17,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-	<h2>Technique</h2>
-	<h2>d'intégration</h2>
-	<h2>multimédia</h2>
+
 		<?php
 		
 		while ( have_posts() ) :

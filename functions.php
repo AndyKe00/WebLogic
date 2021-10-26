@@ -136,6 +136,8 @@ function weblogic_widgets_init() {
 }
 add_action( 'widgets_init', 'weblogic_widgets_init' );
 
+
+
 /**
  * Enqueue scripts and styles.
  */
@@ -178,3 +180,24 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/*function extraire_cours_front_page($query){
+	if( !is_admin() && $query->is_front_page() && $query->is_main_query() ){
+
+	$query->set( 'category_name', 'cours' );
+	$query->set('posts_per_page', -1 );
+	$query->set('orderby', 'title');
+	$query->set('order', 'asc');
+}
+}
+add_action('pre_get_posts','extraire_cours_front_page');*/
+
+/*function extraire_accueil_front_page($query){
+	if( !is_admin() && $query->is_front_page() && $query->is_main_query() ){
+
+	$query->set( 'category_name', 'accueil' );
+	$query->set('posts_per_page', -1 );
+//	$query->set('orderby', 'title');
+//	$query->set('order', 'asc');
+}
+}
+add_action('pre_get_posts','extraire_accueil_front_page');*/

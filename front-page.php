@@ -6,7 +6,7 @@
  *
  * @package WebLogic
  */
-/* CONFLIT ARRETE stp */
+
 get_header();
 ?>
 
