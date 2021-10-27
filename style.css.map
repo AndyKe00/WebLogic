@@ -36,7 +36,8 @@
         "sass/utilities/_alignments.scss",
         "sass/local/_accueil.scss",
         "sass/local/_navigation.scss",
-        "sass/local/_footer.scss"
+        "sass/local/_footer.scss",
+        "sass/local/_vieetudiante.scss"
     ],
     "names": [],
     "file": "style.css"
