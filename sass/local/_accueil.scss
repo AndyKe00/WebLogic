@@ -1,6 +1,6 @@
 .custom-background
 {
-    background-size: 100vw  !important;
+    background-size: 100vw 100vh !important;
     background-repeat: no-repeat !important;
 }
 
@@ -27,7 +27,9 @@ $white: #ffffff;
   margin: auto;
 }
 
+
 .ligneTemps .session:not(.carteDroite, .carteGauche) {
+
   font-size: 1em;
   line-height: 1.75em;
   border-top: 3px solid;
@@ -77,6 +79,7 @@ $white: #ffffff;
                     HOVER SUR LES COURS
 =============================================================*/
 
+
 .carteDroite{
   position:relative;
   max-height: 20px;
@@ -86,6 +89,7 @@ $white: #ffffff;
   transition: all ease-in-out .4s;
   background-color:#ffffff;
   
+
   &__titre{
    // margin:0;
     
@@ -99,6 +103,8 @@ $white: #ffffff;
     font-size: 1.1em;
   //  line-height:1.6;
   }
+
+
   
   &:hover, &:focus{
     clip-path: circle(75%);
@@ -187,4 +193,5 @@ $white: #ffffff;
 /*=============================================================
                     LIGNE DU TEMPS V2
 =============================================================*/
+
 

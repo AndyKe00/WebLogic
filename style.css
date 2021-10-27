@@ -939,7 +939,7 @@ textarea {
 /* Local
 --------------------------------------------- */
 .custom-background {
-  background-size: 100vw  !important;
+  background-size: 100vw 100vh !important;
   background-repeat: no-repeat !important;
 }
 
@@ -1009,6 +1009,7 @@ textarea {
 =============================================================*/
 .carteDroite {
   position: relative;
+
   max-height: 20px;
   padding: 5px 10px;
   clip-path: circle(1% at 85% 50%);
@@ -1042,6 +1043,42 @@ textarea {
   max-height: 20px;
   padding: 5px 10px;
   clip-path: circle(1% at 15% 5%);
+=======
+  padding: 1px 2px;
+  clip-path: circle(1% at 85% 5%);
+
+  transition: all ease-in-out .3s;
+  background-color: #ffffff;
+}
+
+.carteDroite__titre {
+  margin: 0;
+  font-size: 3em;
+  line-height: 1.8;
+}
+
+.carteDroite__description {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.carteDroite:hover, .carteDroite:focus {
+  clip-path: circle(75%);
+  border-radius: 20px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  outline: none;
+}
+
+.carteDroite:focus {
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.carteGauche {
+  position: relative;
+  padding: 10px 20px;
+  clip-path: circle(1% at 10% 5%);
   transition: all ease-in-out .3s;
   background-color: #ffffff;
 }
@@ -1107,6 +1144,7 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: rgba(41, 41, 41, 0.78);
+  width: 100vw;
 }
 
 .custom-logo {
@@ -1173,5 +1211,72 @@ footer .ensemble-colonne-footer {
   height: 50px;
   background-color: black;
   margin-bottom: 30px;
+}
+
+hr {
+  background-color: #dc0084;
+  height: 3px;
+  border: 0;
+  width: 60%;
+}
+
+.header_etudiante {
+  padding-left: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #292929;
+}
+
+.bloc-texte {
+  z-index: 999;
+  width: 50%;
+  height: 300px;
+  padding: 2%;
+  background-color: rgba(130, 130, 130, 0.1);
+  color: white;
+}
+
+.menu-galerie {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  margin-bottom: 4vh;
+  padding-left: 20px;
+  width: 60%;
+  height: 7vh;
+  justify-content: space-between;
+  background-color: rgba(130, 130, 130, 0.1);
+}
+
+.menu-galerie a {
+  text-decoration: none;
+}
+
+.menu-galerie a:active {
+  font-weight: bold;
+}
+
+.menu-galerie a:hover {
+  color: #dc0084;
+}
+
+.galerie-projet {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  flex-wrap: wrap;
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 100vw;
+  height: 90vh;
+}
+
+.galerie-projet div {
+  text-align: center;
+  padding: 20px;
+  width: 25vw;
+  height: 25vh;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

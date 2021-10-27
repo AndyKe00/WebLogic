@@ -6,7 +6,7 @@
  *
  * @package WebLogic
  */
-/* CONFLIT ARRETE stp*/
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
