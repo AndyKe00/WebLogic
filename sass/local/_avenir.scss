@@ -1,0 +1,108 @@
+.page-id-44 {
+    
+    hr
+    {
+        background-color: #dc0084; height: 3px; border: 0;
+        width:60%;
+    }
+    .header_etudiante
+    {
+    display: flex;
+    justify-content: space-between;  
+    background-color: rgb(41,41,41);
+    
+        h2 {
+            font-size: 0.5em;
+        }
+
+    }
+    .bloc-texte 
+    {
+    z-index: 999;
+    width:50%;
+    height:300px;
+    padding: 2%;;
+    background-color: rgba(130,130,130,0.10);
+    color:white;
+    }
+
+    .sectionStages {
+        margin: 7%;
+        display: flex;
+        flex-direction: column;
+
+        .conteneurStages {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgba(130,130,130,0.10);
+            width: 100%;
+            padding: 0 5% 5% 5%;
+            text-align: center;
+            color: #fff;
+            margin: auto;
+
+            div {
+                width: 40%;
+                margin: auto;
+
+                .conteneurTitreStages {
+                    background-color: #dc0084;
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+            
+            p {
+                //width: 70%;
+                margin: auto;
+            }
+
+            span {
+                width: 3px;
+                height: 100px;
+                background-color: #dc0084;
+                margin: 0 2% 0 2%;
+            }
+
+        }
+    }
+
+    .sectionProfessions {
+        margin: 7%;
+        display: flex;
+        flex-direction: column;
+
+        .conteneurProfessions {
+
+            display: flex;
+            flex-direction: row;
+            
+            ul {
+                font-size: 2em;
+                color: #fff;
+                font-family: $font__main;
+            }
+
+            img {
+                min-height: 198px;
+                min-width: 352px;
+            }
+        }
+
+    }
+
+    //Typographie
+    h3 {
+        font-family: $font__titles;
+        font-size: 3em;
+        color: #fff;
+    }
+
+    h4 {
+        font-size: 2em;
+    }
+
+}
+
+
