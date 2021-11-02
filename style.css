@@ -939,7 +939,7 @@ textarea {
 /* Local
 --------------------------------------------- */
 .custom-background {
-  background-size: 100vw 100vh !important;
+  background-size: 100vw 90vh !important;
   background-repeat: no-repeat !important;
 }
 
@@ -1037,7 +1037,67 @@ textarea {
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
+.carteGauche {
+  position: relative;
+  max-height: 20px;
+  padding: 5px 10px;
+  clip-path: circle(1% at 15% 5%);
+  transition: all ease-in-out .3s;
+  background-color: #ffffff;
+}
 
+.carteGauche__titre {
+  margin: 0;
+  font-size: 3em;
+  line-height: 1.8;
+}
+
+.carteGauche__description {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.carteGauche:hover, .carteGauche:focus {
+  clip-path: circle(75%);
+  border-radius: 20px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  outline: none;
+}
+
+.carteGauche:focus {
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*=============================================================
+                    BLOC DES COLONNES
+=============================================================*/
+.condAdminConteneur {
+  margin-right: 5%;
+  border: 2px solid black;
+  border-radius: 10%;
+}
+
+.titreCondAdmin {
+  text-align: center;
+}
+
+.listeCondAdmin {
+  list-style: none;
+  border: 2px solid black;
+  border-radius: 10%;
+  margin-right: 30px;
+}
+
+.entry-title:nth-of-type(1) a {
+  color: aqua;
+  font-size: 1rem;
+}
+
+/*=============================================================
+                    LIGNE DU TEMPS V2
+=============================================================*/
 header {
   display: flex;
 }
