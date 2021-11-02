@@ -61,7 +61,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -960,7 +959,7 @@ textarea {
   margin: auto;
 }
 
-.ligneTemps div {
+.ligneTemps .session:not(.carteDroite, .carteGauche) {
   font-size: 1em;
   line-height: 1.75em;
   border-top: 3px solid;
@@ -974,7 +973,7 @@ textarea {
   color: #34435E;
 }
 
-.ligneTemps div:nth-child(odd) {
+.ligneTemps div:nth-child(odd):not(.carteDroite, .carteGauche) {
   border-right: 3px solid;
   padding-left: 0;
 }
@@ -984,7 +983,7 @@ textarea {
   margin-left: -20px;
 }
 
-.ligneTemps div:nth-child(even) {
+.ligneTemps div:nth-child(even):not(.carteDroite, .carteGauche) {
   border-left: 3px solid;
   padding-right: 0;
 }
@@ -994,13 +993,13 @@ textarea {
   margin-right: -20px;
 }
 
-.ligneTemps div:first-child {
+.ligneTemps div:first-child:not(.carteDroite, .carteGauche) {
   border-top: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-.ligneTemps div:last-child {
+.ligneTemps div:last-child:not(.carteDroite, .carteGauche) {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -1010,26 +1009,24 @@ textarea {
 =============================================================*/
 .carteDroite {
   position: relative;
-  padding: 1px 2px;
-  clip-path: circle(1% at 85% 5%);
-  transition: all ease-in-out .3s;
+  max-height: 20px;
+  padding: 5px 10px;
+  clip-path: circle(1% at 85% 50%);
+  transition: all ease-in-out .4s;
   background-color: #ffffff;
 }
 
 .carteDroite__titre {
-  margin: 0;
-  font-size: 3em;
-  line-height: 1.8;
+  font-size: 1rem;
 }
 
 .carteDroite__description {
-  margin: 0;
   font-size: 1.1em;
-  line-height: 1.6;
 }
 
 .carteDroite:hover, .carteDroite:focus {
   clip-path: circle(75%);
+  min-height: 150px;
   border-radius: 20px;
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
   background: #ffffff;
@@ -1039,6 +1036,7 @@ textarea {
 .carteDroite:focus {
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
+
 
 header {
   display: flex;
