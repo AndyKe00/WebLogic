@@ -1037,67 +1037,7 @@ textarea {
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
-.carteGauche {
-  position: relative;
-  max-height: 20px;
-  padding: 5px 10px;
-  clip-path: circle(1% at 15% 5%);
-  transition: all ease-in-out .3s;
-  background-color: #ffffff;
-}
 
-.carteGauche__titre {
-  margin: 0;
-  font-size: 3em;
-  line-height: 1.8;
-}
-
-.carteGauche__description {
-  margin: 0;
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.carteGauche:hover, .carteGauche:focus {
-  clip-path: circle(75%);
-  border-radius: 20px;
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
-  background: #ffffff;
-  outline: none;
-}
-
-.carteGauche:focus {
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
-}
-
-/*=============================================================
-                    BLOC DES COLONNES
-=============================================================*/
-.condAdminConteneur {
-  margin-right: 5%;
-  border: 2px solid black;
-  border-radius: 10%;
-}
-
-.titreCondAdmin {
-  text-align: center;
-}
-
-.listeCondAdmin {
-  list-style: none;
-  border: 2px solid black;
-  border-radius: 10%;
-  margin-right: 30px;
-}
-
-.entry-title:nth-of-type(1) a {
-  color: aqua;
-  font-size: 1rem;
-}
-
-/*=============================================================
-                    LIGNE DU TEMPS V2
-=============================================================*/
 header {
   display: flex;
 }
@@ -1241,5 +1181,103 @@ hr {
   width: 25vw;
   height: 25vh;
   background-color: white;
+}
+
+.page-id-44 hr {
+  background-color: #dc0084;
+  height: 3px;
+  border: 0;
+  width: 60%;
+}
+
+.page-id-44 .header_etudiante {
+  display: flex;
+  justify-content: space-between;
+  background-color: #292929;
+}
+
+.page-id-44 .header_etudiante h2 {
+  font-size: 0.5em;
+}
+
+.page-id-44 .bloc-texte {
+  z-index: 999;
+  width: 50%;
+  height: 300px;
+  padding: 2%;
+  background-color: rgba(130, 130, 130, 0.1);
+  color: white;
+}
+
+.page-id-44 .sectionStages {
+  margin: 7%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-id-44 .sectionStages .conteneurStages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(130, 130, 130, 0.1);
+  width: 100%;
+  padding: 0 5% 5% 5%;
+  text-align: center;
+  color: #fff;
+  margin: auto;
+}
+
+.page-id-44 .sectionStages .conteneurStages div {
+  width: 40%;
+  margin: auto;
+}
+
+.page-id-44 .sectionStages .conteneurStages div .conteneurTitreStages {
+  background-color: #dc0084;
+  width: 100%;
+  margin: auto;
+}
+
+.page-id-44 .sectionStages .conteneurStages p {
+  margin: auto;
+}
+
+.page-id-44 .sectionStages .conteneurStages span {
+  width: 3px;
+  height: 100px;
+  background-color: #dc0084;
+  margin: 0 2% 0 2%;
+}
+
+.page-id-44 .sectionProfessions {
+  margin: 7%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions {
+  display: flex;
+  flex-direction: row;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul {
+  font-size: 2em;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions img {
+  min-height: 198px;
+  min-width: 352px;
+}
+
+.page-id-44 h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3em;
+  color: #fff;
+}
+
+.page-id-44 h4 {
+  font-size: 2em;
 }
 /*# sourceMappingURL=style.css.map */
