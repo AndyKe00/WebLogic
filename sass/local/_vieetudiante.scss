@@ -3,6 +3,11 @@ hr
         background-color: #dc0084; height: 3px; border: 0;
         width:60%;
     }
+
+.page-etudiante
+{
+    background-color:rgb(41,41,41); 
+
 .header_etudiante
 {
     padding-left: 5%;
@@ -63,3 +68,65 @@ color:white;
         
     }
 }
+
+h3
+{
+    color:white;
+    margin: 5%;
+    font-size: 2rem;
+    padding: 20px;
+    padding-left: 6%;
+    width:700px;
+    border: 1px solid white;
+}
+.section-temoignages
+{
+    display: block;
+    margin: 5%;
+}
+
+.post-it
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    height:300px;
+   
+   
+}
+
+.post-it-vedettes
+{
+display: flex;
+justify-content: space-between;
+margin-left: 5%;
+margin-right: 5%;
+    
+    .post-it:nth-child(1)
+    {
+        background-color: #DC0084;
+        
+    }
+    .post-it:nth-child(2)
+    {
+        background-color: #FF67C2;
+        transform: rotateZ(-20deg);
+        margin-top:5%;
+    }
+    .post-it:nth-child(3)
+    {
+        background-color: #DC0084;
+        transform: rotateZ(5deg);
+        margin-top:2%;
+    }
+    .post-it:nth-child(4)
+    {
+        background-color: #FF67C2;
+    }
+}
+
+}
+
+
