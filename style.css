@@ -1183,6 +1183,10 @@ hr {
   width: 60%;
 }
 
+.page-etudiante {
+  background-color: #292929;
+}
+
 .header_etudiante {
   padding-left: 5%;
   margin-bottom: 5%;
