@@ -1186,7 +1186,7 @@ hr {
   background-color: #292929;
 }
 
-.header_etudiante {
+.page-etudiante .header_etudiante {
   padding-left: 5%;
   margin-bottom: 5%;
   display: flex;
@@ -1195,7 +1195,7 @@ hr {
   background-color: #292929;
 }
 
-.bloc-texte {
+.page-etudiante .bloc-texte {
   z-index: 999;
   width: 50%;
   height: 300px;
@@ -1204,7 +1204,7 @@ hr {
   color: white;
 }
 
-.menu-galerie {
+.page-etudiante .menu-galerie {
   display: flex;
   align-items: center;
   margin-left: 5%;
@@ -1216,19 +1216,19 @@ hr {
   background-color: rgba(130, 130, 130, 0.1);
 }
 
-.menu-galerie a {
+.page-etudiante .menu-galerie a {
   text-decoration: none;
 }
 
-.menu-galerie a:active {
+.page-etudiante .menu-galerie a:active {
   font-weight: bold;
 }
 
-.menu-galerie a:hover {
+.page-etudiante .menu-galerie a:hover {
   color: #dc0084;
 }
 
-.galerie-projet {
+.page-etudiante .galerie-projet {
   display: inline-grid;
   grid-template-columns: auto auto auto;
   flex-wrap: wrap;
@@ -1238,12 +1238,63 @@ hr {
   height: 90vh;
 }
 
-.galerie-projet div {
+.page-etudiante .galerie-projet div {
   text-align: center;
   padding: 20px;
   width: 25vw;
   height: 25vh;
   background-color: white;
+}
+
+.page-etudiante h3 {
+  color: white;
+  margin: 5%;
+  font-size: 2rem;
+  padding: 20px;
+  padding-left: 6%;
+  width: 700px;
+  border: 1px solid white;
+}
+
+.page-etudiante .section-temoignages {
+  display: block;
+  margin: 5%;
+}
+
+.page-etudiante .post-it {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.page-etudiante .post-it-vedettes {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.page-etudiante .post-it-vedettes .post-it:nth-child(1) {
+  background-color: #DC0084;
+}
+
+.page-etudiante .post-it-vedettes .post-it:nth-child(2) {
+  background-color: #FF67C2;
+  transform: rotateZ(-20deg);
+  margin-top: 5%;
+}
+
+.page-etudiante .post-it-vedettes .post-it:nth-child(3) {
+  background-color: #DC0084;
+  transform: rotateZ(5deg);
+  margin-top: 2%;
+}
+
+.page-etudiante .post-it-vedettes .post-it:nth-child(4) {
+  background-color: #FF67C2;
 }
 
 .page-id-44 hr {
