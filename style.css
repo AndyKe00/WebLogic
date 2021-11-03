@@ -954,8 +954,7 @@ textarea {
                         LIGNE DU TEMPS
 =============================================================*/
 .ligneTemps {
-  min-width: 1000px;
-  max-width: 500px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -1013,7 +1012,7 @@ textarea {
   padding: 5px 10px;
   clip-path: circle(1% at 85% 50%);
   transition: all ease-in-out .4s;
-  background-color: #ffffff;
+  background-color: aqua;
 }
 
 .carteDroite__titre {
@@ -1026,7 +1025,6 @@ textarea {
 
 .carteDroite:hover, .carteDroite:focus {
   clip-path: circle(75%);
-  min-height: 150px;
   border-radius: 20px;
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
   background: #ffffff;
@@ -1043,7 +1041,7 @@ textarea {
   padding: 5px 10px;
   clip-path: circle(1% at 15% 5%);
   transition: all ease-in-out .3s;
-  background-color: #ffffff;
+  background-color: aqua;
 }
 
 .carteGauche__titre {
