@@ -107,3 +107,33 @@
 		flex: 1 0 50%;
 	}
 }
+
+header{
+    display: flex;
+}
+.menu
+{  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color__background-nav;
+    
+}
+
+.custom-logo
+{
+    background-color: $color__background-nav;
+    padding: 10%;
+
+}
+
+li:hover
+{
+    font-weight: bold;
+    
+}
+
+#primary-menu
+{
+	height:50px;
+}

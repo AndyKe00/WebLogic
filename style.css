@@ -717,6 +717,30 @@ textarea {
   flex: 1 0 50%;
 }
 
+header {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(41, 41, 41, 0.78);
+}
+
+.custom-logo {
+  background-color: rgba(41, 41, 41, 0.78);
+  padding: 10%;
+}
+
+li:hover {
+  font-weight: bold;
+}
+
+#primary-menu {
+  height: 50px;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -1098,31 +1122,6 @@ textarea {
 /*=============================================================
                     LIGNE DU TEMPS V2
 =============================================================*/
-header {
-  display: flex;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgba(41, 41, 41, 0.78);
-  width: 100vw;
-}
-
-.custom-logo {
-  background-color: rgba(41, 41, 41, 0.78);
-  padding: 10%;
-}
-
-.page_item a {
-  padding: 30%;
-}
-
-li:hover {
-  font-weight: bold;
-}
-
 footer {
   margin-bottom: 0;
   background-color: white;
