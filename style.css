@@ -1255,8 +1255,71 @@ hr {
 }
 
 .page-etudiante .section-temoignages {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
   margin: 5%;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(1) {
+  background-color: #FFA5DB;
+  transform: rotateZ(-20deg);
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(2) {
+  background-color: #FF67C2;
+  transform: rotateZ(10deg);
+  margin-left: 10%;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(3) {
+  background-color: #FFA5DB;
+  transform: rotateZ(10deg);
+  margin-top: 5%;
+  margin-left: 5%;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(4) {
+  background-color: #FF67C2;
+  transform: rotateZ(60deg);
+  margin-top: -5%;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(5) {
+  background-color: #FF67C2;
+  transform: rotateZ(-50deg);
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(6) {
+  background-color: #FF67C2;
+  transform: rotateZ(5deg);
+  margin-top: -5%;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(7) {
+  background-color: #FFA5DB;
+  transform: rotateZ(-10deg);
+  margin-top: 5%;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(8) {
+  background-color: #FF67C2;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(9) {
+  background-color: #FFA5DB;
+  transform: rotateZ(-40deg);
+  box-shadow: 5px 5px 15px -2px #000000;
 }
 
 .page-etudiante .post-it {
@@ -1268,31 +1331,41 @@ hr {
   height: 300px;
 }
 
+.page-etudiante .post-it:hover {
+  scale: 110%;
+  transition: all .3s ease-in-out;
+}
+
 .page-etudiante .post-it-vedettes {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-left: 5%;
   margin-right: 5%;
 }
 
 .page-etudiante .post-it-vedettes .post-it:nth-child(1) {
   background-color: #DC0084;
+  box-shadow: 5px 5px 15px -2px #000000;
 }
 
 .page-etudiante .post-it-vedettes .post-it:nth-child(2) {
   background-color: #FF67C2;
   transform: rotateZ(-20deg);
   margin-top: 5%;
+  box-shadow: 5px 5px 15px -2px #000000;
 }
 
 .page-etudiante .post-it-vedettes .post-it:nth-child(3) {
   background-color: #DC0084;
   transform: rotateZ(5deg);
   margin-top: 2%;
+  box-shadow: 5px 5px 15px -2px #000000;
 }
 
 .page-etudiante .post-it-vedettes .post-it:nth-child(4) {
   background-color: #FF67C2;
+  box-shadow: 5px 5px 15px -2px #000000;
 }
 
 .page-id-44 hr {
