@@ -43,7 +43,6 @@
 			<div class="icon-footer"></div>
 			<div class="icon-footer"></div>
 			<div class="icon-footer"></div>
-			<div class="icon-footer"></div>
 			</div>
 			</div>
 			

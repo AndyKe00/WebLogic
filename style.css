@@ -1244,6 +1244,19 @@ hr {
   background-color: white;
 }
 
+.page-etudiante .lesBoutonsGalerie {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2%;
+  margin-bottom: 10px;
+}
+
+.page-etudiante .lesBoutonsGalerie button {
+  background-color: #292929;
+  border-radius: 0%;
+  color: white;
+}
+
 .page-etudiante h3 {
   color: white;
   margin: 5%;
@@ -1329,6 +1342,9 @@ hr {
   align-items: center;
   width: 300px;
   height: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
 .page-etudiante .post-it:hover {
