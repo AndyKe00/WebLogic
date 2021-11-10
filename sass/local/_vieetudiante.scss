@@ -58,6 +58,8 @@ color:white;
     margin-left: 5%;
     width: 100vw;
     height: 90vh;
+
+
     div
     {
         text-align: center;
@@ -66,6 +68,19 @@ color:white;
         height:25vh;
         background-color: white;
         
+    }
+}
+.lesBoutonsGalerie
+{
+ display: flex;
+ justify-content: flex-end;
+ margin-right:2%;
+ margin-bottom: 10px;
+    button
+    {
+        background-color: rgb(41,41,41);
+        border-radius: 0%;
+        color:white;
     }
 }
 
@@ -176,6 +191,9 @@ box-shadow: 5px 5px 15px -2px #000000;
     align-items: center;
     width:300px;
     height:300px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:20px;
    
    
 }
@@ -227,6 +245,7 @@ box-shadow: 5px 5px 15px -2px #000000;
     }
 
 }
+
 
 }
 
