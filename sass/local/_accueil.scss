@@ -189,7 +189,62 @@ $white: #ffffff;
 }
 
 /*=============================================================
-                    LIGNE DU TEMPS V2
+                    Sectiton professeurs
 =============================================================*/
+
+.conteneurProf{
+  //max-width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imageProf{
+  width: 320px;
+  height: 447px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+      max-width: 100%;
+      height: 100%;
+    }
+}
+
+/*=============================================================
+                    Hover Sectiton professeurs
+=============================================================*/
+
+
+.hoverProf {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 90%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+  p {
+    transition: all 0.9s ease;
+    transform: scale(0.1)
+  }
+}
+
+.imageProf:hover .hoverProf {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+}
 
 
