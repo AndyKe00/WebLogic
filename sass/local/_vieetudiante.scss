@@ -3,6 +3,11 @@ hr
         background-color: #dc0084; height: 3px; border: 0;
         width:60%;
     }
+
+.page-etudiante
+{
+    background-color:rgb(41,41,41); 
+
 .header_etudiante
 {
     padding-left: 5%;
@@ -63,3 +68,166 @@ color:white;
         
     }
 }
+
+h3
+{
+    color:white;
+    margin: 5%;
+    font-size: 2rem;
+    padding: 20px;
+    padding-left: 6%;
+    width:700px;
+    border: 1px solid white;
+}
+.section-temoignages
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin: 5%;
+
+    .post-it:nth-child(1)
+    {
+        background-color: #FFA5DB;
+        transform: rotateZ(-20deg);
+        -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+box-shadow: 5px 5px 15px -2px #000000;
+    }
+
+    .post-it:nth-child(2)
+    {
+        background-color: #FF67C2;
+        transform: rotateZ(10deg);
+        margin-left: 10%;
+        -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+box-shadow: 5px 5px 15px -2px #000000;
+    }
+
+    .post-it:nth-child(3)
+    {
+        background-color: #FFA5DB;
+        transform: rotateZ(10deg);
+        margin-top: 5%;
+        margin-left: 5%;
+        -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+box-shadow: 5px 5px 15px -2px #000000;
+    }
+
+    .post-it:nth-child(4)
+    {
+        background-color: #FF67C2;
+        transform: rotateZ(60deg);
+        margin-top: -5%;
+        -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+box-shadow: 5px 5px 15px -2px #000000;
+    }
+
+    .post-it:nth-child(5)
+    {
+        background-color: #FF67C2;
+        transform: rotateZ(-50deg);
+        -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+box-shadow: 5px 5px 15px -2px #000000;
+    }
+
+    .post-it:nth-child(6)
+    {
+        background-color: #FF67C2;
+        transform: rotateZ(5deg);
+        margin-top: -5%;
+        -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+box-shadow: 5px 5px 15px -2px #000000;
+    }
+
+    .post-it:nth-child(7)
+    {
+        background-color: #FFA5DB;
+        transform: rotateZ(-10deg);
+        margin-top: 5%;
+        -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+box-shadow: 5px 5px 15px -2px #000000;
+    }
+
+    .post-it:nth-child(8)
+    {
+        background-color: #FF67C2;
+        -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+box-shadow: 5px 5px 15px -2px #000000;
+    }
+
+    .post-it:nth-child(9)
+    {
+        background-color: #FFA5DB;
+        transform: rotateZ(-40deg);
+        -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+box-shadow: 5px 5px 15px -2px #000000;
+    }
+
+    
+}
+
+.post-it
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    height:300px; 
+   
+   
+}
+
+.post-it:hover
+{
+   scale:110%;
+   transition: all .3s ease-in-out;
+   
+   
+}
+//les 4 premier posts it des temoignages 
+.post-it-vedettes
+{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-left: 5%;
+margin-right: 5%;
+    
+    .post-it:nth-child(1)
+    {
+        background-color: #DC0084;
+        -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+box-shadow: 5px 5px 15px -2px #000000;
+        
+    }
+    .post-it:nth-child(2)
+    {
+        background-color: #FF67C2;
+        transform: rotateZ(-20deg);
+        margin-top:5%;
+        -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+box-shadow: 5px 5px 15px -2px #000000;
+    }
+    .post-it:nth-child(3)
+    {
+        background-color: #DC0084;
+        transform: rotateZ(5deg);
+        margin-top:2%;
+        -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+box-shadow: 5px 5px 15px -2px #000000;
+    }
+    .post-it:nth-child(4)
+    {
+        background-color: #FF67C2;
+        -webkit-box-shadow: 5px 5px 15px -2px #000000; 
+box-shadow: 5px 5px 15px -2px #000000;
+    }
+
+}
+
+}
+
+

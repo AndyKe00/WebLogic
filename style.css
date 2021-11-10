@@ -717,6 +717,30 @@ textarea {
   flex: 1 0 50%;
 }
 
+header {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(41, 41, 41, 0.78);
+}
+
+.custom-logo {
+  background-color: rgba(41, 41, 41, 0.78);
+  padding: 10%;
+}
+
+li:hover {
+  font-weight: bold;
+}
+
+#primary-menu {
+  height: 50px;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -1096,85 +1120,6 @@ textarea {
 /*=============================================================
                     Sectiton professeurs
 =============================================================*/
-.conteneurProf {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.imageProf {
-  width: 320px;
-  height: 447px;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imageProf img {
-  max-width: 100%;
-  height: 100%;
-}
-
-/*=============================================================
-                    Hover Sectiton professeurs
-=============================================================*/
-.hoverProf {
-  opacity: 0;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 10px;
-  height: 90%;
-  background: #FFF;
-  color: #151E3F;
-  transition: all 0.9s ease;
-}
-
-.hoverProf p {
-  transition: all 0.9s ease;
-  transform: scale(0.1);
-}
-
-.imageProf:hover .hoverProf {
-  opacity: 0.8;
-  width: 90%;
-  transition: all 0.5s ease;
-}
-
-.imageProf:hover .hoverProf p {
-  transform: scale(1);
-  transition: all 0.9s ease;
-}
-
-header {
-  display: flex;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgba(41, 41, 41, 0.78);
-  width: 100vw;
-}
-
-.custom-logo {
-  background-color: rgba(41, 41, 41, 0.78);
-  padding: 10%;
-}
-
-.page_item a {
-  padding: 30%;
-}
-
-li:hover {
-  font-weight: bold;
-}
 
 footer {
   margin-bottom: 0;
@@ -1236,7 +1181,11 @@ hr {
   width: 60%;
 }
 
-.header_etudiante {
+.page-etudiante {
+  background-color: #292929;
+}
+
+.page-etudiante .header_etudiante {
   padding-left: 5%;
   margin-bottom: 5%;
   display: flex;
@@ -1245,7 +1194,7 @@ hr {
   background-color: #292929;
 }
 
-.bloc-texte {
+.page-etudiante .bloc-texte {
   z-index: 999;
   width: 50%;
   height: 300px;
@@ -1254,7 +1203,7 @@ hr {
   color: white;
 }
 
-.menu-galerie {
+.page-etudiante .menu-galerie {
   display: flex;
   align-items: center;
   margin-left: 5%;
@@ -1266,19 +1215,19 @@ hr {
   background-color: rgba(130, 130, 130, 0.1);
 }
 
-.menu-galerie a {
+.page-etudiante .menu-galerie a {
   text-decoration: none;
 }
 
-.menu-galerie a:active {
+.page-etudiante .menu-galerie a:active {
   font-weight: bold;
 }
 
-.menu-galerie a:hover {
+.page-etudiante .menu-galerie a:hover {
   color: #dc0084;
 }
 
-.galerie-projet {
+.page-etudiante .galerie-projet {
   display: inline-grid;
   grid-template-columns: auto auto auto;
   flex-wrap: wrap;
@@ -1288,12 +1237,136 @@ hr {
   height: 90vh;
 }
 
-.galerie-projet div {
+.page-etudiante .galerie-projet div {
   text-align: center;
   padding: 20px;
   width: 25vw;
   height: 25vh;
   background-color: white;
+}
+
+.page-etudiante h3 {
+  color: white;
+  margin: 5%;
+  font-size: 2rem;
+  padding: 20px;
+  padding-left: 6%;
+  width: 700px;
+  border: 1px solid white;
+}
+
+.page-etudiante .section-temoignages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin: 5%;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(1) {
+  background-color: #FFA5DB;
+  transform: rotateZ(-20deg);
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(2) {
+  background-color: #FF67C2;
+  transform: rotateZ(10deg);
+  margin-left: 10%;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(3) {
+  background-color: #FFA5DB;
+  transform: rotateZ(10deg);
+  margin-top: 5%;
+  margin-left: 5%;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(4) {
+  background-color: #FF67C2;
+  transform: rotateZ(60deg);
+  margin-top: -5%;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(5) {
+  background-color: #FF67C2;
+  transform: rotateZ(-50deg);
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(6) {
+  background-color: #FF67C2;
+  transform: rotateZ(5deg);
+  margin-top: -5%;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(7) {
+  background-color: #FFA5DB;
+  transform: rotateZ(-10deg);
+  margin-top: 5%;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(8) {
+  background-color: #FF67C2;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .section-temoignages .post-it:nth-child(9) {
+  background-color: #FFA5DB;
+  transform: rotateZ(-40deg);
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .post-it {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.page-etudiante .post-it:hover {
+  scale: 110%;
+  transition: all .3s ease-in-out;
+}
+
+.page-etudiante .post-it-vedettes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.page-etudiante .post-it-vedettes .post-it:nth-child(1) {
+  background-color: #DC0084;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .post-it-vedettes .post-it:nth-child(2) {
+  background-color: #FF67C2;
+  transform: rotateZ(-20deg);
+  margin-top: 5%;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .post-it-vedettes .post-it:nth-child(3) {
+  background-color: #DC0084;
+  transform: rotateZ(5deg);
+  margin-top: 2%;
+  box-shadow: 5px 5px 15px -2px #000000;
+}
+
+.page-etudiante .post-it-vedettes .post-it:nth-child(4) {
+  background-color: #FF67C2;
+  box-shadow: 5px 5px 15px -2px #000000;
 }
 
 .page-id-44 hr {
