@@ -1439,6 +1439,19 @@ hr {
   box-shadow: 5px 5px 15px -2px #000000;
 }
 
+.page-id-44 {
+  /*.banniere {
+        width: 100%;
+        display: flex;
+        height: 50px;
+
+        div {
+            background-color: orange;
+            height: 20px;
+        }
+    }*/
+}
+
 .page-id-44 hr {
   background-color: #dc0084;
   height: 3px;
@@ -1477,10 +1490,14 @@ hr {
   align-items: center;
   background-color: rgba(130, 130, 130, 0.1);
   width: 100%;
-  padding: 0 5% 5% 5%;
+  padding: 5% 5% 5% 5%;
   text-align: center;
   color: #fff;
   margin: auto;
+}
+
+.page-id-44 .sectionStages .conteneurStages h4 {
+  margin: 0 0 42px 0;
 }
 
 .page-id-44 .sectionStages .conteneurStages div {
@@ -1500,7 +1517,7 @@ hr {
 
 .page-id-44 .sectionStages .conteneurStages span {
   width: 3px;
-  height: 100px;
+  height: 20rem;
   background-color: #dc0084;
   margin: 0 2% 0 2%;
 }
@@ -1514,6 +1531,7 @@ hr {
 .page-id-44 .sectionProfessions .conteneurProfessions {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions ul {
@@ -1524,7 +1542,103 @@ hr {
 
 .page-id-44 .sectionProfessions .conteneurProfessions img {
   min-height: 198px;
-  min-width: 352px;
+  min-width: 500px;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .rose {
+  background-color: #dc0084b9;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .noir {
+  background-color: #383838b9;
+  text-align: right;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .noir section {
+  text-align: left;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .rose, .page-id-44 .sectionProfessions .meilleuresProfessions .noir {
+  padding: 0 5% 0 5%;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .rose section, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 5%;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .rose section p, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section p {
+  max-width: 50%;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .rose section div, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section div {
+  width: 40%;
+  background-color: #fff;
+  align-self: stretch;
+  box-sizing: border-box;
+}
+
+.page-id-44 .sectionUni {
+  margin: 7%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-id-44 .sectionUni .conteneurUni {
+  margin: auto;
+  background-color: #383838b9;
+  box-sizing: border-box;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  margin-bottom: 2%;
+  width: 85%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+}
+
+.page-id-44 .sectionUni .conteneurUni h5 {
+  padding-right: 10px;
+  text-align: center;
+  margin: auto;
+  font-size: 1.5em;
+}
+
+.page-id-44 .sectionUni .conteneurUni i {
+  margin: auto;
+  font-size: 4.2em;
+  color: #dc0084;
+}
+
+.page-id-44 .sectionUni .conteneurUni .coteDroit {
+  padding-left: 0%;
+}
+
+.page-id-44 .imgBanniere {
+  width: 100vw;
+  padding: 0%;
+  margin: 0;
+}
+
+.page-id-44 .imgBanniere .wp-image-169 {
+  width: 100vw;
+}
+
+.page-id-44 p {
+  color: #fff;
 }
 
 .page-id-44 h3 {
@@ -1535,5 +1649,13 @@ hr {
 
 .page-id-44 h4 {
   font-size: 2em;
+  color: #fff;
+}
+
+.page-id-44 h5 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0%;
+  font-weight: lighter;
 }
 /*# sourceMappingURL=style.css.map */
