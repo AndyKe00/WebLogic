@@ -16,153 +16,119 @@
 }
 
 /*=============================================================
-                        LIGNE DU TEMPS
+                        Cours Offerts
 =============================================================*/
 
-//Colors
-/*$black: #34435E;
-$white: #ffffff;
-
-
-.ligneTemps {
-  max-width: 1000px;
-  margin: auto;
+// Modifier le titre des sessions
+.titreSession{
+  font-size: 2rem;
+  color: #FFF;
+  text-align: center;
 }
 
-
-.ligneTemps .session:not(.carteDroite, .carteGauche) {
-
-  font-size: 1em;
-  line-height: 1.75em;
-  border-top: 3px solid;
-  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
-  border-image-slice: 1;
-  border-width: 3px;
-  margin: 0;
-  padding: 5px;
-  counter-increment: section;
+.container{
   position: relative;
-  color: $black;
-  
-
-}
-//odd number borders
-.ligneTemps div:nth-child(odd):not(.carteDroite, .carteGauche) {
-  border-right: 3px solid;
-  padding-left: 0;
-  
-  &:before {
-    left: 100%; 
-    margin-left: -20px;
-  }
-}
-//even number borders
-.ligneTemps div:nth-child(even):not(.carteDroite, .carteGauche) {
-  border-left: 3px solid;
-  padding-right: 0;
-  
-  &:before {
-    right: 100%; 
-    margin-right: -20px;
-  }
-}
-//handle first and last
-.ligneTemps div:first-child:not(.carteDroite, .carteGauche) {
-  border-top: 0;
-  border-top-right-radius:0;
-  border-top-left-radius:0;
-}
-.ligneTemps div:last-child:not(.carteDroite, .carteGauche) {
-  border-bottom-right-radius:0;
-  border-bottom-left-radius:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1200px;
+  flex-wrap: wrap;
 }
 
-/*=============================================================
-                    HOVER SUR LES COURS
-=============================================================*/
-
-
-/*.carteDroite{
-  position:relative;
-  max-height: 20px;
-  padding:5px 10px;
-  
-  clip-path: circle(1% at 85% 50%);
-  transition: all ease-in-out .4s;
-  background-color:aqua;
-  
-
-  &__titre{
-   // margin:0;
-    
-    font-size: 1rem;
-   // line-height:1.8;
-
-  }
-  &__description{
-   // margin:0;
-    
-    font-size: 1.1em;
-  //  line-height:1.6;
-  }
-
-
-  
-  &:hover, &:focus{
-    clip-path: circle(75%);
-    border-radius:20px;
-    box-shadow: 0px 3px 9px rgba(0,0,0,0.12),
-                0px 3px 18px rgba(0,0,0,0.08);
-    background:#ffffff;
-    
-    outline:none;
-  }
-  &:focus{
-    box-shadow: 0px 3px 9px rgba(0,0,0,0.12), 
-                0px 3px 18px rgba(0,0,0,0.08), 
-                0px 0px 0px 4px rgba(0,0,0,0.2);
-  }
+// Conteneur de la carte
+.container .carte{
+  position: relative;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background: #31313171;
 }
 
-.carteGauche{
-  position:relative;
-  max-height: 20px;
-  
-  padding:5px 10px;
-  
-  clip-path: circle(1% at 15% 5%);
-  transition: all ease-in-out .3s;
-  background-color:aqua;
-  
-  &__titre{
-    margin:0;
-    
-    font-size: 3em;
-    line-height:1.8;
-  }
-  &__description{
-    margin:0;
-    
-    font-size: 1.1em;
-    line-height:1.6;
-  }
-  
-  &:hover, &:focus{
-    clip-path: circle(75%);
-    border-radius:20px;
-    box-shadow: 0px 3px 9px rgba(0,0,0,0.12),
-                0px 3px 18px rgba(0,0,0,0.08);
-    background:#ffffff;
-    
-    outline:none;
-  }
-  &:focus{
-    box-shadow: 0px 3px 9px rgba(0,0,0,0.12), 
-                0px 3px 18px rgba(0,0,0,0.08), 
-                0px 0px 0px 4px rgba(0,0,0,0.2);
-  }
+// Bordure de la carte
+.container .carte::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid #292929;
+  border-top: 20px solid #dc0084;
+  border-right: 20px solid #dc0084;
 }
 
+.container .carte .icone{
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.container .carte .icone .fa-solid{
+  max-width: 90px;
+}
+
+// Carte lorsqu'elle n'est pas en extension
+.container .carte .content{
+  position: relative;
+  height: 215px;
+  overflow: hidden;
+}
+
+// Carte lorsqu'elle est en extension
+.container .carte.active .content{
+  height: auto;
+}
+
+// Petit effet
+.container .carte .content::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(0deg, rgba(220,0,132,0.5) 0%, rgba(34,193,195,0) 100%); 
+}
+
+// Enleve l'effet
+.container .carte.active .content::before{
+  display: none;
+}
+
+// Titre du cours
+.container .carte .content h3{
+  color:#404040;
+  margin-bottom: 10px;
+}
+
+// Description du cours
+.container .carte .content p{
+  color: #404040;
+}
+
+// Conteneur pour le bouton lire plus
+.container .carte .plus{
+  position: relative;
+  padding: 10px;
+  background: #dc0084;
+  margin-top: 15px;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+}
+
+// Lorsque le Lire plus est clique
+.container .carte.active .plus{
+  background: #292929;
+}
+
+// Avant le clique
+.container .carte .plus::before{
+  content: "Lire plus";
+}
+
+// Apres un clique
+.container .carte.active .plus::before{
+  content: "Lire moins";
+}
 
 /*=============================================================
                     BLOC DES COLONNES
@@ -197,6 +163,7 @@ $white: #ffffff;
 
 .conteneurProf{
   //width: 70%;
+  margin: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
