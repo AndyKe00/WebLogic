@@ -37,10 +37,14 @@
             align-items: center;
             background-color: rgba(130,130,130,0.10);
             width: 100%;
-            padding: 0 5% 5% 5%;
+            padding: 5% 5% 5% 5%;
             text-align: center;
             color: #fff;
             margin: auto;
+
+            h4 {
+                margin: 0 0 42px 0;
+            }
 
             div {
                 width: 40%;
@@ -60,7 +64,7 @@
 
             span {
                 width: 3px;
-                height: 100px;
+                height: 20rem;
                 background-color: #dc0084;
                 margin: 0 2% 0 2%;
             }
@@ -77,6 +81,7 @@
 
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
             
             ul {
                 font-size: 2em;
@@ -86,13 +91,126 @@
 
             img {
                 min-height: 198px;
-                min-width: 352px;
+                min-width: 500px;
             }
+        }
+
+        .meilleuresProfessions {
+
+            margin-top: 7%;
+            display: flex;
+            flex-direction: column;
+           // justify-content: ;
+
+            .rose {
+                background-color: #dc0084b9;
+            }
+    
+            .noir {
+                background-color: #383838b9;
+                text-align: right;
+
+                section {
+                    text-align: left;
+                }
+            }
+
+            .rose, .noir {
+                padding: 0 5% 0 5%;
+                
+                section {
+                    flex-direction: row;
+                    display: flex;
+                    justify-content: space-between;
+                    height: 100%;
+                    margin-bottom: 5%;
+
+                    p {
+                        max-width: 50%;
+                        font-size: 1.5em;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+
+                    div {
+                      //  background-image: url(../../media/grandPapaTortue.png);
+                        width: 40%;
+                        //height: 24px;
+                        background-color: #fff;
+                        align-self: stretch;
+                        box-sizing: border-box;
+                    }
+
+                }
+            }
+
         }
 
     }
 
+    .sectionUni {
+        margin: 7%;
+        display: flex;
+        flex-direction: column;
+
+        .conteneurUni {
+            margin: auto;
+            background-color: #383838b9;
+            box-sizing: border-box;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px 0 10px 0;
+            margin-bottom: 2%;
+            width: 85%;
+            flex-direction: row;
+            display: flex;
+            justify-content: space-around;
+
+            h5 {
+                padding-right: 10px;
+                text-align: center;
+                margin: auto;
+                font-size: 1.5em;
+            }
+            i {
+                margin: auto;
+                font-size: 4.2em;
+                color: #dc0084;
+            }
+
+            .coteDroit {
+                padding-left: 0%;
+            }
+
+        }
+    }
+
+    /*.banniere {
+        width: 100%;
+        display: flex;
+        height: 50px;
+
+        div {
+            background-color: orange;
+            height: 20px;
+        }
+    }*/
+
+    .imgBanniere {
+        width: 100vw;
+        padding: 0%;
+        margin: 0;
+
+        .wp-image-169 {
+            width: 100vw;
+        }
+    }
+
     //Typographie
+    p {
+        color: #fff;
+    }
+
     h3 {
         font-family: $font__titles;
         font-size: 3em;
@@ -101,6 +219,14 @@
 
     h4 {
         font-size: 2em;
+        color: #fff;
+    }
+
+    h5 {
+        color: #fff;
+        font-size: 1.2rem;
+        margin: 0%;
+        font-weight: lighter;
     }
 
 }

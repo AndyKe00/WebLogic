@@ -977,12 +977,18 @@ li:hover {
 /*=============================================================
                         LIGNE DU TEMPS
 =============================================================*/
+/*$black: #34435E;
+$white: #ffffff;
+
+
 .ligneTemps {
   max-width: 1000px;
   margin: auto;
 }
 
+
 .ligneTemps .session:not(.carteDroite, .carteGauche) {
+
   font-size: 1em;
   line-height: 1.75em;
   border-top: 3px solid;
@@ -993,104 +999,125 @@ li:hover {
   padding: 5px;
   counter-increment: section;
   position: relative;
-  color: #34435E;
-}
+  color: $black;
+  
 
+}
+//odd number borders
 .ligneTemps div:nth-child(odd):not(.carteDroite, .carteGauche) {
   border-right: 3px solid;
   padding-left: 0;
+  
+  &:before {
+    left: 100%; 
+    margin-left: -20px;
+  }
 }
-
-.ligneTemps div:nth-child(odd):before {
-  left: 100%;
-  margin-left: -20px;
-}
-
+//even number borders
 .ligneTemps div:nth-child(even):not(.carteDroite, .carteGauche) {
   border-left: 3px solid;
   padding-right: 0;
+  
+  &:before {
+    right: 100%; 
+    margin-right: -20px;
+  }
 }
-
-.ligneTemps div:nth-child(even):before {
-  right: 100%;
-  margin-right: -20px;
-}
-
+//handle first and last
 .ligneTemps div:first-child:not(.carteDroite, .carteGauche) {
   border-top: 0;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
 }
-
 .ligneTemps div:last-child:not(.carteDroite, .carteGauche) {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
 }
 
 /*=============================================================
                     HOVER SUR LES COURS
 =============================================================*/
-.carteDroite {
-  position: relative;
+/*.carteDroite{
+  position:relative;
   max-height: 20px;
-  padding: 5px 10px;
+  padding:5px 10px;
+  
   clip-path: circle(1% at 85% 50%);
   transition: all ease-in-out .4s;
-  background-color: aqua;
+  background-color:aqua;
+  
+
+  &__titre{
+   // margin:0;
+    
+    font-size: 1rem;
+   // line-height:1.8;
+
+  }
+  &__description{
+   // margin:0;
+    
+    font-size: 1.1em;
+  //  line-height:1.6;
+  }
+
+
+  
+  &:hover, &:focus{
+    clip-path: circle(75%);
+    border-radius:20px;
+    box-shadow: 0px 3px 9px rgba(0,0,0,0.12),
+                0px 3px 18px rgba(0,0,0,0.08);
+    background:#ffffff;
+    
+    outline:none;
+  }
+  &:focus{
+    box-shadow: 0px 3px 9px rgba(0,0,0,0.12), 
+                0px 3px 18px rgba(0,0,0,0.08), 
+                0px 0px 0px 4px rgba(0,0,0,0.2);
+  }
 }
 
-.carteDroite__titre {
-  font-size: 1rem;
-}
-
-.carteDroite__description {
-  font-size: 1.1em;
-}
-
-.carteDroite:hover, .carteDroite:focus {
-  clip-path: circle(75%);
-  border-radius: 20px;
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
-  background: #ffffff;
-  outline: none;
-}
-
-.carteDroite:focus {
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
-}
-
-.carteGauche {
-  position: relative;
+.carteGauche{
+  position:relative;
   max-height: 20px;
-  padding: 5px 10px;
+  
+  padding:5px 10px;
+  
   clip-path: circle(1% at 15% 5%);
   transition: all ease-in-out .3s;
-  background-color: aqua;
+  background-color:aqua;
+  
+  &__titre{
+    margin:0;
+    
+    font-size: 3em;
+    line-height:1.8;
+  }
+  &__description{
+    margin:0;
+    
+    font-size: 1.1em;
+    line-height:1.6;
+  }
+  
+  &:hover, &:focus{
+    clip-path: circle(75%);
+    border-radius:20px;
+    box-shadow: 0px 3px 9px rgba(0,0,0,0.12),
+                0px 3px 18px rgba(0,0,0,0.08);
+    background:#ffffff;
+    
+    outline:none;
+  }
+  &:focus{
+    box-shadow: 0px 3px 9px rgba(0,0,0,0.12), 
+                0px 3px 18px rgba(0,0,0,0.08), 
+                0px 0px 0px 4px rgba(0,0,0,0.2);
+  }
 }
 
-.carteGauche__titre {
-  margin: 0;
-  font-size: 3em;
-  line-height: 1.8;
-}
-
-.carteGauche__description {
-  margin: 0;
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.carteGauche:hover, .carteGauche:focus {
-  clip-path: circle(75%);
-  border-radius: 20px;
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
-  background: #ffffff;
-  outline: none;
-}
-
-.carteGauche:focus {
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
-}
 
 /*=============================================================
                     BLOC DES COLONNES
@@ -1113,7 +1140,6 @@ li:hover {
 }
 
 .entry-title:nth-of-type(1) a {
-  color: aqua;
   font-size: 1rem;
 }
 
@@ -1130,6 +1156,7 @@ li:hover {
 .imageProf {
   width: 320px;
   height: 447px;
+
   overflow: hidden;
   position: relative;
   display: flex;
@@ -1174,6 +1201,7 @@ li:hover {
   transform: scale(1);
   transition: all 0.9s ease;
 }
+
 
 footer {
   margin-bottom: 0;
@@ -1439,6 +1467,19 @@ hr {
   box-shadow: 5px 5px 15px -2px #000000;
 }
 
+.page-id-44 {
+  /*.banniere {
+        width: 100%;
+        display: flex;
+        height: 50px;
+
+        div {
+            background-color: orange;
+            height: 20px;
+        }
+    }*/
+}
+
 .page-id-44 hr {
   background-color: #dc0084;
   height: 3px;
@@ -1477,10 +1518,14 @@ hr {
   align-items: center;
   background-color: rgba(130, 130, 130, 0.1);
   width: 100%;
-  padding: 0 5% 5% 5%;
+  padding: 5% 5% 5% 5%;
   text-align: center;
   color: #fff;
   margin: auto;
+}
+
+.page-id-44 .sectionStages .conteneurStages h4 {
+  margin: 0 0 42px 0;
 }
 
 .page-id-44 .sectionStages .conteneurStages div {
@@ -1500,7 +1545,7 @@ hr {
 
 .page-id-44 .sectionStages .conteneurStages span {
   width: 3px;
-  height: 100px;
+  height: 20rem;
   background-color: #dc0084;
   margin: 0 2% 0 2%;
 }
@@ -1514,6 +1559,7 @@ hr {
 .page-id-44 .sectionProfessions .conteneurProfessions {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions ul {
@@ -1524,7 +1570,103 @@ hr {
 
 .page-id-44 .sectionProfessions .conteneurProfessions img {
   min-height: 198px;
-  min-width: 352px;
+  min-width: 500px;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .rose {
+  background-color: #dc0084b9;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .noir {
+  background-color: #383838b9;
+  text-align: right;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .noir section {
+  text-align: left;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .rose, .page-id-44 .sectionProfessions .meilleuresProfessions .noir {
+  padding: 0 5% 0 5%;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .rose section, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 5%;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .rose section p, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section p {
+  max-width: 50%;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .rose section div, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section div {
+  width: 40%;
+  background-color: #fff;
+  align-self: stretch;
+  box-sizing: border-box;
+}
+
+.page-id-44 .sectionUni {
+  margin: 7%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-id-44 .sectionUni .conteneurUni {
+  margin: auto;
+  background-color: #383838b9;
+  box-sizing: border-box;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  margin-bottom: 2%;
+  width: 85%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+}
+
+.page-id-44 .sectionUni .conteneurUni h5 {
+  padding-right: 10px;
+  text-align: center;
+  margin: auto;
+  font-size: 1.5em;
+}
+
+.page-id-44 .sectionUni .conteneurUni i {
+  margin: auto;
+  font-size: 4.2em;
+  color: #dc0084;
+}
+
+.page-id-44 .sectionUni .conteneurUni .coteDroit {
+  padding-left: 0%;
+}
+
+.page-id-44 .imgBanniere {
+  width: 100vw;
+  padding: 0%;
+  margin: 0;
+}
+
+.page-id-44 .imgBanniere .wp-image-169 {
+  width: 100vw;
+}
+
+.page-id-44 p {
+  color: #fff;
 }
 
 .page-id-44 h3 {
@@ -1535,5 +1677,151 @@ hr {
 
 .page-id-44 h4 {
   font-size: 2em;
+  color: #fff;
+}
+
+.page-id-44 h5 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0%;
+  font-weight: lighter;
+}
+
+/*=============================================================
+                        LIGNE DU TEMPS
+=============================================================*/
+.ligneTemps {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.ligneTemps .session:not(.carteDroite, .carteGauche) {
+  font-size: 1em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 5px;
+  counter-increment: section;
+  position: relative;
+  color: #34435E;
+}
+
+.ligneTemps div:nth-child(odd):not(.carteDroite, .carteGauche) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+
+.ligneTemps div:nth-child(odd):before {
+  left: 100%;
+  margin-left: -20px;
+}
+
+.ligneTemps div:nth-child(even):not(.carteDroite, .carteGauche) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+
+.ligneTemps div:nth-child(even):before {
+  right: 100%;
+  margin-right: -20px;
+}
+
+.ligneTemps div:first-child:not(.carteDroite, .carteGauche) {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.ligneTemps div:last-child:not(.carteDroite, .carteGauche) {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/*=============================================================
+                    HOVER SUR LES COURS
+=============================================================*/
+.carteDroite {
+  position: relative;
+  padding: 5px 10px;
+  clip-path: circle(1% at 85% 50%);
+  transition: all ease-in-out .4s;
+  background: #ffffff;
+  /*&__titre{
+   // margin:0;
+   
+    
+    font-size: 1rem;
+   // line-height:1.8;
+
+  }
+  &__description{
+   // margin:0;
+    
+    font-size: 1.1em;
+  //  line-height:1.6;
+  }*/
+}
+
+.carteDroite:hover, .carteDroite:focus {
+  clip-path: circle(75%);
+  border-radius: 20px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  outline: none;
+}
+
+.carteDroite:focus {
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.carteDroite .carte__titre {
+  height: 1px;
+}
+
+.carteDroite .carte__description {
+  height: 1px;
+}
+
+.carteGauche {
+  position: relative;
+  padding: 5px 10px;
+  background: #ffffff;
+  clip-path: circle(1% at 15% 50%);
+  transition: all ease-in-out .3s;
+  /*&__titre{
+    margin:0;
+    
+    font-size: 3em;
+    line-height:1.8;
+  }
+  &__description{
+    margin:0;
+    
+    font-size: 1.1em;
+    line-height:1.6;
+  }*/
+}
+
+.carteGauche:hover, .carteGauche:focus {
+  clip-path: circle(75%);
+  border-radius: 20px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  outline: none;
+}
+
+.carteGauche:focus {
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.carteGauche .carte__titre {
+  height: 1px;
+}
+
+.carteGauche .carte__description {
+  height: 1px;
 }
 /*# sourceMappingURL=style.css.map */
