@@ -1156,7 +1156,7 @@ $white: #ffffff;
 .imageProf {
   width: 320px;
   height: 447px;
-  margin: 50px;
+
   overflow: hidden;
   position: relative;
   display: flex;
@@ -1202,18 +1202,6 @@ $white: #ffffff;
   transition: all 0.9s ease;
 }
 
-/*=============================================================
-                    Grille de cheminement
-=============================================================*/
-.conteneurBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/10/244371350_920791305215488_4824831813202747773_n.jpg);
-  min-height: 100px;
-  background-repeat: no-repeat;
-  background-size: 1920px auto;
-}
 
 footer {
   margin-bottom: 0;
