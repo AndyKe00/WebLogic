@@ -1,26 +1,9 @@
-
-  .custom-background
-  {
-      background-size: 100vw 90vh !important;
-      background-repeat: no-repeat !important;
-  }
-  
-
-
-#primary h2
-{
-    font-size: 8em;
-    margin: 0;
-    color:white;
-    text-transform: uppercase;
-}
-
 /*=============================================================
                         LIGNE DU TEMPS
 =============================================================*/
 
 //Colors
-/*$black: #34435E;
+$black: #34435E;
 $white: #ffffff;
 
 
@@ -82,18 +65,18 @@ $white: #ffffff;
 =============================================================*/
 
 
-/*.carteDroite{
+.carteDroite{
   position:relative;
-  max-height: 20px;
-  padding:5px 10px;
+  padding: 5px 10px;
   
   clip-path: circle(1% at 85% 50%);
   transition: all ease-in-out .4s;
-  background-color:aqua;
+  background:#ffffff;
   
 
-  &__titre{
+  /*&__titre{
    // margin:0;
+   
     
     font-size: 1rem;
    // line-height:1.8;
@@ -104,7 +87,7 @@ $white: #ffffff;
     
     font-size: 1.1em;
   //  line-height:1.6;
-  }
+  }*/
 
 
   
@@ -122,19 +105,26 @@ $white: #ffffff;
                 0px 3px 18px rgba(0,0,0,0.08), 
                 0px 0px 0px 4px rgba(0,0,0,0.2);
   }
+
+  .carte__titre{
+    height: 1px;
+  }
+
+  .carte__description
+  {
+    height: 1px;
+  }
 }
 
 .carteGauche{
   position:relative;
-  max-height: 20px;
-  
   padding:5px 10px;
+  background:#ffffff;
   
-  clip-path: circle(1% at 15% 5%);
+  clip-path: circle(1% at 15% 50%);
   transition: all ease-in-out .3s;
-  background-color:aqua;
   
-  &__titre{
+  /*&__titre{
     margin:0;
     
     font-size: 3em;
@@ -145,7 +135,7 @@ $white: #ffffff;
     
     font-size: 1.1em;
     line-height:1.6;
-  }
+  }*/
   
   &:hover, &:focus{
     clip-path: circle(75%);
@@ -161,109 +151,13 @@ $white: #ffffff;
                 0px 3px 18px rgba(0,0,0,0.08), 
                 0px 0px 0px 4px rgba(0,0,0,0.2);
   }
-}
 
-
-/*=============================================================
-                    BLOC DES COLONNES
-=============================================================*/
-
-.condAdminConteneur{
-  margin-right: 5%;
-  border: 2px solid black;
-  border-radius: 10%;
-}
-
-.titreCondAdmin{
-  text-align: center;
-}
-
-.listeCondAdmin{
-  list-style: none;
-  border: 2px solid black;
-  border-radius: 10%;
-  margin-right: 30px;
-}
-
-.entry-title:nth-of-type(1) a
-{
-  //color: aqua;
-  font-size: 1rem;
-}
-
-/*=============================================================
-                    Sectiton professeurs
-=============================================================*/
-
-.conteneurProf{
-  //width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.imageProf{
-  width: 320px;
-  height: 447px;
-  margin: 50px;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- // box-shadow: 5px 5px 16px -5px #dc0084;
-  img {
-      max-width: 100%;
-      height: 100%;
-      //box-shadow: 5px 5px 16px -5px rgba(220,0,132,0.55);
-    }
-}
-
-/*=============================================================
-                    Hover Sectiton professeurs
-=============================================================*/
-
-
-.hoverProf {
-  opacity: 0;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 10px;
-  height: 90%;
-  background: #FFF;
-  color: #151E3F;
-  transition: all 0.9s ease;
-  p {
-    transition: all 0.9s ease;
-    transform: scale(0.1)
+  .carte__titre{
+    height: 1px;
   }
-}
 
-.imageProf:hover .hoverProf {
-  opacity: 0.8;
-  width: 90%;
-  transition: all 0.5s ease;
-  p {
-    transform: scale(1);
-    transition: all 0.9s ease;
+  .carte__description
+  {
+    height: 1px;
   }
-}
-
-/*=============================================================
-                    Grille de cheminement
-=============================================================*/
-
-.conteneurBtn
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/10/244371350_920791305215488_4824831813202747773_n.jpg);
-  min-height: 100px;
-  background-repeat: no-repeat;
-  background-size: 1920px auto;
 }
