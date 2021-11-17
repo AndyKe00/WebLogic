@@ -1156,7 +1156,7 @@ $white: #ffffff;
 .imageProf {
   width: 320px;
   height: 447px;
-
+  margin: 50px;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -1202,6 +1202,18 @@ $white: #ffffff;
   transition: all 0.9s ease;
 }
 
+/*=============================================================
+                    Grille de cheminement
+=============================================================*/
+.conteneurBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/10/244371350_920791305215488_4824831813202747773_n.jpg);
+  min-height: 100px;
+  background-repeat: no-repeat;
+  background-size: 1920px auto;
+}
 
 footer {
   margin-bottom: 0;
@@ -1823,5 +1835,34 @@ hr {
 
 .carteGauche .carte__description {
   height: 1px;
+}
+
+.galerie-projetPHP {
+  display: flex;
+  justify-content: center;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.galerie-projetPHP div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galerie-projetPHP div img {
+  width: 300px;
+  height: 200px;
+}
+
+.blocks-gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.blocks-gallery-grid .li.blocks-gallery-item figure {
+  width: 300px;
+  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */
