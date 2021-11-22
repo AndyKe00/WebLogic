@@ -1,3 +1,6 @@
+
+
+
 hr
     {
         background-color: #dc0084; height: 3px; border: 0;
@@ -27,7 +30,14 @@ padding: 2%;;
 background-color: rgba(130,130,130,0.10);
 color:white;
 }
-.menu-galerie
+
+/*-------------------------------------------------------------------
+------------PROPRIÉTÉS CSS DE LA GALERIE PROJETS-------------------
+-------------------------------------------------------*/
+
+/*ANCIENNE VERSION*/
+
+ /*.menu-galerie
 {
     display: flex;
     align-items: center;
@@ -48,7 +58,9 @@ color:white;
     {
         color:#dc0084;
     }
-}
+}*/
+
+/*
 .galerie-projet
 {
     display: inline-grid;
@@ -82,8 +94,24 @@ color:white;
         border-radius: 0%;
         color:white;
     }
-}
+}*/
 
+.wp-block-gallery
+{
+    .blocks-gallery-grid
+    {
+        li.blocks-gallery-item
+        {
+            width:300px;
+            height:200px;
+        }
+    }
+    
+}
+/*-------------------------------------------------------------------
+------------PROPRIÉTÉS CSS DE LA SECTION TÉMOIGNAGES-------------------
+-------------------------------------------------------*/
+//titre 'témoignages"
 h3
 {
     color:white;
@@ -94,6 +122,7 @@ h3
     width:700px;
     border: 1px solid white;
 }
+//styles pour la section générale des témoignages
 .section-temoignages
 {
     display: flex;
@@ -103,12 +132,13 @@ h3
     margin-right: 5%;
     margin: 5%;
 
+//couleurs différentes pour chaques post-it
     .post-it:nth-child(1)
     {
         background-color: #FFA5DB;
         transform: rotateZ(-20deg);
         -webkit-box-shadow: 5px 5px 15px -2px #000000; 
-box-shadow: 5px 5px 15px -2px #000000;
+    box-shadow: 5px 5px 15px -2px #000000;
     }
 
     .post-it:nth-child(2)
@@ -117,7 +147,7 @@ box-shadow: 5px 5px 15px -2px #000000;
         transform: rotateZ(10deg);
         margin-left: 10%;
         -webkit-box-shadow: 5px 5px 15px -2px #000000; 
-box-shadow: 5px 5px 15px -2px #000000;
+    box-shadow: 5px 5px 15px -2px #000000;
     }
 
     .post-it:nth-child(3)
@@ -127,7 +157,7 @@ box-shadow: 5px 5px 15px -2px #000000;
         margin-top: 5%;
         margin-left: 5%;
         -webkit-box-shadow: 5px 5px 15px -2px #000000; 
-box-shadow: 5px 5px 15px -2px #000000;
+    box-shadow: 5px 5px 15px -2px #000000;
     }
 
     .post-it:nth-child(4)
@@ -136,7 +166,7 @@ box-shadow: 5px 5px 15px -2px #000000;
         transform: rotateZ(60deg);
         margin-top: -5%;
         -webkit-box-shadow: 5px 5px 15px -2px #000000; 
-box-shadow: 5px 5px 15px -2px #000000;
+        box-shadow: 5px 5px 15px -2px #000000;
     }
 
     .post-it:nth-child(5)
@@ -144,7 +174,7 @@ box-shadow: 5px 5px 15px -2px #000000;
         background-color: #FF67C2;
         transform: rotateZ(-50deg);
         -webkit-box-shadow: 5px 5px 15px -2px #000000; 
-box-shadow: 5px 5px 15px -2px #000000;
+    box-shadow: 5px 5px 15px -2px #000000;
     }
 
     .post-it:nth-child(6)
@@ -153,7 +183,7 @@ box-shadow: 5px 5px 15px -2px #000000;
         transform: rotateZ(5deg);
         margin-top: -5%;
         -webkit-box-shadow: 5px 5px 15px -2px #000000; 
-box-shadow: 5px 5px 15px -2px #000000;
+    box-shadow: 5px 5px 15px -2px #000000;
     }
 
     .post-it:nth-child(7)
@@ -162,14 +192,14 @@ box-shadow: 5px 5px 15px -2px #000000;
         transform: rotateZ(-10deg);
         margin-top: 5%;
         -webkit-box-shadow: 5px 5px 15px -2px #000000; 
-box-shadow: 5px 5px 15px -2px #000000;
+    box-shadow: 5px 5px 15px -2px #000000;
     }
 
     .post-it:nth-child(8)
     {
         background-color: #FF67C2;
         -webkit-box-shadow: 5px 5px 15px -2px #000000; 
-box-shadow: 5px 5px 15px -2px #000000;
+    box-shadow: 5px 5px 15px -2px #000000;
     }
 
     .post-it:nth-child(9)
@@ -177,12 +207,12 @@ box-shadow: 5px 5px 15px -2px #000000;
         background-color: #FFA5DB;
         transform: rotateZ(-40deg);
         -webkit-box-shadow: 5px 5px 15px -2px #000000; 
-box-shadow: 5px 5px 15px -2px #000000;
+    box-shadow: 5px 5px 15px -2px #000000;
     }
 
     
 }
-
+//Propriétés générales des post-it (Taille,alignement,disposition des textes)
 .post-it
 {
     display: flex;
