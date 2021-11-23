@@ -963,11 +963,11 @@ li:hover {
 
 /* Local
 --------------------------------------------- */
-.custom-background {
-  background-size: 100vw 90vh !important;
-  background-repeat: no-repeat !important;
-}
-
+/*  .custom-background
+  {
+      background-size: 100vw 90vh !important;
+      background-repeat: no-repeat !important;
+  } */
 #primary h2 {
   font-size: 8em;
   margin: 0;
@@ -1044,13 +1044,17 @@ li:hover {
   display: none;
 }
 
+.container .carte .content i .fas {
+  color: #FFF;
+}
+
 .container .carte .content h3 {
-  color: #404040;
+  color: #FFF;
   margin-bottom: 10px;
 }
 
 .container .carte .content p {
-  color: #404040;
+  color: #FFF;
 }
 
 .container .carte .plus {

@@ -1,9 +1,8 @@
-
-  .custom-background
+/*  .custom-background
   {
       background-size: 100vw 90vh !important;
       background-repeat: no-repeat !important;
-  }
+  } */
   
 
 
@@ -92,15 +91,19 @@
   display: none;
 }
 
+.container .carte .content i .fas{
+  color: #FFF;
+}
+
 // Titre du cours
 .container .carte .content h3{
-  color:#404040;
+  color:#FFF;
   margin-bottom: 10px;
 }
 
 // Description du cours
 .container .carte .content p{
-  color: #404040;
+  color: #FFF;
 }
 
 // Conteneur pour le bouton lire plus
