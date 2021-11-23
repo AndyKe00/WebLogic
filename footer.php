@@ -40,9 +40,10 @@
 				<h3>Suivez-nous</h3>
 			<!--ce sera des img au lieu de divs, mais ce nest qu'à titre indicatif-->
 			<div class="ensemble-icon-footer">
-			<div class="icon-footer"></div>
-			<div class="icon-footer"></div>
-			<div class="icon-footer"></div>
+			<a href="https://fr-ca.facebook.com/maisonneuvetim/"><img class="icon-footer" src="http://eddym10.sg-host.com/wp-content/uploads/2021/11/facebook-150x150-1.png" ></a>
+			<a href="https://www.instagram.com/maisonneuvetim/?hl=fr"><img class="icon-footer" src="http://eddym10.sg-host.com/wp-content/uploads/2021/11/instagram-150x150-1.png" ></a>
+			<a href="https://www.behance.net/departement_tim"><img class="icon-footer" src="http://eddym10.sg-host.com/wp-content/uploads/2021/11/behance-150x150-1.png"></a>
+			<a href="https://www.youtube.com/channel/UCFbzVrYpbJOaOW8ub9NiAOA"><img class="icon-footer" src="http://eddym10.sg-host.com/wp-content/uploads/2021/11/youtube-150x150-1.png"></a>
 			</div>
 			</div>
 			

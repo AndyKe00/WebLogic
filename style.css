@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: WebLogic
 Theme URI: http://underscores.me/
@@ -975,149 +976,105 @@ li:hover {
 }
 
 /*=============================================================
-                        LIGNE DU TEMPS
+                        Cours Offerts
 =============================================================*/
-/*$black: #34435E;
-$white: #ffffff;
-
-
-.ligneTemps {
-  max-width: 1000px;
-  margin: auto;
+.titreSession {
+  font-size: 2rem;
+  color: #FFF;
+  text-align: center;
 }
 
-
-.ligneTemps .session:not(.carteDroite, .carteGauche) {
-
-  font-size: 1em;
-  line-height: 1.75em;
-  border-top: 3px solid;
-  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
-  border-image-slice: 1;
-  border-width: 3px;
-  margin: 0;
-  padding: 5px;
-  counter-increment: section;
+.container {
   position: relative;
-  color: $black;
-  
-
-}
-//odd number borders
-.ligneTemps div:nth-child(odd):not(.carteDroite, .carteGauche) {
-  border-right: 3px solid;
-  padding-left: 0;
-  
-  &:before {
-    left: 100%; 
-    margin-left: -20px;
-  }
-}
-//even number borders
-.ligneTemps div:nth-child(even):not(.carteDroite, .carteGauche) {
-  border-left: 3px solid;
-  padding-right: 0;
-  
-  &:before {
-    right: 100%; 
-    margin-right: -20px;
-  }
-}
-//handle first and last
-.ligneTemps div:first-child:not(.carteDroite, .carteGauche) {
-  border-top: 0;
-  border-top-right-radius:0;
-  border-top-left-radius:0;
-}
-.ligneTemps div:last-child:not(.carteDroite, .carteGauche) {
-  border-bottom-right-radius:0;
-  border-bottom-left-radius:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1200px;
+  flex-wrap: wrap;
 }
 
-/*=============================================================
-                    HOVER SUR LES COURS
-=============================================================*/
-/*.carteDroite{
-  position:relative;
-  max-height: 20px;
-  padding:5px 10px;
-  
-  clip-path: circle(1% at 85% 50%);
-  transition: all ease-in-out .4s;
-  background-color:aqua;
-  
-
-  &__titre{
-   // margin:0;
-    
-    font-size: 1rem;
-   // line-height:1.8;
-
-  }
-  &__description{
-   // margin:0;
-    
-    font-size: 1.1em;
-  //  line-height:1.6;
-  }
-
-
-  
-  &:hover, &:focus{
-    clip-path: circle(75%);
-    border-radius:20px;
-    box-shadow: 0px 3px 9px rgba(0,0,0,0.12),
-                0px 3px 18px rgba(0,0,0,0.08);
-    background:#ffffff;
-    
-    outline:none;
-  }
-  &:focus{
-    box-shadow: 0px 3px 9px rgba(0,0,0,0.12), 
-                0px 3px 18px rgba(0,0,0,0.08), 
-                0px 0px 0px 4px rgba(0,0,0,0.2);
-  }
+.container .carte {
+  position: relative;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background: #31313171;
 }
 
-.carteGauche{
-  position:relative;
-  max-height: 20px;
-  
-  padding:5px 10px;
-  
-  clip-path: circle(1% at 15% 5%);
-  transition: all ease-in-out .3s;
-  background-color:aqua;
-  
-  &__titre{
-    margin:0;
-    
-    font-size: 3em;
-    line-height:1.8;
-  }
-  &__description{
-    margin:0;
-    
-    font-size: 1.1em;
-    line-height:1.6;
-  }
-  
-  &:hover, &:focus{
-    clip-path: circle(75%);
-    border-radius:20px;
-    box-shadow: 0px 3px 9px rgba(0,0,0,0.12),
-                0px 3px 18px rgba(0,0,0,0.08);
-    background:#ffffff;
-    
-    outline:none;
-  }
-  &:focus{
-    box-shadow: 0px 3px 9px rgba(0,0,0,0.12), 
-                0px 3px 18px rgba(0,0,0,0.08), 
-                0px 0px 0px 4px rgba(0,0,0,0.2);
-  }
+.container .carte::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid #292929;
+  border-top: 20px solid #dc0084;
+  border-right: 20px solid #dc0084;
 }
 
+.container .carte .icone {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.container .carte .icone .fa-solid {
+  max-width: 90px;
+}
+
+.container .carte .content {
+  position: relative;
+  height: 215px;
+  overflow: hidden;
+}
+
+.container .carte.active .content {
+  height: auto;
+}
+
+.container .carte .content::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(0deg, rgba(220, 0, 132, 0.5) 0%, rgba(34, 193, 195, 0) 100%);
+}
+
+.container .carte.active .content::before {
+  display: none;
+}
+
+.container .carte .content h3 {
+  color: #404040;
+  margin-bottom: 10px;
+}
+
+.container .carte .content p {
+  color: #404040;
+}
+
+.container .carte .plus {
+  position: relative;
+  padding: 10px;
+  background: #dc0084;
+  margin-top: 15px;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+}
+
+.container .carte.active .plus {
+  background: #292929;
+}
+
+.container .carte .plus::before {
+  content: "Lire plus";
+}
+
+.container .carte.active .plus::before {
+  content: "Lire moins";
+}
 
 /*=============================================================
                     BLOC DES COLONNES
@@ -1147,6 +1104,7 @@ $white: #ffffff;
                     Sectiton professeurs
 =============================================================*/
 .conteneurProf {
+  margin: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1225,7 +1183,7 @@ footer h3 {
   font-family: "Roboto Slab", serif;
 }
 
-footer a {
+footer .ensemble-colonne-footer a {
   color: #707070 !important;
   text-decoration: none;
   margin-left: 10%;
@@ -1258,14 +1216,38 @@ footer .ensemble-colonne-footer {
 .footer-section-bas .ensemble-icon-footer {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .footer-section-bas .icon-footer {
-  margin: 5px;
   width: 50px;
   height: 50px;
-  background-color: black;
+  margin: 5px;
   margin-bottom: 30px;
+}
+
+/***********************************************
+*********Pour IPHONE****************
+*********************************************/
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  .ensemble-colonne-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+  }
+  .colonne-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
+  .ensemble-colonne-footer a {
+    color: #707070 !important;
+    text-decoration: none;
+    text-align: center;
+  }
 }
 
 hr {
@@ -1277,6 +1259,15 @@ hr {
 
 .page-etudiante {
   background-color: #292929;
+  /*-------------------------------------------------------------------
+------------PROPRIÉTÉS CSS DE LA GALERIE PROJETS-------------------
+-------------------------------------------------------*/
+  /*-------------------------------------------------------------------
+------------PROPRIÉTÉS CSS DE LA SECTION TÉMOIGNAGES-------------------
+-------------------------------------------------------*/
+  /********************************************
+**********MEDIA QUERY - IPHONE ****************
+*****************************************/
 }
 
 .page-etudiante .header_etudiante {
@@ -1289,6 +1280,10 @@ hr {
 }
 
 .page-etudiante .bloc-texte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   z-index: 999;
   width: 50%;
   height: 300px;
@@ -1297,59 +1292,9 @@ hr {
   color: white;
 }
 
-.page-etudiante .menu-galerie {
-  display: flex;
-  align-items: center;
-  margin-left: 5%;
-  margin-bottom: 4vh;
-  padding-left: 20px;
-  width: 60%;
-  height: 7vh;
-  justify-content: space-between;
-  background-color: rgba(130, 130, 130, 0.1);
-}
-
-.page-etudiante .menu-galerie a {
-  text-decoration: none;
-}
-
-.page-etudiante .menu-galerie a:active {
-  font-weight: bold;
-}
-
-.page-etudiante .menu-galerie a:hover {
-  color: #dc0084;
-}
-
-.page-etudiante .galerie-projet {
-  display: inline-grid;
-  grid-template-columns: auto auto auto;
-  flex-wrap: wrap;
-  margin-right: 5%;
-  margin-left: 5%;
-  width: 100vw;
-  height: 90vh;
-}
-
-.page-etudiante .galerie-projet div {
-  text-align: center;
-  padding: 20px;
-  width: 25vw;
-  height: 25vh;
-  background-color: white;
-}
-
-.page-etudiante .lesBoutonsGalerie {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 2%;
-  margin-bottom: 10px;
-}
-
-.page-etudiante .lesBoutonsGalerie button {
-  background-color: #292929;
-  border-radius: 0%;
-  color: white;
+.page-etudiante .wp-block-gallery .blocks-gallery-grid li.blocks-gallery-item {
+  width: 300px;
+  height: 200px;
 }
 
 .page-etudiante h3 {
@@ -1442,6 +1387,10 @@ hr {
   padding-top: 20px;
 }
 
+.page-etudiante .post-it p {
+  font-size: 0.8rem;
+}
+
 .page-etudiante .post-it:hover {
   scale: 110%;
   transition: all .3s ease-in-out;
@@ -1479,8 +1428,7 @@ hr {
   box-shadow: 5px 5px 15px -2px #000000;
 }
 
-.page-id-44 div {
-  text-overflow: clip;
+
 }
 
 .page-id-44 hr {
@@ -1890,5 +1838,34 @@ hr {
 
 .carteGauche .carte__description {
   height: 1px;
+}
+
+.galerie-projetPHP {
+  display: flex;
+  justify-content: center;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.galerie-projetPHP div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galerie-projetPHP div img {
+  width: 300px;
+  height: 200px;
+}
+
+.blocks-gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.blocks-gallery-grid .li.blocks-gallery-item figure {
+  width: 300px;
+  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */
