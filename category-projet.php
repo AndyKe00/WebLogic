@@ -5,6 +5,9 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WebLogic
+ * 
+ * 
+ * //SEULEMENT SI J'AI A UTILISER DU PHP POUR MA GALERIE PROJET, EN STAND BY
  */
 
 get_header();

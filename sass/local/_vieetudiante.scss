@@ -23,12 +23,16 @@ hr
 }
 .bloc-texte 
 {
-z-index: 999;
-width:50%;
-height:300px;
-padding: 2%;;
-background-color: rgba(130,130,130,0.10);
-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 999;
+    width:50%;
+    height:300px;
+    padding: 2%;;
+    background-color: rgba(130,130,130,0.10);
+    color:white;
 }
 
 /*-------------------------------------------------------------------
@@ -247,6 +251,15 @@ box-shadow: 5px 5px 15px -2px #000000;
     color:white;
     font-size: 1rem;
     
+}
+.bloc-texte
+{
+    display: none;
+    visibility: hidden;
+}
+.header_etudiante_title
+{
+    font-size: 0.2rem;
 }
 }
 

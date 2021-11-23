@@ -1280,6 +1280,10 @@ hr {
 }
 
 .page-etudiante .bloc-texte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   z-index: 999;
   width: 50%;
   height: 300px;
@@ -1439,6 +1443,13 @@ hr {
     text-align: center;
     color: white;
     font-size: 1rem;
+  }
+  .page-etudiante .bloc-texte {
+    display: none;
+    visibility: hidden;
+  }
+  .page-etudiante .header_etudiante_title {
+    font-size: 0.2rem;
   }
 }
 
