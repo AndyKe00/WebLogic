@@ -277,35 +277,47 @@
 
     //Media-Queries
 
-    @media only screen //Téléphone
-    and (min-device-width: 375px) 
-    and (max-device-width: 812px) 
-    and (-webkit-min-device-pixel-ratio: 3) { 
+    .page-id-44 div {
+        text-overflow: clip;
 
-
+      @media only screen and (min-width: 375px) and (max-width: 812px) {
+        .page-etudiante .post-it-vedettes {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+        .page-etudiante h3 {
+          margin: auto;
+          margin-bottom: 30px;
+          width: 300px;
+          text-align: center;
+          color: white;
+          font-size: 1rem;
+        }
+        .page-etudiante .bloc-texte {
+          display: none;
+          visibility: hidden;
+        }
+        .page-etudiante .header_etudiante_title {
+          font-size: 0.2rem;
+        }
+      }
+      
+      .page-id-44 {
+        /*.banniere {
+              width: 100%;
+              display: flex;
+              height: 50px;
+      
+              div {
+                  background-color: orange;
+                  height: 20px;
+              }
+          }*/
+        }
     }
 
-    @media only screen //Tablette
-    and (min-width: 834px) 
-    and (max-width: 1112px) {
-
-        .conteneurStages {
-            padding: 0;
-            display: none;
-        }
-
-        .sectionStages {
-            margin: 2%;
-
-            p {
-                max-width: 200px;
-                min-width: 100px;
-                margin: 0;
-            }
-        }
-
-    }
 
 }
-
-
