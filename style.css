@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: WebLogic
 Theme URI: http://underscores.me/
@@ -1182,7 +1183,7 @@ footer h3 {
   font-family: "Roboto Slab", serif;
 }
 
-footer a {
+footer .ensemble-colonne-footer a {
   color: #707070 !important;
   text-decoration: none;
   margin-left: 10%;
@@ -1215,14 +1216,38 @@ footer .ensemble-colonne-footer {
 .footer-section-bas .ensemble-icon-footer {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .footer-section-bas .icon-footer {
-  margin: 5px;
   width: 50px;
   height: 50px;
-  background-color: black;
+  margin: 5px;
   margin-bottom: 30px;
+}
+
+/***********************************************
+*********Pour IPHONE****************
+*********************************************/
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  .ensemble-colonne-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+  }
+  .colonne-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
+  .ensemble-colonne-footer a {
+    color: #707070 !important;
+    text-decoration: none;
+    text-align: center;
+  }
 }
 
 hr {
@@ -1234,6 +1259,15 @@ hr {
 
 .page-etudiante {
   background-color: #292929;
+  /*-------------------------------------------------------------------
+------------PROPRIÉTÉS CSS DE LA GALERIE PROJETS-------------------
+-------------------------------------------------------*/
+  /*-------------------------------------------------------------------
+------------PROPRIÉTÉS CSS DE LA SECTION TÉMOIGNAGES-------------------
+-------------------------------------------------------*/
+  /********************************************
+**********MEDIA QUERY - IPHONE ****************
+*****************************************/
 }
 
 .page-etudiante .header_etudiante {
@@ -1246,6 +1280,10 @@ hr {
 }
 
 .page-etudiante .bloc-texte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   z-index: 999;
   width: 50%;
   height: 300px;
@@ -1254,59 +1292,9 @@ hr {
   color: white;
 }
 
-.page-etudiante .menu-galerie {
-  display: flex;
-  align-items: center;
-  margin-left: 5%;
-  margin-bottom: 4vh;
-  padding-left: 20px;
-  width: 60%;
-  height: 7vh;
-  justify-content: space-between;
-  background-color: rgba(130, 130, 130, 0.1);
-}
-
-.page-etudiante .menu-galerie a {
-  text-decoration: none;
-}
-
-.page-etudiante .menu-galerie a:active {
-  font-weight: bold;
-}
-
-.page-etudiante .menu-galerie a:hover {
-  color: #dc0084;
-}
-
-.page-etudiante .galerie-projet {
-  display: inline-grid;
-  grid-template-columns: auto auto auto;
-  flex-wrap: wrap;
-  margin-right: 5%;
-  margin-left: 5%;
-  width: 100vw;
-  height: 90vh;
-}
-
-.page-etudiante .galerie-projet div {
-  text-align: center;
-  padding: 20px;
-  width: 25vw;
-  height: 25vh;
-  background-color: white;
-}
-
-.page-etudiante .lesBoutonsGalerie {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 2%;
-  margin-bottom: 10px;
-}
-
-.page-etudiante .lesBoutonsGalerie button {
-  background-color: #292929;
-  border-radius: 0%;
-  color: white;
+.page-etudiante .wp-block-gallery .blocks-gallery-grid li.blocks-gallery-item {
+  width: 300px;
+  height: 200px;
 }
 
 .page-etudiante h3 {
@@ -1399,6 +1387,10 @@ hr {
   padding-top: 20px;
 }
 
+.page-etudiante .post-it p {
+  font-size: 0.8rem;
+}
+
 .page-etudiante .post-it:hover {
   scale: 110%;
   transition: all .3s ease-in-out;
@@ -1434,6 +1426,31 @@ hr {
 .page-etudiante .post-it-vedettes .post-it:nth-child(4) {
   background-color: #FF67C2;
   box-shadow: 5px 5px 15px -2px #000000;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  .page-etudiante .post-it-vedettes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-etudiante h3 {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+  }
+  .page-etudiante .bloc-texte {
+    display: none;
+    visibility: hidden;
+  }
+  .page-etudiante .header_etudiante_title {
+    font-size: 0.2rem;
+  }
 }
 
 .page-id-44 {

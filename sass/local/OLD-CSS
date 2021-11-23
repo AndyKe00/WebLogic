@@ -1,0 +1,60 @@
+/*ANCIENNE VERSION galerie projets*/
+
+ /*.menu-galerie
+{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-bottom: 4vh;
+    padding-left: 20px;
+    width:60%;
+    height:7vh;
+    justify-content:space-between;
+    background-color: rgba(130,130,130,0.10);
+    a{
+        text-decoration: none;
+    }
+    a:active{
+        font-weight: bold;
+    }
+    a:hover
+    {
+        color:#dc0084;
+    }
+}*/
+
+/*
+.galerie-projet
+{
+    display: inline-grid;
+  grid-template-columns: auto auto auto;
+    flex-wrap: wrap;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 100vw;
+    height: 90vh;
+
+
+    div
+    {
+        text-align: center;
+        padding: 20px;
+        width:25vw;
+        height:25vh;
+        background-color: white;
+        
+    }
+}
+.lesBoutonsGalerie
+{
+ display: flex;
+ justify-content: flex-end;
+ margin-right:2%;
+ margin-bottom: 10px;
+    button
+    {
+        background-color: rgb(41,41,41);
+        border-radius: 0%;
+        color:white;
+    }
+}*/
