@@ -1457,17 +1457,8 @@ hr {
   }
 }
 
-.page-id-44 {
-  /*.banniere {
-        width: 100%;
-        display: flex;
-        height: 50px;
-
-        div {
-            background-color: orange;
-            height: 20px;
-        }
-    }*/
+.page-id-44 div {
+  text-overflow: clip;
 }
 
 .page-id-44 hr {
@@ -1530,6 +1521,8 @@ hr {
 }
 
 .page-id-44 .sectionStages .conteneurStages p {
+  max-width: 350px;
+  min-width: 350px;
   margin: auto;
 }
 
@@ -1553,7 +1546,7 @@ hr {
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions ul {
-  font-size: 2em;
+  font-size: 1.3rem;
   color: #fff;
   font-family: "Open Sans", sans-serif;
 }
@@ -1595,14 +1588,16 @@ hr {
 }
 
 .page-id-44 .sectionProfessions .meilleuresProfessions .rose section p, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section p {
-  max-width: 50%;
+  max-width: 500px;
+  min-width: 500px;
   font-size: 1.5em;
+  letter-spacing: 2px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.page-id-44 .sectionProfessions .meilleuresProfessions .rose section div, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section div {
-  width: 40%;
+.page-id-44 .sectionProfessions .meilleuresProfessions .rose section img, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section img {
+  max-width: 720px;
   background-color: #fff;
   align-self: stretch;
   box-sizing: border-box;
@@ -1626,23 +1621,68 @@ hr {
   flex-direction: row;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .page-id-44 .sectionUni .conteneurUni h5 {
   padding-right: 10px;
   text-align: center;
-  margin: auto;
-  font-size: 1.5em;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  padding: 0 5% 0 0;
+  max-width: 900px;
+}
+
+.page-id-44 .sectionUni .conteneurUni .txtCoteDroit {
+  padding: 0 0 0 5%;
 }
 
 .page-id-44 .sectionUni .conteneurUni i {
   margin: auto;
   font-size: 4.2em;
   color: #dc0084;
+  float: left;
+  margin: 0 5% 0 5%;
 }
 
 .page-id-44 .sectionUni .conteneurUni .coteDroit {
   padding-left: 0%;
+  float: right;
+}
+
+.page-id-44 .sectionUni .conteneurUni:hover > i {
+  transition: 0.3s;
+  animation-fill-mode: both;
+  transform: scale(1.3) rotate(-15deg);
+}
+
+.page-id-44 .sectionUni .conteneurUni:hover > .coteDroit {
+  transform: scale(1.3) rotate(15deg);
+}
+
+.page-id-44 .blocks-gallery-item {
+  margin: 0%;
+  padding: 0;
+}
+
+.page-id-44 .wp-block-gallery {
+  max-height: 100px;
+}
+
+.page-id-44 .wp-block-gallery ul {
+  background-color: #fff;
+}
+
+.page-id-44 .wp-block-gallery figcaption {
+  background: none;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page-id-44 .wp-block-gallery figcaption a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  opacity: 0;
 }
 
 .page-id-44 .imgBanniere {
@@ -1661,7 +1701,7 @@ hr {
 
 .page-id-44 h3 {
   font-family: "Roboto Slab", serif;
-  font-size: 3em;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -1675,6 +1715,48 @@ hr {
   font-size: 1.2rem;
   margin: 0%;
   font-weight: lighter;
+}
+
+.page-id-44 .page-id-44 div {
+  text-overflow: clip;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  .page-id-44 .page-id-44 div .page-etudiante .post-it-vedettes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-id-44 .page-id-44 div .page-etudiante h3 {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+  }
+  .page-id-44 .page-id-44 div .page-etudiante .bloc-texte {
+    display: none;
+    visibility: hidden;
+  }
+  .page-id-44 .page-id-44 div .page-etudiante .header_etudiante_title {
+    font-size: 0.2rem;
+  }
+}
+
+.page-id-44 .page-id-44 div .page-id-44 {
+  /*.banniere {
+              width: 100%;
+              display: flex;
+              height: 50px;
+      
+              div {
+                  background-color: orange;
+                  height: 20px;
+              }
+          }*/
 }
 
 /*=============================================================
