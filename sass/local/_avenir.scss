@@ -9,7 +9,7 @@
         background-color: #dc0084; height: 3px; border: 0;
         width:60%;
     }
-    .header_etudiante
+    .header_avenir
     {
     display: flex;
     justify-content: space-between;
@@ -41,7 +41,7 @@
             align-items: center;
             background-color: rgba(130,130,130,0.10);
             width: 100%;
-            padding: 5% 5% 5% 5%;
+            padding: 5% 2% 5% 2%;
             text-align: center;
             color: #fff;
             margin: auto;
@@ -62,9 +62,11 @@
             }
             
             p {
-                max-width: 350px;
-                min-width: 350px;
+                max-width: 100%;
+                min-width: 100%;
                 margin: auto;
+                font-size: 1rem;
+                line-height: 30px;
             }
 
             span {
@@ -82,6 +84,14 @@
         display: flex;
         flex-direction: column;
 
+        .imgProfession {
+            background-color: #fff;
+            max-height: 100%;
+            max-width: 50%;
+            min-height: 300px;
+            min-width: 300px;
+        }
+
         .conteneurProfessions {
 
             display: flex;
@@ -89,12 +99,87 @@
             justify-content: space-between;
             
             ul {
-                font-size: 1.3rem;
+                font-size: 1.5rem;
                 color: #fff;
                 font-family: $font__main;
+                
+                li {
+                    margin-bottom: 20px;
+                }
+
+                #li1 {
+                    animation: animLi1 0s forwards;
+                }
+
+                #li1:hover {
+                    animation: animLi1 0s reverse;
+                }
+
+                #li2 {
+                    animation: animLi2 0s forwards;
+                }
+
+                #li2:hover {
+                    animation: animLi2 0s reverse;
+                }
+
+                #li3 {
+                    animation: animLi3 0s forwards;
+                }
+
+                #li3:hover {
+                    animation: animLi3 0s reverse;
+                }
+
+                #li4 {
+                    animation: animLi4 0s forwards;
+                }
+
+                #li4:hover {
+                    animation: animLi4 0s reverse;
+                }
+
+                #li5 {
+                    animation: animLi5 0s forwards;
+                }
+                
+                #li5:hover {
+                    animation: animLi5 0s reverse;
+                } 
+
+                #li6 {
+                    animation: animLi6 0s forwards;
+                }
+
+                #li6:hover {
+                    animation: animLi6 0s reverse;
+                }
+
+                #li7 {
+                    animation: animLi7 0s forwards;
+                }
+
+                #li7:hover {
+                    animation: animLi7 0s reverse;
+                }
+
+                #li8 {
+                    animation: animLi8 0s forwards;
+                    margin-bottom: 0;
+                }
+
+                #li8:hover {
+                    animation: animLi8 0s reverse;
+                }
+
+                li:hover {
+                    font-weight: normal;
+                   // transform: scale(110%) rotate(0deg);
+                }
             }
 
             img {
+
                 min-height: 198px;
                 min-width: 500px;
             }
@@ -106,6 +191,11 @@
             display: flex;
             flex-direction: column;
            // justify-content: ;
+
+           img {
+               width: 300px;
+               height: 200px;
+           }
 
             .rose {
                 background-color: #dc0084b9;
@@ -133,7 +223,7 @@
                     p {
                         max-width: 500px;
                         min-width: 500px;
-                        font-size: 1.5em;
+                        font-size: 1em;
                         letter-spacing: 2px;
                         margin-top: 0;
                         margin-bottom: 0;
@@ -251,6 +341,10 @@
         }
     }
 
+    .blocks-gallery-grid {
+        margin: 0;
+    }
+
     //Typographie
     p {
         color: #fff;
@@ -277,47 +371,73 @@
 
     //Media-Queries
 
-    .page-id-44 div {
-        text-overflow: clip;
+      @media only screen and (min-width: 834px) and (max-width: 1112px) {
+        
+        .sectionStages {
+            margin: 3%;
 
-      @media only screen and (min-width: 375px) and (max-width: 812px) {
-        .page-etudiante .post-it-vedettes {
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
-          margin-left: 5%;
-          margin-right: 5%;
+            p {
+                max-width: 300px !important;
+                min-width: 100px !important;
+                font-size: 1rem !important;
+                line-height: 25px !important;
+            }
         }
-        .page-etudiante h3 {
-          margin: auto;
-          margin-bottom: 30px;
-          width: 300px;
-          text-align: center;
-          color: white;
-          font-size: 1rem;
+
+        ul {
+            margin: 0;
         }
-        .page-etudiante .bloc-texte {
-          display: none;
-          visibility: hidden;
+
+        .meilleuresProfessions {
+            p {
+                letter-spacing: normal !important;
+                font-size: 1rem !important;
+            }
         }
-        .page-etudiante .header_etudiante_title {
-          font-size: 0.2rem;
-        }
-      }
-      
-      .page-id-44 {
-        /*.banniere {
-              width: 100%;
-              display: flex;
-              height: 50px;
-      
-              div {
-                  background-color: orange;
-                  height: 20px;
-              }
-          }*/
-        }
+
+        //.se 
+
     }
 
+    //Section Animations
+    @keyframes animLi1 {
+        from {}
+        to {transform: scale(90%) rotate(-2deg);}
+    }
+
+    @keyframes animLi2 {
+        from {}
+        to {transform: scale(90%) rotate(-1deg);}
+    }
+
+    @keyframes animLi3 {
+        from {}
+        to {transform: scale(90%) rotate(2deg);}
+    }
+
+    @keyframes animLi4 {
+        from {}
+        to {transform: scale(90%) rotate(-3deg);}
+    }
+
+    @keyframes animLi5 {
+        from {}
+        to {transform: scale(90%) rotate(1deg);}
+    }
+
+    @keyframes animLi6 {
+        from {}
+        to {transform: scale(90%) rotate(3deg);}
+    }
+
+    @keyframes animLi7 {
+        from {}
+        to {transform: scale(90%) rotate(2deg);}
+    }
+
+    @keyframes animLi8 {
+        from {}
+        to {transform: scale(90%) rotate(-1deg);}
+    }
 
 }
