@@ -1226,6 +1226,30 @@ footer .ensemble-colonne-footer {
   margin-bottom: 30px;
 }
 
+/***********************************************
+*********Pour IPHONE****************
+*********************************************/
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  .ensemble-colonne-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+  }
+  .colonne-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
+  .ensemble-colonne-footer a {
+    color: #707070 !important;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
 hr {
   background-color: #dc0084;
   height: 3px;
@@ -1238,67 +1262,12 @@ hr {
   /*-------------------------------------------------------------------
 ------------PROPRIÉTÉS CSS DE LA GALERIE PROJETS-------------------
 -------------------------------------------------------*/
-  /*ANCIENNE VERSION*/
-  /*.menu-galerie
-{
-    display: flex;
-    align-items: center;
-    margin-left: 5%;
-    margin-bottom: 4vh;
-    padding-left: 20px;
-    width:60%;
-    height:7vh;
-    justify-content:space-between;
-    background-color: rgba(130,130,130,0.10);
-    a{
-        text-decoration: none;
-    }
-    a:active{
-        font-weight: bold;
-    }
-    a:hover
-    {
-        color:#dc0084;
-    }
-}*/
-  /*
-.galerie-projet
-{
-    display: inline-grid;
-  grid-template-columns: auto auto auto;
-    flex-wrap: wrap;
-    margin-right: 5%;
-    margin-left: 5%;
-    width: 100vw;
-    height: 90vh;
-
-
-    div
-    {
-        text-align: center;
-        padding: 20px;
-        width:25vw;
-        height:25vh;
-        background-color: white;
-        
-    }
-}
-.lesBoutonsGalerie
-{
- display: flex;
- justify-content: flex-end;
- margin-right:2%;
- margin-bottom: 10px;
-    button
-    {
-        background-color: rgb(41,41,41);
-        border-radius: 0%;
-        color:white;
-    }
-}*/
   /*-------------------------------------------------------------------
 ------------PROPRIÉTÉS CSS DE LA SECTION TÉMOIGNAGES-------------------
 -------------------------------------------------------*/
+  /********************************************
+**********MEDIA QUERY - IPHONE ****************
+*****************************************/
 }
 
 .page-etudiante .header_etudiante {
@@ -1414,6 +1383,10 @@ hr {
   padding-top: 20px;
 }
 
+.page-etudiante .post-it p {
+  font-size: 0.8rem;
+}
+
 .page-etudiante .post-it:hover {
   scale: 110%;
   transition: all .3s ease-in-out;
@@ -1449,6 +1422,24 @@ hr {
 .page-etudiante .post-it-vedettes .post-it:nth-child(4) {
   background-color: #FF67C2;
   box-shadow: 5px 5px 15px -2px #000000;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  .page-etudiante .post-it-vedettes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-etudiante h3 {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+  }
 }
 
 .page-id-44 {
