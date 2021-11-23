@@ -999,6 +999,7 @@ li:hover {
   padding: 20px;
   margin: 20px;
   background: #31313171;
+  transform: scaleX(45);
 }
 
 .container .carte::before {
