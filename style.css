@@ -1017,10 +1017,6 @@ li:hover {
   font-size: 2rem;
 }
 
-.container .carte .icone .fa-solid {
-  max-width: 90px;
-}
-
 .container .carte .content {
   position: relative;
   height: 215px;
