@@ -999,6 +999,7 @@ li:hover {
   padding: 20px;
   margin: 20px;
   background: #31313171;
+  transform: scaleX(45);
 }
 
 .container .carte::before {
@@ -1832,7 +1833,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(-2deg);
+    transform: scale(90%) rotate(-1deg);
   }
 }
 
@@ -1840,7 +1841,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(-1deg);
+    transform: scale(90%) rotate(1deg);
   }
 }
 
@@ -1848,7 +1849,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(2deg);
+    transform: scale(90%) rotate(-1deg);
   }
 }
 
@@ -1856,7 +1857,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(-3deg);
+    transform: scale(90%) rotate(-1deg);
   }
 }
 
@@ -1864,7 +1865,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(1deg);
+    transform: scale(90%) rotate(-1deg);
   }
 }
 
@@ -1872,7 +1873,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(3deg);
+    transform: scale(90%) rotate(1deg);
   }
 }
 
@@ -1880,7 +1881,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(2deg);
+    transform: scale(90%) rotate(-1deg);
   }
 }
 
@@ -1888,7 +1889,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(-1deg);
+    transform: scale(90%) rotate(1deg);
   }
 }
 
