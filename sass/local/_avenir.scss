@@ -14,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     background-color: rgb(41,41,41);
+    padding-left: 5%;
     
         h2 {
             font-size: 0.5em;
@@ -179,9 +180,7 @@
             }
 
             img {
-
-                min-height: 198px;
-                min-width: 500px;
+                min-width: 400px;
             }
         }
 
@@ -192,18 +191,26 @@
             flex-direction: column;
            // justify-content: ;
 
-           img {
-               width: 300px;
-               height: 200px;
-           }
+            h4 {
+                margin-bottom: 0;
+            }
+
+            p {
+                margin-top: 30px !important;
+            }
 
             .rose {
                 background-color: #dc0084b9;
+            
             }
     
             .noir {
                 background-color: #383838b9;
                 text-align: right;
+
+                img {
+                    padding-right: 20px;
+                }
 
                 section {
                     text-align: left;
@@ -221,7 +228,7 @@
                     margin-bottom: 5%;
 
                     p {
-                        max-width: 500px;
+                        max-width: 650px;
                         min-width: 500px;
                         font-size: 1em;
                         letter-spacing: 2px;
@@ -231,11 +238,8 @@
 
                     img {
                       //  background-image: url(../../media/grandPapaTortue.png);
-                        max-width: 720px;
-                        //height: 24px;
-                        background-color: #fff;
-                        align-self: stretch;
-                        box-sizing: border-box;
+                        width: 250px;
+                        
                     }
 
                 }
@@ -371,8 +375,14 @@
 
     //Media-Queries
 
-      @media only screen and (min-width: 834px) and (max-width: 1112px) {
+      @media only screen and (min-width: 834px) and (max-width: 1112px) { //Tablette
         
+        .header_avenir {
+            h2 {
+                font-size: 100px !important;
+            }
+        }
+
         .sectionStages {
             margin: 3%;
 
@@ -392,7 +402,81 @@
             p {
                 letter-spacing: normal !important;
                 font-size: 1rem !important;
+                max-width: 350px !important;
+                min-width: 300px !important;
+                width: 350px;
             }
+
+            img {
+                padding-top: 30px;
+            }
+            
+        }
+
+        //.se 
+
+    }
+
+    @media only screen and (min-width: 375px) and (max-width: 833px) { //Mobile
+        
+        p {
+            font-size: 12px !important;
+        }
+
+        .header_avenir {
+            h2 {
+                font-size: 100px !important;
+            }
+        }
+
+        .sectionStages {
+            margin: 0%;
+
+            span {
+                display: none;
+            }
+
+            p {
+                line-height: 25px !important;
+            }
+
+            .conteneurStages {
+                padding: 10px 0 10px 0;
+                justify-content: space-around;
+
+                div {
+                    margin: 0;
+                }
+
+                h4 {
+                    margin: 10px;
+                }
+            }
+        }
+
+        .sectionProfessions {
+            margin: 3% !important;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            font-size: 12px !important;
+        }
+
+        .meilleuresProfessions {
+            p {
+                letter-spacing: normal !important;
+                font-size: 1rem !important;
+                max-width: 350px !important;
+                min-width: 300px !important;
+                width: 350px;
+            }
+
+            img {
+                padding-top: 30px;
+            }
+            
         }
 
         //.se 
@@ -402,7 +486,7 @@
     //Section Animations
     @keyframes animLi1 {
         from {}
-        to {transform: scale(90%) rotate(-2deg);}
+        to {transform: scale(90%) rotate(1deg);}
     }
 
     @keyframes animLi2 {
@@ -412,12 +496,12 @@
 
     @keyframes animLi3 {
         from {}
-        to {transform: scale(90%) rotate(2deg);}
+        to {transform: scale(90%) rotate(1deg);}
     }
 
     @keyframes animLi4 {
         from {}
-        to {transform: scale(90%) rotate(-3deg);}
+        to {transform: scale(90%) rotate(-1deg);}
     }
 
     @keyframes animLi5 {
@@ -427,12 +511,12 @@
 
     @keyframes animLi6 {
         from {}
-        to {transform: scale(90%) rotate(3deg);}
+        to {transform: scale(90%) rotate(-1deg);}
     }
 
     @keyframes animLi7 {
         from {}
-        to {transform: scale(90%) rotate(2deg);}
+        to {transform: scale(90%) rotate(1deg);}
     }
 
     @keyframes animLi8 {
