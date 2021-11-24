@@ -1453,17 +1453,8 @@ hr {
   }
 }
 
-.page-id-44 {
-  /*.banniere {
-        width: 100%;
-        display: flex;
-        height: 50px;
-
-        div {
-            background-color: orange;
-            height: 20px;
-        }
-    }*/
+.page-id-44 div {
+  text-overflow: clip;
 }
 
 .page-id-44 hr {
@@ -1473,13 +1464,13 @@ hr {
   width: 60%;
 }
 
-.page-id-44 .header_etudiante {
+.page-id-44 .header_avenir {
   display: flex;
   justify-content: space-between;
   background-color: #292929;
 }
 
-.page-id-44 .header_etudiante h2 {
+.page-id-44 .header_avenir h2 {
   font-size: 0.5em;
 }
 
@@ -1504,7 +1495,7 @@ hr {
   align-items: center;
   background-color: rgba(130, 130, 130, 0.1);
   width: 100%;
-  padding: 5% 5% 5% 5%;
+  padding: 5% 2% 5% 2%;
   text-align: center;
   color: #fff;
   margin: auto;
@@ -1526,7 +1517,11 @@ hr {
 }
 
 .page-id-44 .sectionStages .conteneurStages p {
+  max-width: 100%;
+  min-width: 100%;
   margin: auto;
+  font-size: 1rem;
+  line-height: 30px;
 }
 
 .page-id-44 .sectionStages .conteneurStages span {
@@ -1542,6 +1537,14 @@ hr {
   flex-direction: column;
 }
 
+.page-id-44 .sectionProfessions .imgProfession {
+  background-color: #fff;
+  max-height: 100%;
+  max-width: 50%;
+  min-height: 300px;
+  min-width: 300px;
+}
+
 .page-id-44 .sectionProfessions .conteneurProfessions {
   display: flex;
   flex-direction: row;
@@ -1549,9 +1552,82 @@ hr {
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions ul {
-  font-size: 2em;
+  font-size: 1.5rem;
   color: #fff;
   font-family: "Open Sans", sans-serif;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul li {
+  margin-bottom: 20px;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li1 {
+  animation: animLi1 0s forwards;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li1:hover {
+  animation: animLi1 0s reverse;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li2 {
+  animation: animLi2 0s forwards;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li2:hover {
+  animation: animLi2 0s reverse;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li3 {
+  animation: animLi3 0s forwards;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li3:hover {
+  animation: animLi3 0s reverse;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li4 {
+  animation: animLi4 0s forwards;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li4:hover {
+  animation: animLi4 0s reverse;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li5 {
+  animation: animLi5 0s forwards;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li5:hover {
+  animation: animLi5 0s reverse;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li6 {
+  animation: animLi6 0s forwards;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li6:hover {
+  animation: animLi6 0s reverse;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li7 {
+  animation: animLi7 0s forwards;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li7:hover {
+  animation: animLi7 0s reverse;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li8 {
+  animation: animLi8 0s forwards;
+  margin-bottom: 0;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul #li8:hover {
+  animation: animLi8 0s reverse;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions ul li:hover {
+  font-weight: normal;
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions img {
@@ -1563,6 +1639,11 @@ hr {
   margin-top: 7%;
   display: flex;
   flex-direction: column;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions img {
+  width: 300px;
+  height: 200px;
 }
 
 .page-id-44 .sectionProfessions .meilleuresProfessions .rose {
@@ -1591,14 +1672,16 @@ hr {
 }
 
 .page-id-44 .sectionProfessions .meilleuresProfessions .rose section p, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section p {
-  max-width: 50%;
-  font-size: 1.5em;
+  max-width: 500px;
+  min-width: 500px;
+  font-size: 1em;
+  letter-spacing: 2px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.page-id-44 .sectionProfessions .meilleuresProfessions .rose section div, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section div {
-  width: 40%;
+.page-id-44 .sectionProfessions .meilleuresProfessions .rose section img, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section img {
+  max-width: 720px;
   background-color: #fff;
   align-self: stretch;
   box-sizing: border-box;
@@ -1622,23 +1705,68 @@ hr {
   flex-direction: row;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .page-id-44 .sectionUni .conteneurUni h5 {
   padding-right: 10px;
   text-align: center;
-  margin: auto;
-  font-size: 1.5em;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  padding: 0 5% 0 0;
+  max-width: 900px;
+}
+
+.page-id-44 .sectionUni .conteneurUni .txtCoteDroit {
+  padding: 0 0 0 5%;
 }
 
 .page-id-44 .sectionUni .conteneurUni i {
   margin: auto;
   font-size: 4.2em;
   color: #dc0084;
+  float: left;
+  margin: 0 5% 0 5%;
 }
 
 .page-id-44 .sectionUni .conteneurUni .coteDroit {
   padding-left: 0%;
+  float: right;
+}
+
+.page-id-44 .sectionUni .conteneurUni:hover > i {
+  transition: 0.3s;
+  animation-fill-mode: both;
+  transform: scale(1.3) rotate(-15deg);
+}
+
+.page-id-44 .sectionUni .conteneurUni:hover > .coteDroit {
+  transform: scale(1.3) rotate(15deg);
+}
+
+.page-id-44 .blocks-gallery-item {
+  margin: 0%;
+  padding: 0;
+}
+
+.page-id-44 .wp-block-gallery {
+  max-height: 100px;
+}
+
+.page-id-44 .wp-block-gallery ul {
+  background-color: #fff;
+}
+
+.page-id-44 .wp-block-gallery figcaption {
+  background: none;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page-id-44 .wp-block-gallery figcaption a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  opacity: 0;
 }
 
 .page-id-44 .imgBanniere {
@@ -1651,13 +1779,17 @@ hr {
   width: 100vw;
 }
 
+.page-id-44 .blocks-gallery-grid {
+  margin: 0;
+}
+
 .page-id-44 p {
   color: #fff;
 }
 
 .page-id-44 h3 {
   font-family: "Roboto Slab", serif;
-  font-size: 3em;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -1671,6 +1803,89 @@ hr {
   font-size: 1.2rem;
   margin: 0%;
   font-weight: lighter;
+}
+
+@media only screen and (min-width: 834px) and (max-width: 1112px) {
+  .page-id-44 .sectionStages {
+    margin: 3%;
+  }
+  .page-id-44 .sectionStages p {
+    max-width: 300px !important;
+    min-width: 100px !important;
+    font-size: 1rem !important;
+    line-height: 25px !important;
+  }
+  .page-id-44 ul {
+    margin: 0;
+  }
+  .page-id-44 .meilleuresProfessions p {
+    letter-spacing: normal !important;
+    font-size: 1rem !important;
+  }
+}
+
+@keyframes animLi1 {
+  from {
+  }
+  to {
+    transform: scale(90%) rotate(-2deg);
+  }
+}
+
+@keyframes animLi2 {
+  from {
+  }
+  to {
+    transform: scale(90%) rotate(-1deg);
+  }
+}
+
+@keyframes animLi3 {
+  from {
+  }
+  to {
+    transform: scale(90%) rotate(2deg);
+  }
+}
+
+@keyframes animLi4 {
+  from {
+  }
+  to {
+    transform: scale(90%) rotate(-3deg);
+  }
+}
+
+@keyframes animLi5 {
+  from {
+  }
+  to {
+    transform: scale(90%) rotate(1deg);
+  }
+}
+
+@keyframes animLi6 {
+  from {
+  }
+  to {
+    transform: scale(90%) rotate(3deg);
+  }
+}
+
+@keyframes animLi7 {
+  from {
+  }
+  to {
+    transform: scale(90%) rotate(2deg);
+  }
+}
+
+@keyframes animLi8 {
+  from {
+  }
+  to {
+    transform: scale(90%) rotate(-1deg);
+  }
 }
 
 /*=============================================================
