@@ -1,6 +1,5 @@
 {
     "version": 3,
-
     "sources": [
         "sass/style.scss",
         "sass/abstracts/_abstracts.scss",
