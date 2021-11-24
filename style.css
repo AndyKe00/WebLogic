@@ -1828,7 +1828,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(-2deg);
+    transform: scale(90%) rotate(-1deg);
   }
 }
 
@@ -1836,7 +1836,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(-1deg);
+    transform: scale(90%) rotate(1deg);
   }
 }
 
@@ -1844,7 +1844,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(2deg);
+    transform: scale(90%) rotate(-1deg);
   }
 }
 
@@ -1852,7 +1852,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(-3deg);
+    transform: scale(90%) rotate(-1deg);
   }
 }
 
@@ -1860,7 +1860,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(1deg);
+    transform: scale(90%) rotate(-1deg);
   }
 }
 
@@ -1868,7 +1868,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(3deg);
+    transform: scale(90%) rotate(1deg);
   }
 }
 
@@ -1876,7 +1876,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(2deg);
+    transform: scale(90%) rotate(-1deg);
   }
 }
 
@@ -1884,7 +1884,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(-1deg);
+    transform: scale(90%) rotate(1deg);
   }
 }
 
