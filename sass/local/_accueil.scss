@@ -29,10 +29,10 @@
 .container{
   position: relative;
   display: flex;
+  min-width: 25vh;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-width: 1200px;
-  flex-wrap: wrap;
 }
 
 // Conteneur de la carte
@@ -42,7 +42,6 @@
   padding: 20px;
   margin: 20px;
   background: #31313171;
-  transform: scaleX(45);
 }
 
 // Bordure de la carte
@@ -172,9 +171,9 @@
 }
 
 .imageProf{
-  width: 320px;
-  height: 447px;
-  margin: 50px;
+  width: 160px;
+  height: 223px;
+  margin: 25px;
   overflow: hidden;
   position: relative;
   display: flex;
