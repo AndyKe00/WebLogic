@@ -486,17 +486,15 @@
     //Section Animations
     @keyframes animLi1 {
         from {}
-        to {transform: scale(90%) rotate(1deg);}
     }
 
     @keyframes animLi2 {
         from {}
-        to {transform: scale(90%) rotate(-1deg);}
+        to {transform: scale(90%) rotate(1deg);}
     }
 
     @keyframes animLi3 {
         from {}
-        to {transform: scale(90%) rotate(1deg);}
     }
 
     @keyframes animLi4 {
@@ -506,22 +504,20 @@
 
     @keyframes animLi5 {
         from {}
-        to {transform: scale(90%) rotate(1deg);}
+        to {transform: scale(90%) rotate(-1deg);}
     }
 
     @keyframes animLi6 {
         from {}
-        to {transform: scale(90%) rotate(-1deg);}
     }
 
     @keyframes animLi7 {
         from {}
-        to {transform: scale(90%) rotate(1deg);}
     }
 
     @keyframes animLi8 {
         from {}
-        to {transform: scale(90%) rotate(-1deg);}
+        to {transform: scale(90%) rotate(1deg);}
     }
 
 }
