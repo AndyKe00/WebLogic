@@ -146,12 +146,15 @@ function weblogic_scripts() {
 	wp_style_add_data( 'weblogic-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'weblogic-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
+	wp_register_script( 'weblogic-ctrlNav', get_template_directory_uri() . '/js/navAvenir.js', array(), _S_VERSION, true);
+	wp_enqueue_script( 'weblogic-ctrlNav' );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'weblogic_scripts' );
+
+
 
 /**
  * Implement the Custom Header feature.

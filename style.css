@@ -1302,14 +1302,30 @@ footer .ensemble-colonne-footer {
   }
 }
 
+img.img-entete-etudiant {
+  position: absolute;
+  z-index: -1;
+  top: -100px;
+}
+
 hr {
   background-color: #dc0084;
-  height: 3px;
-  border: 0;
   width: 60%;
+  height: 3px;
+}
+
+h3.has-text-align-left {
+  color: white;
+  margin: 5%;
+  font-size: 2rem;
+  padding: 20px;
+  padding-left: 6%;
+  width: 600px;
+  border: 1px solid white;
 }
 
 .page-etudiante {
+  margin-top: 15%;
   background-color: #292929;
   /*-------------------------------------------------------------------
 ------------PROPRIÉTÉS CSS DE LA GALERIE PROJETS-------------------
@@ -1342,6 +1358,10 @@ hr {
   padding: 2%;
   background-color: rgba(130, 130, 130, 0.1);
   color: white;
+}
+
+.page-etudiante .wp-block-gallery {
+  background-color: rgba(130, 130, 130, 0.1);
 }
 
 .page-etudiante .wp-block-gallery .blocks-gallery-grid li.blocks-gallery-item {
@@ -1481,12 +1501,39 @@ hr {
 }
 
 @media only screen and (min-width: 375px) and (max-width: 812px) {
+  .page-etudiante h3.has-text-align-left {
+    color: white;
+    margin: auto;
+    font-size: 1rem;
+    width: 300px;
+    border: 1px solid white;
+  }
   .page-etudiante .post-it-vedettes {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-left: 5%;
     margin-right: 5%;
+  }
+  .page-etudiante .post-it-vedettes .post-it:active:nth-child(1) {
+    background-color: #DC0084;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .post-it-vedettes .post-it:active:nth-child(2) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    margin-top: 5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .post-it-vedettes .post-it:active:nth-child(3) {
+    background-color: #DC0084;
+    transform: rotateZ(0deg);
+    margin-top: 2%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .post-it-vedettes .post-it:active:nth-child(4) {
+    background-color: #FF67C2;
+    box-shadow: 5px 5px 15px -2px #000000;
   }
   .page-etudiante h3 {
     margin: auto;
@@ -1502,7 +1549,100 @@ hr {
   }
   .page-etudiante .header_etudiante_title {
     font-size: 0.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
   }
+  .page-etudiante .section-temoignages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin: 5%;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(1) {
+    background-color: #FFA5DB;
+    transform: rotateZ(0deg);
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(2) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    margin-left: 10%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(3) {
+    background-color: #FFA5DB;
+    transform: rotateZ(0deg);
+    margin-top: 5%;
+    margin-left: 5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(4) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    margin-top: -5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(5) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(6) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    margin-top: -5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(7) {
+    background-color: #FFA5DB;
+    transform: rotateZ(0deg);
+    margin-top: 5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(8) {
+    background-color: #FF67C2;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(9) {
+    background-color: #FFA5DB;
+    transform: rotateZ(0deg);
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  h3.has-text-align-left {
+    color: white;
+    margin: auto;
+    font-size: 1rem;
+    width: 300px;
+    border: 1px solid white;
+    text-align: center;
+  }
+  img.img-entete-etudiant {
+    position: absolute;
+    z-index: -1;
+    top: -100px;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.page-id-44 {
+  /*Temp*/
+}
+
+.page-id-44 .page-avenir {
+  width: 100vw;
+}
+
+.page-id-44 img {
+  background-color: white;
 }
 
 .page-id-44 div {
@@ -1520,6 +1660,7 @@ hr {
   display: flex;
   justify-content: space-between;
   background-color: #292929;
+  padding-left: 5%;
 }
 
 .page-id-44 .header_avenir h2 {
@@ -1547,7 +1688,7 @@ hr {
   align-items: center;
   background-color: rgba(130, 130, 130, 0.1);
   width: 100%;
-  padding: 5% 2% 5% 2%;
+  padding: 3% 2% 3% 2%;
   text-align: center;
   color: #fff;
   margin: auto;
@@ -1587,6 +1728,7 @@ hr {
   margin: 7%;
   display: flex;
   flex-direction: column;
+  margin: auto !important;
 }
 
 .page-id-44 .sectionProfessions .imgProfession {
@@ -1683,19 +1825,28 @@ hr {
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions img {
-  min-height: 198px;
-  min-width: 500px;
+  height: 300px;
 }
 
 .page-id-44 .sectionProfessions .meilleuresProfessions {
-  margin-top: 7%;
   display: flex;
   flex-direction: column;
+  max-width: 70vw;
+  width: 70vw;
+  margin: auto;
+  margin-top: 7%;
 }
 
-.page-id-44 .sectionProfessions .meilleuresProfessions img {
-  width: 300px;
-  height: 200px;
+.page-id-44 .sectionProfessions .meilleuresProfessions input {
+  display: none;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions h4 {
+  margin-bottom: 0;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions p {
+  margin-top: 30px !important;
 }
 
 .page-id-44 .sectionProfessions .meilleuresProfessions .rose {
@@ -1705,6 +1856,10 @@ hr {
 .page-id-44 .sectionProfessions .meilleuresProfessions .noir {
   background-color: #383838b9;
   text-align: right;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .noir img {
+  padding-right: 20px;
 }
 
 .page-id-44 .sectionProfessions .meilleuresProfessions .noir section {
@@ -1724,7 +1879,7 @@ hr {
 }
 
 .page-id-44 .sectionProfessions .meilleuresProfessions .rose section p, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section p {
-  max-width: 500px;
+  max-width: 650px;
   min-width: 500px;
   font-size: 1em;
   letter-spacing: 2px;
@@ -1733,10 +1888,9 @@ hr {
 }
 
 .page-id-44 .sectionProfessions .meilleuresProfessions .rose section img, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section img {
-  max-width: 720px;
-  background-color: #fff;
-  align-self: stretch;
-  box-sizing: border-box;
+  padding: 0;
+  height: 200px;
+  margin: auto;
 }
 
 .page-id-44 .sectionUni {
@@ -1753,7 +1907,7 @@ hr {
   text-align: center;
   padding: 10px 0 10px 0;
   margin-bottom: 2%;
-  width: 85%;
+  width: 70%;
   flex-direction: row;
   display: flex;
   justify-content: space-around;
@@ -1858,6 +2012,9 @@ hr {
 }
 
 @media only screen and (min-width: 834px) and (max-width: 1112px) {
+  .page-id-44 .header_avenir h2 {
+    font-size: 100px !important;
+  }
   .page-id-44 .sectionStages {
     margin: 3%;
   }
@@ -1873,6 +2030,140 @@ hr {
   .page-id-44 .meilleuresProfessions p {
     letter-spacing: normal !important;
     font-size: 1rem !important;
+    max-width: 350px !important;
+    min-width: 300px !important;
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 833px) {
+  .page-id-44 .sectionStages, .page-id-44 .sectionProfessions, .page-id-44 .sectionUni {
+    margin-top: 20px !important;
+  }
+  .page-id-44 h4 {
+    font-size: 1.5rem;
+  }
+  .page-id-44 p {
+    font-size: 12px !important;
+  }
+  .page-id-44 .header_avenir {
+    flex-direction: column;
+  }
+  .page-id-44 .header_avenir h2 {
+    font-size: 100px !important;
+  }
+  .page-id-44 h3 {
+    font-size: 1.5rem !important;
+    text-align: center;
+    margin: auto;
+  }
+  .page-id-44 .sectionStages {
+    margin: 0%;
+  }
+  .page-id-44 .sectionStages h3 {
+    margin-bottom: 20px;
+  }
+  .page-id-44 .sectionStages span {
+    display: none;
+  }
+  .page-id-44 .sectionStages p {
+    line-height: 20px !important;
+    font-size: 18px !important;
+    padding: 15px;
+  }
+  .page-id-44 .sectionStages .conteneurStages {
+    flex-direction: column;
+    padding: 0px 0 10px 0;
+    justify-content: space-around;
+  }
+  .page-id-44 .sectionStages .conteneurStages div {
+    margin: 0;
+    width: 100%;
+  }
+  .page-id-44 .sectionStages .conteneurStages div:nth-child(3) {
+    margin-top: 20px;
+  }
+  .page-id-44 .sectionStages .conteneurStages h4 {
+    margin: 0px;
+  }
+  .page-id-44 .sectionProfessions {
+    width: 100vw;
+    margin: 0 !important;
+    margin-top: 20px !important;
+  }
+  .page-id-44 ul {
+    margin: 0;
+    padding: 0;
+    font-size: 12px !important;
+  }
+  .page-id-44 .meilleuresProfessions {
+    margin: auto;
+    padding: 0;
+    width: 95vw !important;
+    max-width: none !important;
+  }
+  .page-id-44 .meilleuresProfessions input {
+    display: block !important;
+    height: 30px;
+    margin-right: 30px !important;
+  }
+  .page-id-44 .meilleuresProfessions .rose, .page-id-44 .meilleuresProfessions .noir {
+    padding: 0 !important;
+    margin-bottom: 30px;
+    border-radius: 30px 30px 0 0;
+    overflow: hidden;
+    width: 100% !important;
+  }
+  .page-id-44 .meilleuresProfessions .rose section, .page-id-44 .meilleuresProfessions .noir section {
+    display: flex;
+  }
+  .page-id-44 .meilleuresProfessions img {
+    margin: auto;
+    padding: 0 !important;
+    margin-top: 30px !important;
+  }
+  .page-id-44 .meilleuresProfessions .rose section {
+    flex-direction: column-reverse !important;
+  }
+  .page-id-44 .meilleuresProfessions .noir {
+    flex-direction: column-reverse !important;
+  }
+  .page-id-44 .meilleuresProfessions .noir section {
+    flex-direction: column !important;
+  }
+  .page-id-44 .meilleuresProfessions .headerRose, .page-id-44 .meilleuresProfessions .headerNoir {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 0 3% 0 5%;
+    border-radius: 30px 30px 0 0;
+  }
+  .page-id-44 .meilleuresProfessions .headerRose h4, .page-id-44 .meilleuresProfessions .headerNoir h4 {
+    margin: 0 !important;
+    font-size: 1rem !important;
+    margin-left: 20px !important;
+  }
+  .page-id-44 .meilleuresProfessions .headerRose {
+    background-color: #8d0055;
+  }
+  .page-id-44 .meilleuresProfessions .headerNoir {
+    background-color: #1b1b1b;
+  }
+  .page-id-44 .meilleuresProfessions p {
+    letter-spacing: normal !important;
+    font-size: 15px !important;
+    max-width: none !important;
+    min-width: 250px !important;
+    width: 90% !important;
+    margin: auto;
+    margin-top: 100px !important;
+    text-align: center;
+  }
+  .page-id-44 .conteneurUni {
+    width: 100% !important;
   }
 }
 
@@ -1880,7 +2171,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(-1deg);
+    transform: scale(90%) rotate(-0.5deg);
   }
 }
 
@@ -1888,7 +2179,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(1deg);
+    transform: scale(90%) rotate(0.5deg);
   }
 }
 
@@ -1896,7 +2187,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(-1deg);
+    transform: scale(90%) rotate(-0.5deg);
   }
 }
 
@@ -1904,7 +2195,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(-1deg);
+    transform: scale(90%) rotate(0.5deg);
   }
 }
 
@@ -1912,7 +2203,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(-1deg);
+    transform: scale(90%) rotate(-0.5deg);
   }
 }
 
@@ -1920,7 +2211,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(1deg);
+    transform: scale(90%) rotate(0.5deg);
   }
 }
 
@@ -1928,7 +2219,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(-1deg);
+    transform: scale(90%) rotate(-0.5deg);
   }
 }
 
@@ -1936,7 +2227,7 @@ hr {
   from {
   }
   to {
-    transform: scale(90%) rotate(1deg);
+    transform: scale(90%) rotate(0.5deg);
   }
 }
 

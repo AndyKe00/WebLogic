@@ -1,5 +1,14 @@
 .page-id-44 {
     
+    .page-avenir {
+        width: 100vw;
+    }
+
+    /*Temp*/
+    img {
+        background-color: white;
+    }
+
     div {
         text-overflow: clip;
     }
@@ -14,6 +23,7 @@
     display: flex;
     justify-content: space-between;
     background-color: rgb(41,41,41);
+    padding-left: 5%;
     
         h2 {
             font-size: 0.5em;
@@ -41,7 +51,7 @@
             align-items: center;
             background-color: rgba(130,130,130,0.10);
             width: 100%;
-            padding: 5% 2% 5% 2%;
+            padding: 3% 2% 3% 2%;
             text-align: center;
             color: #fff;
             margin: auto;
@@ -83,6 +93,7 @@
         margin: 7%;
         display: flex;
         flex-direction: column;
+        margin: auto !important;
 
         .imgProfession {
             background-color: #fff;
@@ -179,31 +190,45 @@
             }
 
             img {
-
-                min-height: 198px;
-                min-width: 500px;
+                height: 300px;
             }
         }
 
         .meilleuresProfessions {
 
-            margin-top: 7%;
+
             display: flex;
             flex-direction: column;
+            max-width: 70vw;
+            width: 70vw;
+            margin: auto;
+            margin-top: 7%;
            // justify-content: ;
+            
+            input {
+                display: none;
+            }
 
-           img {
-               width: 300px;
-               height: 200px;
-           }
+            h4 {
+                margin-bottom: 0;
+            }
+
+            p {
+                margin-top: 30px !important;
+            }
 
             .rose {
                 background-color: #dc0084b9;
+            
             }
     
             .noir {
                 background-color: #383838b9;
                 text-align: right;
+
+                img {
+                    padding-right: 20px;
+                }
 
                 section {
                     text-align: left;
@@ -221,7 +246,7 @@
                     margin-bottom: 5%;
 
                     p {
-                        max-width: 500px;
+                        max-width: 650px;
                         min-width: 500px;
                         font-size: 1em;
                         letter-spacing: 2px;
@@ -231,11 +256,10 @@
 
                     img {
                       //  background-image: url(../../media/grandPapaTortue.png);
-                        max-width: 720px;
-                        //height: 24px;
-                        background-color: #fff;
-                        align-self: stretch;
-                        box-sizing: border-box;
+                        padding: 0;
+                        height: 200px;
+                        margin: auto;
+                        
                     }
 
                 }
@@ -258,7 +282,7 @@
             text-align: center;
             padding: 10px 0 10px 0;
             margin-bottom: 2%;
-            width: 85%;
+            width: 70%;
             flex-direction: row;
             display: flex;
             justify-content: space-around;
@@ -371,8 +395,14 @@
 
     //Media-Queries
 
-      @media only screen and (min-width: 834px) and (max-width: 1112px) {
+      @media only screen and (min-width: 834px) and (max-width: 1112px) { //Tablette
         
+        .header_avenir {
+            h2 {
+                font-size: 100px !important;
+            }
+        }
+
         .sectionStages {
             margin: 3%;
 
@@ -392,52 +422,229 @@
             p {
                 letter-spacing: normal !important;
                 font-size: 1rem !important;
+                max-width: 350px !important;
+                min-width: 300px !important;
+                width: 350px;
             }
+            
         }
 
         //.se 
 
     }
 
+    @media only screen and (min-width: 375px) and (max-width: 833px) { //Mobile
+        
+        .sectionStages, .sectionProfessions, .sectionUni {
+            margin-top: 20px !important;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 12px !important;
+        }
+
+        .header_avenir {
+
+            flex-direction: column;
+
+            h2 {
+                font-size: 100px !important;
+            }
+        }
+
+        h3 {
+            font-size: 1.5rem !important;
+            text-align: center;
+            margin: auto;
+        }
+
+        .sectionStages {
+            margin: 0%;
+
+            h3 {
+                margin-bottom: 20px;
+            }
+            
+            span {
+                display: none;
+            }
+
+            p {
+                line-height: 20px !important;
+                font-size: 18px !important;
+                padding: 15px;
+            }
+
+
+            .conteneurStages {
+                flex-direction: column;
+                padding: 0px 0 10px 0;
+                justify-content: space-around;
+
+                div {
+                    margin: 0;
+                    width: 100%;
+                }
+
+                div:nth-child(3) {
+                    margin-top: 20px;
+                }
+
+                h4 {
+                    margin: 0px;
+                }
+            }
+        }
+
+        .sectionProfessions {
+           // margin: 3% !important;
+            width: 100vw;
+            margin: 0 !important;
+            margin-top: 20px !important;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            font-size: 12px !important;
+        }
+
+        .meilleuresProfessions {
+            margin: auto;
+            padding: 0;
+            width: 95vw !important;
+            max-width: none !important;
+
+            input {
+                display: block !important;
+                height: 30px;
+                margin-right: 30px !important;
+
+            }
+
+            .rose, .noir {
+                padding: 0 !important;
+                margin-bottom: 30px;
+                border-radius: 30px 30px 0 0;
+                overflow:hidden;
+                width: 100% !important;
+
+                section {
+                    display: flex;
+                }
+
+            }
+            
+            img {
+                margin: auto;
+                padding: 0 !important;
+                margin-top: 30px !important;
+            }
+
+            .rose {
+
+                section {
+                    flex-direction: column-reverse !important;
+                }
+            }
+
+            .noir {
+                flex-direction: column-reverse !important;
+
+                section {
+                    flex-direction: column !important;
+                }
+
+            }
+
+            .headerRose, .headerNoir {
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: space-between;
+                height: 80px;
+                width: 100%;
+                align-items: center;
+                padding: 0 3% 0 5%;
+                border-radius: 30px 30px 0 0;
+
+                h4 {
+                    margin: 0 !important;
+                    font-size: 1rem !important;
+                    margin-left: 20px !important;
+                }
+
+            }
+
+            .headerRose {
+                background-color: #8d0055;
+            }
+
+            .headerNoir {
+                background-color: #1b1b1b;
+            }
+
+            p {
+                letter-spacing: normal !important;
+                font-size: 15px !important;
+                max-width: none !important;
+                min-width: 250px !important;
+                width: 90% !important;
+                margin: auto;
+                margin-top: 100px !important;
+                text-align: center;
+            }
+            
+        }
+
+        .conteneurUni {
+            width: 100% !important;
+        }
+
+    }
+
     //Section Animations
     @keyframes animLi1 {
         from {}
-        to {transform: scale(90%) rotate(-1deg);}
+        to {transform: scale(90%) rotate(-0.5deg);}
     }
 
     @keyframes animLi2 {
         from {}
-        to {transform: scale(90%) rotate(1deg);}
+        to {transform: scale(90%) rotate(0.5deg);}
     }
 
     @keyframes animLi3 {
         from {}
-        to {transform: scale(90%) rotate(-1deg);}
+        to {transform: scale(90%) rotate(-0.5deg);}
     }
 
     @keyframes animLi4 {
         from {}
-        to {transform: scale(90%) rotate(-1deg);}
+        to {transform: scale(90%) rotate(0.5deg);}
     }
 
     @keyframes animLi5 {
         from {}
-        to {transform: scale(90%) rotate(-1deg);}
+        to {transform: scale(90%) rotate(-0.5deg);}
     }
 
     @keyframes animLi6 {
         from {}
-        to {transform: scale(90%) rotate(1deg);}
+        to {transform: scale(90%) rotate(0.5deg);}
     }
 
     @keyframes animLi7 {
         from {}
-        to {transform: scale(90%) rotate(-1deg);}
+        to {transform: scale(90%) rotate(-0.5deg);}
     }
 
     @keyframes animLi8 {
         from {}
-        to {transform: scale(90%) rotate(1deg);}
+        to {transform: scale(90%) rotate(0.5deg);}
     }
 
 }
