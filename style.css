@@ -1250,14 +1250,30 @@ footer .ensemble-colonne-footer {
   }
 }
 
+img.img-entete-etudiant {
+  position: absolute;
+  z-index: -1;
+  top: -100px;
+}
+
 hr {
   background-color: #dc0084;
-  height: 3px;
-  border: 0;
   width: 60%;
+  height: 3px;
+}
+
+h3.has-text-align-left {
+  color: white;
+  margin: 5%;
+  font-size: 2rem;
+  padding: 20px;
+  padding-left: 6%;
+  width: 600px;
+  border: 1px solid white;
 }
 
 .page-etudiante {
+  margin-top: 15%;
   background-color: #292929;
   /*-------------------------------------------------------------------
 ------------PROPRIÉTÉS CSS DE LA GALERIE PROJETS-------------------
@@ -1290,6 +1306,10 @@ hr {
   padding: 2%;
   background-color: rgba(130, 130, 130, 0.1);
   color: white;
+}
+
+.page-etudiante .wp-block-gallery {
+  background-color: rgba(130, 130, 130, 0.1);
 }
 
 .page-etudiante .wp-block-gallery .blocks-gallery-grid li.blocks-gallery-item {
@@ -1429,12 +1449,39 @@ hr {
 }
 
 @media only screen and (min-width: 375px) and (max-width: 812px) {
+  .page-etudiante h3.has-text-align-left {
+    color: white;
+    margin: auto;
+    font-size: 1rem;
+    width: 300px;
+    border: 1px solid white;
+  }
   .page-etudiante .post-it-vedettes {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-left: 5%;
     margin-right: 5%;
+  }
+  .page-etudiante .post-it-vedettes .post-it:active:nth-child(1) {
+    background-color: #DC0084;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .post-it-vedettes .post-it:active:nth-child(2) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    margin-top: 5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .post-it-vedettes .post-it:active:nth-child(3) {
+    background-color: #DC0084;
+    transform: rotateZ(0deg);
+    margin-top: 2%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .post-it-vedettes .post-it:active:nth-child(4) {
+    background-color: #FF67C2;
+    box-shadow: 5px 5px 15px -2px #000000;
   }
   .page-etudiante h3 {
     margin: auto;
@@ -1450,6 +1497,87 @@ hr {
   }
   .page-etudiante .header_etudiante_title {
     font-size: 0.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  .page-etudiante .section-temoignages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin: 5%;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(1) {
+    background-color: #FFA5DB;
+    transform: rotateZ(0deg);
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(2) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    margin-left: 10%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(3) {
+    background-color: #FFA5DB;
+    transform: rotateZ(0deg);
+    margin-top: 5%;
+    margin-left: 5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(4) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    margin-top: -5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(5) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(6) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    margin-top: -5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(7) {
+    background-color: #FFA5DB;
+    transform: rotateZ(0deg);
+    margin-top: 5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(8) {
+    background-color: #FF67C2;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(9) {
+    background-color: #FFA5DB;
+    transform: rotateZ(0deg);
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  h3.has-text-align-left {
+    color: white;
+    margin: auto;
+    font-size: 1rem;
+    width: 300px;
+    border: 1px solid white;
+    text-align: center;
+  }
+  img.img-entete-etudiant {
+    position: absolute;
+    z-index: -1;
+    top: -100px;
+    visibility: hidden;
+    display: none;
   }
 }
 
