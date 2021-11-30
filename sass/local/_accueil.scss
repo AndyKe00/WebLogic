@@ -16,6 +16,32 @@
 }
 
 /*=============================================================
+                        Présentation
+=============================================================*/
+
+.imgEnteteAccueil{
+  position: absolute;
+  z-index: -1;
+  top: -10vh;
+}
+
+.conteneurHeaderAccueil{
+  display: flex;
+}
+
+.headerAccueil{
+  padding-left: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.txtPresentation{
+  color:white;
+}
+
+/*=============================================================
                         Cours Offerts
 =============================================================*/
 
@@ -134,7 +160,7 @@
                     BLOC DES COLONNES
 =============================================================*/
 
-.condAdminConteneur{
+/*.condAdminConteneur{
   margin-right: 5%;
   border: 2px solid black;
   border-radius: 10%;
@@ -155,10 +181,37 @@
 {
   //color: aqua;
   font-size: 1rem;
+}*/
+
+.conteneurTrois{
+margin-left: 5%;
+margin-right: 5%;
+margin-top: 5%;
+}
+
+.titreCondAdmin
+{
+  text-align: center;
+  color: #FFF;
+}
+
+.condAdmin{
+  border: 3px solid white;
+  border-radius: 5%;
+  text-decoration: none;
+  min-height: 35vh;
+  height: 40vh;
+}
+
+.listeCondAdmin{
+  border: 1px solid white;
+  margin: 20px;
+  padding: 10px;
+  color: #FFF;
 }
 
 /*=============================================================
-                    Sectiton professeurs
+                    Section professeurs
 =============================================================*/
 
 .conteneurProf{
