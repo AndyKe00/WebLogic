@@ -1,5 +1,9 @@
 .page-id-44 {
     
+    .page-avenir {
+        width: 100vw;
+    }
+
     /*Temp*/
     img {
         background-color: white;
@@ -186,7 +190,7 @@
             }
 
             img {
-                min-width: 400px;
+                height: 300px;
             }
         }
 
@@ -201,7 +205,7 @@
             margin-top: 7%;
            // justify-content: ;
             
-            button {
+            input {
                 display: none;
             }
 
@@ -252,7 +256,9 @@
 
                     img {
                       //  background-image: url(../../media/grandPapaTortue.png);
-                        width: 250px;
+                        padding: 0;
+                        height: 200px;
+                        margin: auto;
                         
                     }
 
@@ -420,10 +426,6 @@
                 min-width: 300px !important;
                 width: 350px;
             }
-
-            img {
-                padding-top: 30px;
-            }
             
         }
 
@@ -433,6 +435,10 @@
 
     @media only screen and (min-width: 375px) and (max-width: 833px) { //Mobile
         
+        .sectionStages, .sectionProfessions, .sectionUni {
+            margin-top: 20px !important;
+        }
+
         h4 {
             font-size: 1.5rem;
         }
@@ -442,39 +448,63 @@
         }
 
         .header_avenir {
+
+            flex-direction: column;
+
             h2 {
                 font-size: 100px !important;
             }
         }
 
+        h3 {
+            font-size: 1.5rem !important;
+            text-align: center;
+            margin: auto;
+        }
+
         .sectionStages {
             margin: 0%;
 
+            h3 {
+                margin-bottom: 20px;
+            }
+            
             span {
                 display: none;
             }
 
             p {
-                line-height: 25px !important;
+                line-height: 20px !important;
+                font-size: 18px !important;
+                padding: 15px;
             }
 
+
             .conteneurStages {
-                padding: 10px 0 10px 0;
+                flex-direction: column;
+                padding: 0px 0 10px 0;
                 justify-content: space-around;
 
                 div {
                     margin: 0;
+                    width: 100%;
+                }
+
+                div:nth-child(3) {
+                    margin-top: 20px;
                 }
 
                 h4 {
-                    margin: 10px;
+                    margin: 0px;
                 }
             }
         }
 
         .sectionProfessions {
            // margin: 3% !important;
-            width: 70vw;
+            width: 100vw;
+            margin: 0 !important;
+            margin-top: 20px !important;
         }
 
         ul {
@@ -484,19 +514,51 @@
         }
 
         .meilleuresProfessions {
-            
+            margin: auto;
             padding: 0;
+            width: 95vw !important;
+            max-width: none !important;
 
-            button {
+            input {
                 display: block !important;
                 height: 30px;
-                
+                margin-right: 30px !important;
+
             }
 
             .rose, .noir {
                 padding: 0 !important;
                 margin-bottom: 30px;
                 border-radius: 30px 30px 0 0;
+                overflow:hidden;
+                width: 100% !important;
+
+                section {
+                    display: flex;
+                }
+
+            }
+            
+            img {
+                margin: auto;
+                padding: 0 !important;
+                margin-top: 30px !important;
+            }
+
+            .rose {
+
+                section {
+                    flex-direction: column-reverse !important;
+                }
+            }
+
+            .noir {
+                flex-direction: column-reverse !important;
+
+                section {
+                    flex-direction: column !important;
+                }
+
             }
 
             .headerRose, .headerNoir {
@@ -511,6 +573,8 @@
 
                 h4 {
                     margin: 0 !important;
+                    font-size: 1rem !important;
+                    margin-left: 20px !important;
                 }
 
             }
@@ -525,18 +589,20 @@
 
             p {
                 letter-spacing: normal !important;
-                font-size: 1rem !important;
-                max-width: 350px !important;
-                min-width: 200px !important;
-            }
-
-            img {
-                padding-top: 30px;
+                font-size: 15px !important;
+                max-width: none !important;
+                min-width: 250px !important;
+                width: 90% !important;
+                margin: auto;
+                margin-top: 100px !important;
+                text-align: center;
             }
             
         }
 
-        //.se 
+        .conteneurUni {
+            width: 100% !important;
+        }
 
     }
 
