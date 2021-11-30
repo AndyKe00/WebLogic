@@ -1,10 +1,16 @@
 
-/*TEST TRANSFTER FTP !!!*/
+img.img-entete-etudiant
+{
+    position: absolute;
+  z-index: -1;
+  top: -100px;
+}
 
 hr
     {
         background-color: #dc0084;
         width:60%;
+        height: 3px;
     }
 
     h3.has-text-align-left
@@ -14,11 +20,12 @@ hr
         font-size: 2rem;
         padding: 20px;
         padding-left: 6%;
-        width:500px;
+        width:600px;
         border: 1px solid white;
     }
 .page-etudiante
 {
+    margin-top: 15%;
     background-color:rgb(41,41,41); 
 
 .header_etudiante
@@ -43,6 +50,7 @@ hr
     padding: 2%;;
     background-color: rgba(130,130,130,0.10);
     color:white;
+   
 }
 
 /*-------------------------------------------------------------------
@@ -53,8 +61,12 @@ hr
 
 .wp-block-gallery
 {
+    
+    
+    background-color:rgba(130,130,130,0.10) ;
     .blocks-gallery-grid
     {
+        
         li.blocks-gallery-item
         {
             width:300px;
@@ -242,6 +254,7 @@ box-shadow: 5px 5px 15px -2px #000000;
   and (min-width: 375px) 
   and (max-width: 812px) 
    { 
+  
     h3.has-text-align-left
     {
         color:white;
@@ -320,7 +333,7 @@ box-shadow: 5px 5px 15px -2px #000000;
 .section-temoignages
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-left: 5%;
     margin-right: 5%;
@@ -413,6 +426,7 @@ box-shadow: 5px 5px 15px -2px #000000;
 
 //extérieur de la page vie étudiante
 //alignement center pour le titre "projets étudiants" en mobile
+//enlever img header en mobile
 @media only screen 
   and (min-width: 375px) 
   and (max-width: 812px) 
@@ -425,5 +439,14 @@ box-shadow: 5px 5px 15px -2px #000000;
         width:300px;
         border: 1px solid white;
         text-align: center;
+    }
+
+    img.img-entete-etudiant
+    {
+        position: absolute;
+      z-index: -1;
+      top: -100px;
+      visibility: hidden;
+      display: none;
     }
 }

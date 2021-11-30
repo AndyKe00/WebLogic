@@ -1250,10 +1250,16 @@ footer .ensemble-colonne-footer {
   }
 }
 
-/*TEST TRANSFTER FTP !!!*/
+img.img-entete-etudiant {
+  position: absolute;
+  z-index: -1;
+  top: -100px;
+}
+
 hr {
   background-color: #dc0084;
   width: 60%;
+  height: 3px;
 }
 
 h3.has-text-align-left {
@@ -1262,11 +1268,12 @@ h3.has-text-align-left {
   font-size: 2rem;
   padding: 20px;
   padding-left: 6%;
-  width: 500px;
+  width: 600px;
   border: 1px solid white;
 }
 
 .page-etudiante {
+  margin-top: 15%;
   background-color: #292929;
   /*-------------------------------------------------------------------
 ------------PROPRIÉTÉS CSS DE LA GALERIE PROJETS-------------------
@@ -1299,6 +1306,10 @@ h3.has-text-align-left {
   padding: 2%;
   background-color: rgba(130, 130, 130, 0.1);
   color: white;
+}
+
+.page-etudiante .wp-block-gallery {
+  background-color: rgba(130, 130, 130, 0.1);
 }
 
 .page-etudiante .wp-block-gallery .blocks-gallery-grid li.blocks-gallery-item {
@@ -1494,7 +1505,7 @@ h3.has-text-align-left {
   }
   .page-etudiante .section-temoignages {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-left: 5%;
     margin-right: 5%;
@@ -1560,6 +1571,13 @@ h3.has-text-align-left {
     width: 300px;
     border: 1px solid white;
     text-align: center;
+  }
+  img.img-entete-etudiant {
+    position: absolute;
+    z-index: -1;
+    top: -100px;
+    visibility: hidden;
+    display: none;
   }
 }
 
