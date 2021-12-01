@@ -1665,6 +1665,7 @@ h3.has-text-align-left {
 
 .page-id-44 .header_avenir h2 {
   font-size: 0.5em;
+  margin: auto;
 }
 
 .page-id-44 .bloc-texte {
@@ -1849,13 +1850,65 @@ h3.has-text-align-left {
   margin-top: 30px !important;
 }
 
-.page-id-44 .sectionProfessions .meilleuresProfessions .rose {
+.page-id-44 .sectionProfessions .meilleuresProfessions .headerNoir, .page-id-44 .sectionProfessions .meilleuresProfessions .headerRose {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  border-radius: 30px 30px 30px 30px;
+  transition: border-radius 0.2s ease-in-out;
+  padding: 0 5% 0 5%;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .headerNoir h4, .page-id-44 .sectionProfessions .meilleuresProfessions .headerRose h4 {
+  margin: 0;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .headerNoir input, .page-id-44 .sectionProfessions .meilleuresProfessions .headerRose input {
+  display: block;
+  opacity: 0;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .headerNoir .labelRose, .page-id-44 .sectionProfessions .meilleuresProfessions .headerNoir .labelNoir, .page-id-44 .sectionProfessions .meilleuresProfessions .headerRose .labelRose, .page-id-44 .sectionProfessions .meilleuresProfessions .headerRose .labelNoir {
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 20px;
+  transition: transform 0.2s;
+  transform: scaleY(-1);
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .headerNoir .labelRose, .page-id-44 .sectionProfessions .meilleuresProfessions .headerRose .labelRose {
+  background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/12/Groupe-defilant-4.png);
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .headerNoir .labelNoir, .page-id-44 .sectionProfessions .meilleuresProfessions .headerRose .labelNoir {
+  background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/12/Groupe-defilant-6.png);
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .headerRose {
+  background-color: #8d0055;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .headerNoir {
+  background-color: #1b1b1b;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .headerNoir, .page-id-44 .sectionProfessions .meilleuresProfessions .headerRose {
+  cursor: pointer;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .rose section {
   background-color: #dc0084b9;
 }
 
 .page-id-44 .sectionProfessions .meilleuresProfessions .noir {
-  background-color: #383838b9;
   text-align: right;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .noir section {
+  background-color: #383838b9;
 }
 
 .page-id-44 .sectionProfessions .meilleuresProfessions .noir img {
@@ -1867,7 +1920,8 @@ h3.has-text-align-left {
 }
 
 .page-id-44 .sectionProfessions .meilleuresProfessions .rose, .page-id-44 .sectionProfessions .meilleuresProfessions .noir {
-  padding: 0 5% 0 5%;
+  border-radius: 30px 30px 30px 30px;
+  margin-bottom: 2%;
 }
 
 .page-id-44 .sectionProfessions .meilleuresProfessions .rose section, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section {
@@ -1876,6 +1930,11 @@ h3.has-text-align-left {
   justify-content: space-between;
   height: 100%;
   margin-bottom: 5%;
+  padding: 0 5% 0 5%;
+  transform-origin: top center;
+  animation: animMeilleurProfessions 0.2s both ease-out;
+  border-radius: 0px 0px 30px 30px;
+  padding-bottom: 3%;
 }
 
 .page-id-44 .sectionProfessions .meilleuresProfessions .rose section p, .page-id-44 .sectionProfessions .meilleuresProfessions .noir section p {
@@ -1891,6 +1950,10 @@ h3.has-text-align-left {
   padding: 0;
   height: 200px;
   margin: auto;
+}
+
+.page-id-44 .sectionProfessions .meilleuresProfessions .noir:nth-child(4) {
+  margin-bottom: 0;
 }
 
 .page-id-44 .sectionUni {
@@ -2048,9 +2111,18 @@ h3.has-text-align-left {
   }
   .page-id-44 .header_avenir {
     flex-direction: column;
+    padding: 0;
   }
   .page-id-44 .header_avenir h2 {
-    font-size: 100px !important;
+    font-size: 70px !important;
+    text-align: center;
+  }
+  .page-id-44 .header_avenir .bloc-texte {
+    display: flex;
+    width: 100%;
+    min-height: 0;
+    height: 100%;
+    margin: auto;
   }
   .page-id-44 h3 {
     font-size: 1.5rem !important;
@@ -2139,7 +2211,7 @@ h3.has-text-align-left {
     width: 100%;
     align-items: center;
     padding: 0 3% 0 5%;
-    border-radius: 30px 30px 0 0;
+    border-radius: 30px 30px 30px 30px;
   }
   .page-id-44 .meilleuresProfessions .headerRose h4, .page-id-44 .meilleuresProfessions .headerNoir h4 {
     margin: 0 !important;
@@ -2228,6 +2300,16 @@ h3.has-text-align-left {
   }
   to {
     transform: scale(90%) rotate(0.5deg);
+  }
+}
+
+@keyframes animMeilleurProfessions {
+  from {
+    transform: scaleY(0);
+    border-radius: 30px;
+  }
+  to {
+    transform: scaleY(1);
   }
 }
 
