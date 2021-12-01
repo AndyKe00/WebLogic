@@ -160,29 +160,6 @@
                     BLOC DES COLONNES
 =============================================================*/
 
-/*.condAdminConteneur{
-  margin-right: 5%;
-  border: 2px solid black;
-  border-radius: 10%;
-}
-
-.titreCondAdmin{
-  text-align: center;
-}
-
-.listeCondAdmin{
-  list-style: none;
-  border: 2px solid black;
-  border-radius: 10%;
-  margin-right: 30px;
-}
-
-.entry-title:nth-of-type(1) a
-{
-  //color: aqua;
-  font-size: 1rem;
-}*/
-
 .conteneurTrois{
 margin-left: 5%;
 margin-right: 5%;
@@ -214,63 +191,72 @@ margin-top: 5%;
                     Section professeurs
 =============================================================*/
 
-.conteneurProf{
-  //width: 70%;
-  margin: 50px;
+.containerProf{
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.imageProf{
-  width: 160px;
-  height: 223px;
-  margin: 25px;
-  overflow: hidden;
+.carteProf  {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- // box-shadow: 5px 5px 16px -5px #dc0084;
-  img {
-      max-width: 100%;
-      height: 100%;
-      //box-shadow: 5px 5px 16px -5px rgba(220,0,132,0.55);
-    }
+  height: 400px;
+  width: 600px;
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 200;
 }
 
-/*=============================================================
-                    Hover Sectiton professeurs
-=============================================================*/
-
-
-.hoverProf {
-  opacity: 0;
+.contentProf {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 10px;
-  height: 90%;
-  background: #FFF;
-  color: #151E3F;
-  transition: all 0.9s ease;
-  p {
-    transition: all 0.9s ease;
-    transform: scale(0.1)
-  }
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: justify;
+  color: black;
+  padding: 40px;
 }
 
-.imageProf:hover .hoverProf {
-  opacity: 0.8;
-  width: 90%;
-  transition: all 0.5s ease;
-  p {
-    transform: scale(1);
-    transition: all 0.9s ease;
-  }
+h3 {
+  color: black;
+}
+
+.rideaux {
+  width: 100%;
+  height: 100%;
+}
+
+.rideaux::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Martin-1-e1636566428251-1-e1638387711990.jpg) #292929;
+  background-size: 600px 400px;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.rideaux::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background:  url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Martin-1-e1636566428251-1-e1638387711990.jpg) #292929;
+  background-size: 600px 400px;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.carteProf:hover .rideaux::after {
+  transform: translatex(300px);
+}
+
+.carteProf:hover .rideaux::before{
+  transform: translatex(-300px);
 }
 
 /*=============================================================
