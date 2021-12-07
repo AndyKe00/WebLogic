@@ -1137,6 +1137,9 @@ li:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .carteProf {
@@ -1145,9 +1148,9 @@ li:hover {
   width: 600px;
   background: #f2f2f2;
   overflow: hidden;
-  border-radius: 20px;
   cursor: pointer;
   z-index: 200;
+  margin: 2%;
 }
 
 .contentProf {
@@ -1156,25 +1159,37 @@ li:hover {
   transform: translatey(-50%);
   text-align: justify;
   color: black;
-  padding: 40px;
+  padding: 20px;
 }
 
 h3 {
   color: black;
 }
 
-.rideaux {
+.rideaux,
+.rideaux2,
+.rideaux3,
+.rideaux4,
+.rideaux5,
+.rideaux6,
+.rideaux7,
+.rideaux8,
+.rideaux9,
+.rideaux10 {
   width: 100%;
   height: 100%;
 }
 
+/*=============================================================
+                    Martin
+=============================================================*/
 .rideaux::before {
   position: absolute;
   content: "";
   height: 100%;
   width: 50%;
   background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Martin-1-e1636566428251-1-e1638387711990.jpg) #292929;
-  background-size: 600px 400px;
+  background-size: 320px 448px;
   background-position: 100px;
   background-repeat: no-repeat;
   transition: 1s;
@@ -1187,7 +1202,7 @@ h3 {
   width: 50%;
   right: 0;
   background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Martin-1-e1636566428251-1-e1638387711990.jpg) #292929;
-  background-size: 600px 400px;
+  background-size: 320px 448px;
   background-position: -200px;
   background-repeat: no-repeat;
   transition: 1s;
@@ -1202,16 +1217,340 @@ h3 {
 }
 
 /*=============================================================
+                    Dominic
+=============================================================*/
+.rideaux2::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Dom-e1636567894898-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.rideaux2::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Dom-e1636567894898-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.carteProf:hover .rideaux2::after {
+  transform: translatex(300px);
+}
+
+.carteProf:hover .rideaux2::before {
+  transform: translatex(-300px);
+}
+
+/*=============================================================
+                    Eddy
+=============================================================*/
+.rideaux3::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Eddy-1-e1636567864415-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.rideaux3::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Eddy-1-e1636567864415-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.carteProf:hover .rideaux3::after {
+  transform: translatex(300px);
+}
+
+.carteProf:hover .rideaux3::before {
+  transform: translatex(-300px);
+}
+
+/*=============================================================
+                    Johanne
+=============================================================*/
+.rideaux4::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-johanne-gd-1-e1636567357699-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.rideaux4::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-johanne-gd-1-e1636567357699-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.carteProf:hover .rideaux4::after {
+  transform: translatex(300px);
+}
+
+.carteProf:hover .rideaux4::before {
+  transform: translatex(-300px);
+}
+
+/*=============================================================
+                    Ahmed
+=============================================================*/
+.rideaux5::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Ahmed-photo-e1636567932614-1.jpeg) #292929;
+  background-size: 320px 448px;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.rideaux5::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Ahmed-photo-e1636567932614-1.jpeg) #292929;
+  background-size: 320px 448px;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.carteProf:hover .rideaux5::after {
+  transform: translatex(300px);
+}
+
+.carteProf:hover .rideaux5::before {
+  transform: translatex(-300px);
+}
+
+/*=============================================================
+                    Camille
+=============================================================*/
+.rideaux6::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-camille-e1636567921700-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.rideaux6::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-camille-e1636567921700-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.carteProf:hover .rideaux6::after {
+  transform: translatex(300px);
+}
+
+.carteProf:hover .rideaux6::before {
+  transform: translatex(-300px);
+}
+
+/*=============================================================
+                    Caroline
+=============================================================*/
+.rideaux7::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Caroline-e1636567914536-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.rideaux7::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Caroline-e1636567914536-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.carteProf:hover .rideaux7::after {
+  transform: translatex(300px);
+}
+
+.carteProf:hover .rideaux7::before {
+  transform: translatex(-300px);
+}
+
+/*=============================================================
+                    Denis
+=============================================================*/
+.rideaux8::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Denis-e1636567902202-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.rideaux8::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Denis-e1636567902202-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.carteProf:hover .rideaux8::after {
+  transform: translatex(300px);
+}
+
+.carteProf:hover .rideaux8::before {
+  transform: translatex(-300px);
+}
+
+/*=============================================================
+                    Mathieu
+=============================================================*/
+.rideaux9::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Mathieu-1-e1636567532615-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.rideaux9::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Mathieu-1-e1636567532615-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.carteProf:hover .rideaux9::after {
+  transform: translatex(300px);
+}
+
+.carteProf:hover .rideaux9::before {
+  transform: translatex(-300px);
+}
+
+/*=============================================================
+                    Manon
+=============================================================*/
+.rideaux10::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Manon-1-e1636567855222-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.rideaux10::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Manon-1-e1636567855222-1.jpg) #292929;
+  background-size: 320px 448px;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.carteProf:hover .rideaux10::after {
+  transform: translatex(300px);
+}
+
+.carteProf:hover .rideaux10::before {
+  transform: translatex(-300px);
+}
+
+/*=============================================================
                     Grille de cheminement
 =============================================================*/
 .conteneurBtn {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/10/244371350_920791305215488_4824831813202747773_n.jpg);
-  min-height: 100px;
+  background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/12/Sabrine_MicroControleurs.jpg);
+  height: 500px;
+  width: 1000px;
   background-repeat: no-repeat;
-  background-size: 1920px auto;
 }
 
 footer {
