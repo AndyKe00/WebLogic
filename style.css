@@ -1325,6 +1325,9 @@ h3.has-text-align-left {
   /********************************************
 **********MEDIA QUERY - IPHONE ****************
 *****************************************/
+  /********************************************
+**********MEDIA QUERY - TABLET ****************
+*****************************************/
 }
 
 .page-etudiante .header_etudiante {
@@ -1551,6 +1554,94 @@ h3.has-text-align-left {
     margin-left: 5%;
     margin-right: 5%;
     margin: 5%;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(1) {
+    background-color: #FFA5DB;
+    transform: rotateZ(0deg);
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(2) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    margin-left: 10%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(3) {
+    background-color: #FFA5DB;
+    transform: rotateZ(0deg);
+    margin-top: 5%;
+    margin-left: 5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(4) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    margin-top: -5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(5) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(6) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    margin-top: -5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(7) {
+    background-color: #FFA5DB;
+    transform: rotateZ(0deg);
+    margin-top: 5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(8) {
+    background-color: #FF67C2;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .section-temoignages .post-it:active:nth-child(9) {
+    background-color: #FFA5DB;
+    transform: rotateZ(0deg);
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+}
+
+@media only screen and (min-width: 834px) and (max-width: 1112px) {
+  .page-etudiante .bloc-texte {
+    display: none;
+    visibility: hidden;
+  }
+  .page-etudiante .post-it {
+    width: 200px;
+    height: 200px;
+    margin-top: 3px;
+  }
+  .page-etudiante .post-it p {
+    font-size: 0.55rem;
+  }
+  .page-etudiante .post-it h5 {
+    margin-top: -2px;
+  }
+  .page-etudiante .post-it-vedettes .post-it:active:nth-child(1) {
+    background-color: #DC0084;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .post-it-vedettes .post-it:active:nth-child(2) {
+    background-color: #FF67C2;
+    transform: rotateZ(0deg);
+    margin-top: 5%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .post-it-vedettes .post-it:active:nth-child(3) {
+    background-color: #DC0084;
+    transform: rotateZ(0deg);
+    margin-top: 2%;
+    box-shadow: 5px 5px 15px -2px #000000;
+  }
+  .page-etudiante .post-it-vedettes .post-it:active:nth-child(4) {
+    background-color: #FF67C2;
+    box-shadow: 5px 5px 15px -2px #000000;
   }
   .page-etudiante .section-temoignages .post-it:active:nth-child(1) {
     background-color: #FFA5DB;
