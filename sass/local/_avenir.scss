@@ -1,5 +1,9 @@
 .page-id-44 {
     
+    .page-avenir {
+        width: 100vw;
+    }
+
     /*Temp*/
     img {
         background-color: white;
@@ -23,6 +27,7 @@
     
         h2 {
             font-size: 0.5em;
+            margin: auto;
         }
 
     }
@@ -186,12 +191,11 @@
             }
 
             img {
-                min-width: 400px;
+                height: 300px;
             }
         }
 
         .meilleuresProfessions {
-
 
             display: flex;
             flex-direction: column;
@@ -201,7 +205,7 @@
             margin-top: 7%;
            // justify-content: ;
             
-            button {
+            input {
                 display: none;
             }
 
@@ -212,15 +216,71 @@
             p {
                 margin-top: 30px !important;
             }
+            
+            .headerNoir, .headerRose {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 100px;
+                width: 100%;
+                border-radius: 30px 30px 30px 30px;
+                transition: border-radius 0.2s ease-in-out;
+                padding: 0 5% 0 5%;
+
+                h4 {
+                    margin: 0;
+                }
+
+                input {
+                    display: block;
+                    opacity: 0;
+                }
+
+                .labelRose, .labelNoir {
+                    background-size: auto;
+                    background-repeat: no-repeat;
+                    width: 30px;
+                    height: 20px;
+                    transition: transform 0.2s;
+                    transform: scaleY(-1);
+                }
+
+                .labelRose {
+                    background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/12/Groupe-defilant-4.png);
+                }
+
+                .labelNoir {
+                    background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/12/Groupe-defilant-6.png);
+                }
+
+            }
+
+            .headerRose {
+                background-color: #8d0055;
+            }
+
+            .headerNoir{
+                background-color: #1b1b1b;
+            }
+
+            .headerNoir, .headerRose {
+                cursor: pointer;
+            }
 
             .rose {
-                background-color: #dc0084b9;
+                
+                section {
+                    background-color: #dc0084b9;
+                }
             
             }
     
             .noir {
-                background-color: #383838b9;
+                
                 text-align: right;
+                section {
+                    background-color: #383838b9;
+                }
 
                 img {
                     padding-right: 20px;
@@ -232,7 +292,8 @@
             }
 
             .rose, .noir {
-                padding: 0 5% 0 5%;
+                border-radius: 30px 30px 30px 30px;
+                margin-bottom: 2%;
                 
                 section {
                     flex-direction: row;
@@ -240,6 +301,11 @@
                     justify-content: space-between;
                     height: 100%;
                     margin-bottom: 5%;
+                    padding: 0 5% 0 5%;
+                    transform-origin: top center;
+                    animation: animMeilleurProfessions 0.2s both ease-out;
+                    border-radius: 0px 0px 30px 30px;
+                    padding-bottom: 3%;
 
                     p {
                         max-width: 650px;
@@ -252,11 +318,17 @@
 
                     img {
                       //  background-image: url(../../media/grandPapaTortue.png);
-                        width: 250px;
+                        padding: 0;
+                        height: 200px;
+                        margin: auto;
                         
                     }
 
                 }
+            }
+
+            .noir:nth-child(4) {
+                margin-bottom: 0;
             }
 
         }
@@ -420,10 +492,6 @@
                 min-width: 300px !important;
                 width: 350px;
             }
-
-            img {
-                padding-top: 30px;
-            }
             
         }
 
@@ -433,6 +501,10 @@
 
     @media only screen and (min-width: 375px) and (max-width: 833px) { //Mobile
         
+        .sectionStages, .sectionProfessions, .sectionUni {
+            margin-top: 20px !important;
+        }
+
         h4 {
             font-size: 1.5rem;
         }
@@ -442,39 +514,73 @@
         }
 
         .header_avenir {
+
+            flex-direction: column;
+            padding: 0;
+
             h2 {
-                font-size: 100px !important;
+                font-size: 70px !important;
+                text-align: center;
             }
+
+            .bloc-texte {
+                display: flex;
+                width: 100%;
+                min-height: 0;
+                height: 100%;
+                margin: auto;
+            }
+        }
+
+        h3 {
+            font-size: 1.5rem !important;
+            text-align: center;
+            margin: auto;
         }
 
         .sectionStages {
             margin: 0%;
 
+            h3 {
+                margin-bottom: 20px;
+            }
+            
             span {
                 display: none;
             }
 
             p {
-                line-height: 25px !important;
+                line-height: 20px !important;
+                font-size: 18px !important;
+                padding: 15px;
             }
 
+
             .conteneurStages {
-                padding: 10px 0 10px 0;
+                flex-direction: column;
+                padding: 0px 0 10px 0;
                 justify-content: space-around;
 
                 div {
                     margin: 0;
+                    width: 100%;
+                }
+
+                div:nth-child(3) {
+                    margin-top: 20px;
                 }
 
                 h4 {
-                    margin: 10px;
+                    margin: 0px;
                 }
             }
         }
 
         .sectionProfessions {
            // margin: 3% !important;
-            width: 70vw;
+            width: 100vw;
+            margin: 0 !important;
+            margin-top: 20px !important;
         }
 
         ul {
@@ -484,19 +590,51 @@
         }
 
         .meilleuresProfessions {
-            
+            margin: auto;
             padding: 0;
+            width: 95vw !important;
+            max-width: none !important;
 
-            button {
+            input {
                 display: block !important;
                 height: 30px;
-                
+                margin-right: 30px !important;
+
             }
 
             .rose, .noir {
                 padding: 0 !important;
                 margin-bottom: 30px;
                 border-radius: 30px 30px 0 0;
+                overflow:hidden;
+                width: 100% !important;
+
+                section {
+                    display: flex;
+                }
+
+            }
+            
+            img {
+                margin: auto;
+                padding: 0 !important;
+                margin-top: 30px !important;
+            }
+
+            .rose {
+
+                section {
+                    flex-direction: column-reverse !important;
+                }
+            }
+
+            .noir {
+                flex-direction: column-reverse !important;
+
+                section {
+                    flex-direction: column !important;
+                }
+
             }
 
             .headerRose, .headerNoir {
@@ -507,10 +645,12 @@
                 width: 100%;
                 align-items: center;
                 padding: 0 3% 0 5%;
-                border-radius: 30px 30px 0 0;
+                border-radius: 30px 30px 30px 30px;
 
                 h4 {
                     margin: 0 !important;
+                    font-size: 1rem !important;
+                    margin-left: 20px !important;
                 }
 
             }
@@ -525,18 +665,20 @@
 
             p {
                 letter-spacing: normal !important;
-                font-size: 1rem !important;
-                max-width: 350px !important;
-                min-width: 200px !important;
-            }
-
-            img {
-                padding-top: 30px;
+                font-size: 15px !important;
+                max-width: none !important;
+                min-width: 250px !important;
+                width: 90% !important;
+                margin: auto;
+                margin-top: 100px !important;
+                text-align: center;
             }
             
         }
 
-        //.se 
+        .conteneurUni {
+            width: 100% !important;
+        }
 
     }
 
@@ -579,6 +721,11 @@
     @keyframes animLi8 {
         from {}
         to {transform: scale(90%) rotate(0.5deg);}
+    }
+
+    @keyframes animMeilleurProfessions {
+        from {transform: scaleY(0); border-radius: 30px;}
+        to {transform: scaleY(1);}
     }
 
 }
