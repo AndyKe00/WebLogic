@@ -2092,6 +2092,11 @@ h3.has-text-align-left {
   justify-content: space-between;
   background-color: #292929;
   padding-left: 5%;
+  align-items: center;
+}
+
+.page-id-44 .header_avenir .header_avenir_title {
+  justify-content: center;
 }
 
 .page-id-44 .header_avenir h2 {
@@ -2102,7 +2107,6 @@ h3.has-text-align-left {
 .page-id-44 .bloc-texte {
   z-index: 999;
   width: 50%;
-  height: 300px;
   padding: 2%;
   background-color: rgba(130, 130, 130, 0.1);
   color: white;
@@ -2110,6 +2114,7 @@ h3.has-text-align-left {
 
 .page-id-44 .sectionStages {
   margin: 7%;
+  margin-bottom: 3%;
   display: flex;
   flex-direction: column;
 }
@@ -2158,6 +2163,8 @@ h3.has-text-align-left {
 
 .page-id-44 .sectionProfessions {
   margin: 7%;
+  margin-top: 0%;
+  margin-bottom: 3%;
   display: flex;
   flex-direction: column;
 }
@@ -2174,7 +2181,8 @@ h3.has-text-align-left {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 500px;
+  height: 550px;
+  flex-wrap: wrap;
   /*ul {
                 font-size: 1.5rem;
                 color: #fff;
@@ -2261,45 +2269,52 @@ h3.has-text-align-left {
   font-weight: bolder;
   font-size: 3rem;
   position: absolute;
+  transform-origin: left;
+}
+
+.page-id-44 .sectionProfessions .conteneurProfessions .prof2, .page-id-44 .sectionProfessions .conteneurProfessions .prof3, .page-id-44 .sectionProfessions .conteneurProfessions .prof5, .page-id-44 .sectionProfessions .conteneurProfessions .prof6, .page-id-44 .sectionProfessions .conteneurProfessions .prof8 {
+  transform-origin: right;
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions .prof1 {
-  transform: translate(200px, 300px) rotate(-5deg) scale(1.4);
+  transform: translate(3vw, 250px) rotate(-5deg) scale(1.4);
   text-shadow: black 2px 0px 0px, black 1.75517px 0.95885px 0px, black 1.0806px 1.68294px 0px, black 0.14147px 1.99499px 0px, black -0.83229px 1.81859px 0px, black -1.60229px 1.19694px 0px, black -1.97999px 0.28224px 0px, black -1.87291px -0.70157px 0px, black -1.30729px -1.51361px 0px, black -0.42159px -1.95506px 0px, black 0.56732px -1.91785px 0px, black 1.41734px -1.41108px 0px, black 1.92034px -0.55883px 0px;
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions .prof2 {
-  transform: translate(800px, 450px);
+  transform: translate(30vw, 400px);
   color: #000;
   text-shadow: #dc0084 1px 0px 0px, #dc0084 0.5403px 0.84147px 0px, #dc0084 -0.41615px 0.9093px 0px, #dc0084 -0.98999px 0.14112px 0px, #dc0084 -0.65364px -0.7568px 0px, #dc0084 0.28366px -0.95892px 0px, #dc0084 0.96017px -0.27942px 0px;
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions .prof3 {
-  transform: translate(950px, 100px);
+  transform: translate(50vw, 100px);
   font-weight: normal;
   text-shadow: black 2px 0px 0px, black 1.75517px 0.95885px 0px, black 1.0806px 1.68294px 0px, black 0.14147px 1.99499px 0px, black -0.83229px 1.81859px 0px, black -1.60229px 1.19694px 0px, black -1.97999px 0.28224px 0px, black -1.87291px -0.70157px 0px, black -1.30729px -1.51361px 0px, black -0.42159px -1.95506px 0px, black 0.56732px -1.91785px 0px, black 1.41734px -1.41108px 0px, black 1.92034px -0.55883px 0px;
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions .prof4 {
-  transform: translateY(100px) rotate(-3deg) scale(0.8);
+  transform: translateY(4vw) rotate(-3deg) scale(0.8);
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions .prof5 {
-  transform: translate(1050px, 300px) rotate(5deg) scale(1.2);
+  transform: translate(45vw, 350px) rotate(5deg) scale(1);
   color: #000;
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions .prof6 {
-  transform: translateX(650px) scale(0.7) rotate(-2deg);
+  transform: translateX(50vw) scale(0.7) rotate(-2deg);
+  text-shadow: #dc0084 1px 0px 0px, #dc0084 0.5403px 0.84147px 0px, #dc0084 -0.41615px 0.9093px 0px, #dc0084 -0.98999px 0.14112px 0px, #dc0084 -0.65364px -0.7568px 0px, #dc0084 0.28366px -0.95892px 0px, #dc0084 0.96017px -0.27942px 0px;
   color: #000;
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions .prof7 {
-  transform: translate(0, 500px) rotate(-3deg);
+  transform: translate(1vw, 500px) rotate(-3deg);
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions .prof8 {
-  transform: translate(1300px, 500px) rotate(3deg);
+  transform: translate(60vw, 500px) rotate(3deg);
+  text-shadow: black 2px 0px 0px, black 1.75517px 0.95885px 0px, black 1.0806px 1.68294px 0px, black 0.14147px 1.99499px 0px, black -0.83229px 1.81859px 0px, black -1.60229px 1.19694px 0px, black -1.97999px 0.28224px 0px, black -1.87291px -0.70157px 0px, black -1.30729px -1.51361px 0px, black -0.42159px -1.95506px 0px, black 0.56732px -1.91785px 0px, black 1.41734px -1.41108px 0px, black 1.92034px -0.55883px 0px;
 }
 
 .page-id-44 .sectionProfessions .conteneurProfessions img {
@@ -2435,6 +2450,7 @@ h3.has-text-align-left {
 
 .page-id-44 .sectionUni {
   margin: 7%;
+  margin-top: 3%;
   display: flex;
   flex-direction: column;
 }
@@ -2525,8 +2541,20 @@ h3.has-text-align-left {
   width: 100vw;
 }
 
+.page-id-44 .wp-block-gallery {
+  width: 100vw;
+}
+
 .page-id-44 .blocks-gallery-grid {
   margin: 0;
+}
+
+.page-id-44 .site-footer {
+  width: 100vw;
+}
+
+.page-id-44 .site-footer .ensemble-colonne-footer {
+  padding: 0%;
 }
 
 .page-id-44 p {
@@ -2567,6 +2595,16 @@ h3.has-text-align-left {
   .page-id-44 ul {
     margin: 0;
   }
+  .page-id-44 .conteneurProfessions {
+    justify-content: space-between !important;
+  }
+  .page-id-44 .conteneurProfessions span {
+    transform: none !important;
+    position: static !important;
+  }
+  .page-id-44 .conteneurProfessions .prof3, .page-id-44 .conteneurProfessions .prof4, .page-id-44 .conteneurProfessions .prof6, .page-id-44 .conteneurProfessions .prof8 {
+    margin-left: auto;
+  }
   .page-id-44 .meilleuresProfessions p {
     letter-spacing: normal !important;
     font-size: 1rem !important;
@@ -2576,7 +2614,7 @@ h3.has-text-align-left {
   }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 833px) {
+@media only screen and (max-width: 833px) {
   .page-id-44 .sectionStages, .page-id-44 .sectionProfessions, .page-id-44 .sectionUni {
     margin-top: 20px !important;
   }
@@ -2639,6 +2677,18 @@ h3.has-text-align-left {
     width: 100vw;
     margin: 0 !important;
     margin-top: 20px !important;
+  }
+  .page-id-44 .sectionProfessions .conteneurProfessions {
+    height: auto !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-id-44 .sectionProfessions .conteneurProfessions span {
+    transform: none !important;
+    position: static !important;
+    font-size: clamp(1.5rem, 5vw, 4rem);
   }
   .page-id-44 ul {
     margin: 0;
