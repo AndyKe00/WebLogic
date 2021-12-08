@@ -1,5 +1,7 @@
 .page-id-44 {
-    
+
+   // overflow-x: hidden;
+   
     .page-avenir {
         width: 100vw;
     }
@@ -20,11 +22,16 @@
     }
     .header_avenir
     {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(41,41,41);
-    padding-left: 5%;
-    
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(41,41,41);
+        padding-left: 5%;
+        align-items: center;
+            
+        .header_avenir_title {
+            justify-content: center;
+        }
+
         h2 {
             font-size: 0.5em;
             margin: auto;
@@ -33,16 +40,16 @@
     }
     .bloc-texte 
     {
-    z-index: 999;
-    width:50%;
-    height:300px;
-    padding: 2%;;
-    background-color: rgba(130,130,130,0.10);
-    color:white;
+        z-index: 999;
+        width:50%;
+        padding: 2%;;
+        background-color: rgba(130,130,130,0.10);
+        color:white;
     }
 
     .sectionStages {
         margin: 7%;
+        margin-bottom: 3%;
         display: flex;
         flex-direction: column;
 
@@ -92,6 +99,8 @@
 
     .sectionProfessions {
         margin: 7%;
+        margin-top: 0%;
+        margin-bottom: 3%;
         display: flex;
         flex-direction: column;
 
@@ -108,7 +117,8 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            height: 500px;
+            height: 550px;
+            flex-wrap: wrap;
             
             /*ul {
                 font-size: 1.5rem;
@@ -195,45 +205,52 @@
                 font-weight: bolder;
                 font-size: 3rem;
                 position: absolute;
+                transform-origin: left;
+            }
+            
+            .prof2 ,.prof3, .prof5, .prof6, .prof8 {
+                transform-origin: right;
             }
 
             .prof1 {
-                transform: translate(200px,300px) rotate(-5deg) scale(1.4);
+                transform: translate(3vw,250px) rotate(-5deg) scale(1.4);
                 text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
             }
 
             .prof2 {
-                transform: translate(800px, 450px);
+                transform: translate(30vw, 400px);
                 color: #000;
                 text-shadow: rgb(220, 0, 132) 1px 0px 0px, rgb(220, 0, 132) 0.540302px 0.841471px 0px, rgb(220, 0, 132) -0.416147px 0.909297px 0px, rgb(220, 0, 132) -0.989993px 0.14112px 0px, rgb(220, 0, 132) -0.653644px -0.756803px 0px, rgb(220, 0, 132) 0.283662px -0.958924px 0px, rgb(220, 0, 132) 0.96017px -0.279416px 0px;
             }
 
             .prof3 {
-                transform: translate(950px, 100px);
+                transform: translate(50vw, 100px);
                 font-weight: normal;
                 text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
             }
 
             .prof4 {
-                transform: translateY(100px) rotate(-3deg) scale(0.8);
+                transform: translateY(4vw) rotate(-3deg) scale(0.8);
             }
 
             .prof5 {
-                transform: translate(1050px, 300px) rotate(5deg) scale(1.2);
+                transform: translate(45vw, 350px) rotate(5deg) scale(1);
                 color: #000;
             }
 
             .prof6 {
-                transform: translateX(650px) scale(0.7) rotate(-2deg);
+                transform: translateX(50vw) scale(0.7) rotate(-2deg);
+                text-shadow: rgb(220, 0, 132) 1px 0px 0px, rgb(220, 0, 132) 0.540302px 0.841471px 0px, rgb(220, 0, 132) -0.416147px 0.909297px 0px, rgb(220, 0, 132) -0.989993px 0.14112px 0px, rgb(220, 0, 132) -0.653644px -0.756803px 0px, rgb(220, 0, 132) 0.283662px -0.958924px 0px, rgb(220, 0, 132) 0.96017px -0.279416px 0px;
                 color: #000;
             }
 
             .prof7 {
-                transform: translate(0,500px) rotate(-3deg);
+                transform: translate(1vw,500px) rotate(-3deg);
             }
 
             .prof8 {
-                transform: translate(1300px, 500px) rotate(3deg);
+                transform: translate(60vw, 500px) rotate(3deg);
+                text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
             }
 
             img {
@@ -383,6 +400,7 @@
 
     .sectionUni {
         margin: 7%;
+        margin-top: 3%;
         display: flex;
         flex-direction: column;
 
@@ -477,8 +495,24 @@
         }
     }
 
+    .banniereAvenir1 {
+        
+    }
+
+    .wp-block-gallery {
+        width: 100vw;
+    }
+
     .blocks-gallery-grid {
         margin: 0;
+    }
+
+    .site-footer {
+        width: 100vw;
+        
+        .ensemble-colonne-footer {
+            padding: 0%;
+        }
     }
 
     //Typographie
@@ -530,6 +564,21 @@
             margin: 0;
         }
 
+        .conteneurProfessions {
+            
+            justify-content: space-between !important;
+
+            span {
+                transform: none !important;
+                position: static !important;
+            }
+
+            .prof3, .prof4, .prof6, .prof8 {
+                margin-left: auto;
+            }
+
+        }
+
         .meilleuresProfessions {
             p {
                 letter-spacing: normal !important;
@@ -545,7 +594,7 @@
 
     }
 
-    @media only screen and (min-width: 375px) and (max-width: 833px) { //Mobile
+    @media only screen and (max-width: 833px) { //Mobile
         
         .sectionStages, .sectionProfessions, .sectionUni {
             margin-top: 20px !important;
@@ -627,6 +676,22 @@
             width: 100vw;
             margin: 0 !important;
             margin-top: 20px !important;
+
+            .conteneurProfessions {
+                
+                height: auto !important;
+                justify-content: space-between !important;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                align-items: center;
+    
+                span {
+                    transform: none !important;
+                    position: static !important;
+                    font-size: clamp(1.5rem, 5vw, 4rem);
+                }
+            }
+
         }
 
         ul {
