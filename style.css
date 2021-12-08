@@ -963,11 +963,6 @@ li:hover {
 
 /* Local
 --------------------------------------------- */
-/*  .custom-background
-  {
-      background-size: 100vw 90vh !important;
-      background-repeat: no-repeat !important;
-  } */
 #primary h2 {
   font-size: 8em;
   margin: 0;
@@ -982,7 +977,7 @@ li:hover {
   position: absolute;
   z-index: -1;
   top: -10vh;
-  height: 110vh;
+  min-height: 110vh;
 }
 
 .conteneurHeaderAccueil {
@@ -1002,11 +997,37 @@ li:hover {
   color: white;
 }
 
-.imgPresentation {
-  display: flex;
-  object-fit: cover;
-  height: 800px;
-  align-items: center;
+/*=============================================================
+                    BLOC DES COLONNES
+=============================================================*/
+.titrePresentation {
+  color: #FFF;
+}
+
+.conteneurTrois {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.titreCondAdmin {
+  text-align: center;
+  color: #FFF;
+}
+
+.condAdmin {
+  border: 3px solid white;
+  border-radius: 5%;
+  text-decoration: none;
+  min-height: 35vh;
+  height: 40vh;
+}
+
+.listeCondAdmin {
+  border: 1px solid white;
+  margin: 20px;
+  padding: 10px;
+  color: #FFF;
 }
 
 /*=============================================================
@@ -1111,35 +1132,6 @@ li:hover {
 }
 
 /*=============================================================
-                    BLOC DES COLONNES
-=============================================================*/
-.conteneurTrois {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;
-}
-
-.titreCondAdmin {
-  text-align: center;
-  color: #FFF;
-}
-
-.condAdmin {
-  border: 3px solid white;
-  border-radius: 5%;
-  text-decoration: none;
-  min-height: 35vh;
-  height: 40vh;
-}
-
-.listeCondAdmin {
-  border: 1px solid white;
-  margin: 20px;
-  padding: 10px;
-  color: #FFF;
-}
-
-/*=============================================================
                     Section professeurs
 =============================================================*/
 .containerProf {
@@ -1175,6 +1167,10 @@ h3 {
   color: black;
 }
 
+/*=============================================================
+                    Section professeurs
+                    Gestion de l'effet rideaux
+=============================================================*/
 .rideaux,
 .rideaux2,
 .rideaux3,
@@ -1190,6 +1186,7 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Martin
 =============================================================*/
 .rideaux::before {
@@ -1226,6 +1223,7 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Dominic
 =============================================================*/
 .rideaux2::before {
@@ -1262,6 +1260,7 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Eddy
 =============================================================*/
 .rideaux3::before {
@@ -1298,6 +1297,7 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Johanne
 =============================================================*/
 .rideaux4::before {
@@ -1334,6 +1334,7 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Ahmed
 =============================================================*/
 .rideaux5::before {
@@ -1370,6 +1371,7 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Camille
 =============================================================*/
 .rideaux6::before {
@@ -1406,6 +1408,7 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Caroline
 =============================================================*/
 .rideaux7::before {
@@ -1442,6 +1445,7 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Denis
 =============================================================*/
 .rideaux8::before {
@@ -1478,6 +1482,7 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Mathieu
 =============================================================*/
 .rideaux9::before {
@@ -1514,6 +1519,7 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Manon
 =============================================================*/
 .rideaux10::before {
@@ -1556,14 +1562,55 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/12/Sabrine_MicroControleurs-scaled.jpg);
+  background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/12/20211208_140923-scaled.jpg);
   background-repeat: no-repeat;
   min-height: 30vh;
-  background-position: 0% 90%;
+  background-position: 0% 60%;
 }
 
 /*=============================================================
-                    Media queries
+                    Media queries - Tablette
+                    Section Présentation
+=============================================================*/
+@media only screen and (min-device-width: 834px) and (max-device-width: 1024px) {
+  #primary h2 {
+    font-size: 6em;
+  }
+  .titrePresentation {
+    font-size: 0.8rem;
+  }
+  .txtPresentation {
+    font-size: 0.8rem;
+  }
+  .conteneurTrois {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .titreCondAdmin {
+    text-align: center;
+    color: #FFF;
+    font-size: 0.8rem;
+  }
+  .condAdmin {
+    border: 3px solid white;
+    border-radius: 5%;
+    text-decoration: none;
+    min-height: 35vh;
+    height: 40vh;
+    font-size: 0.8rem;
+  }
+  .listeCondAdmin {
+    border: 1px solid white;
+    margin: 20px;
+    padding: 10px;
+    color: #FFF;
+    font-size: 0.8rem;
+  }
+}
+
+/*=============================================================
+                    Media queries - Mobile
+                    Bloc des colonnes
 =============================================================*/
 footer {
   margin-bottom: 0;

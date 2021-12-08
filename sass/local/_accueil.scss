@@ -1,12 +1,3 @@
-
-/*  .custom-background
-  {
-      background-size: 100vw 90vh !important;
-      background-repeat: no-repeat !important;
-  } */
-  
-
-
 #primary h2
 {
     font-size: 8em;
@@ -23,7 +14,7 @@
   position: absolute;
   z-index: -1;
   top: -10vh;
-  height: 110vh;
+  min-height: 110vh;
 }
 
 .conteneurHeaderAccueil{
@@ -43,23 +34,54 @@
   color:white;
 }
 
-.imgPresentation{
-  display: flex;
-  object-fit: cover;
-  height: 800px;
-  align-items: center;
+/*=============================================================
+                    BLOC DES COLONNES
+=============================================================*/
+
+.titrePresentation{
+  color: #FFF;
 }
+
+.conteneurTrois{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  }
+  
+  .titreCondAdmin
+  {
+    text-align: center;
+    color: #FFF;
+  }
+  
+  // Effet d'un tableau
+  .condAdmin{
+    border: 3px solid white;
+    border-radius: 5%;
+    text-decoration: none;
+    min-height: 35vh;
+    height: 40vh;
+  }
+  
+  .listeCondAdmin{
+    border: 1px solid white;
+    margin: 20px;
+    padding: 10px;
+    color: #FFF;
+  }
+
 /*=============================================================
                         Cours Offerts
 =============================================================*/
 
-// Modifier le titre des sessions
+// Agrandir le titre pour les sessions
 .titreSession{
   font-size: 2rem;
   color: #FFF;
   text-align: center;
 }
 
+// Faire que le contenu soit adaptable à l'aide de flex-wrap
 .container{
   position: relative;
   display: flex;
@@ -89,6 +111,7 @@
   border-right: 20px solid #dc0084;
 }
 
+// Icone pour chaque carte
 .container .carte .icone{
   margin-bottom: 10px;
   font-size: 2rem;
@@ -122,6 +145,7 @@
   display: none;
 }
 
+// Donner une couleur à l'icône
 .container .carte .content i .fas{
   color: #FFF;
 }
@@ -149,7 +173,7 @@
   color: white;
 }
 
-// Lorsque le Lire plus est clique
+// Lorsque le Lire plus est cliqué
 .container .carte.active .plus{
   background: #292929;
 }
@@ -159,46 +183,17 @@
   content: "Lire plus";
 }
 
-// Apres un clique
+// Après un clique
 .container .carte.active .plus::before{
   content: "Lire moins";
 }
 
-/*=============================================================
-                    BLOC DES COLONNES
-=============================================================*/
-
-.conteneurTrois{
-margin-left: 5%;
-margin-right: 5%;
-margin-top: 5%;
-}
-
-.titreCondAdmin
-{
-  text-align: center;
-  color: #FFF;
-}
-
-.condAdmin{
-  border: 3px solid white;
-  border-radius: 5%;
-  text-decoration: none;
-  min-height: 35vh;
-  height: 40vh;
-}
-
-.listeCondAdmin{
-  border: 1px solid white;
-  margin: 20px;
-  padding: 10px;
-  color: #FFF;
-}
 
 /*=============================================================
                     Section professeurs
 =============================================================*/
 
+// Faire en sorte que le contenu s'adapte facilement avec flex-wrap
 .containerProf{
   display: flex;
   align-items: center;
@@ -208,6 +203,7 @@ margin-top: 5%;
   margin-right: 1%;
 }
 
+// Le bloc pour chaque carte de prof individuelle
 .carteProf  {
   position: relative;
   min-height: 400px;
@@ -219,6 +215,8 @@ margin-top: 5%;
   margin: 2%;
 }
 
+// Bien formater le contenu pour chaque carte de prof
+// Bien placer le contenu aussi
 .contentProf {
   position: absolute;
   top: 50%;
@@ -231,6 +229,11 @@ margin-top: 5%;
 h3 {
   color: black;
 }
+
+/*=============================================================
+                    Section professeurs
+                    Gestion de l'effet rideaux
+=============================================================*/
 
 .rideaux,
 .rideaux2,
@@ -248,9 +251,11 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Martin
 =============================================================*/
 
+// Partie gauche de la carte avec l'image de Martin
 .rideaux::before {
   position: absolute;
   content: "";
@@ -263,6 +268,7 @@ h3 {
   transition: 1s;
 }
 
+// Partie droite de la carte avec l'image de Martin
 .rideaux::after {
   position: absolute;
   content: "";
@@ -276,6 +282,7 @@ h3 {
   transition: 1s;
 }
 
+// Faire les transitions qui donne l'effet rideaux
 .carteProf:hover .rideaux::after {
   transform: translatex(300px);
 }
@@ -285,9 +292,11 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Dominic
 =============================================================*/
 
+// Partie gauche de la carte avec l'image de Dominic
 .rideaux2::before {
   position: absolute;
   content: "";
@@ -300,6 +309,7 @@ h3 {
   transition: 1s;
 }
 
+// Partie droite de la carte avec l'image de Domnic
 .rideaux2::after {
   position: absolute;
   content: "";
@@ -313,6 +323,7 @@ h3 {
   transition: 1s;
 }
 
+// Faire les transitions qui donne l'effet rideaux
 .carteProf:hover .rideaux2::after {
   transform: translatex(300px);
 }
@@ -322,9 +333,11 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Eddy
 =============================================================*/
 
+// Partie gauche de la carte avec l'image de Eddy
 .rideaux3::before {
   position: absolute;
   content: "";
@@ -337,6 +350,7 @@ h3 {
   transition: 1s;
 }
 
+// Partie droite de la carte avec l'image de Eddy
 .rideaux3::after {
   position: absolute;
   content: "";
@@ -359,9 +373,11 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Johanne
 =============================================================*/
 
+// Partie gauche de la carte avec l'image de Johanne
 .rideaux4::before {
   position: absolute;
   content: "";
@@ -374,6 +390,7 @@ h3 {
   transition: 1s;
 }
 
+// Partie droite de la carte avec l'image de Johanne
 .rideaux4::after {
   position: absolute;
   content: "";
@@ -396,9 +413,11 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Ahmed
 =============================================================*/
 
+// Partie gauche de la carte avec l'image de Ahmed
 .rideaux5::before {
   position: absolute;
   content: "";
@@ -411,6 +430,7 @@ h3 {
   transition: 1s;
 }
 
+// Partie droite de la carte avec l'image de Ahmed
 .rideaux5::after {
   position: absolute;
   content: "";
@@ -433,9 +453,11 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Camille
 =============================================================*/
 
+// Partie gauche de la carte avec l'image de Camille
 .rideaux6::before {
   position: absolute;
   content: "";
@@ -448,6 +470,7 @@ h3 {
   transition: 1s;
 }
 
+// Partie droite de la carte avec l'image de Camille
 .rideaux6::after {
   position: absolute;
   content: "";
@@ -470,9 +493,11 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Caroline
 =============================================================*/
 
+// Partie gauche de la carte avec l'image de Caroline
 .rideaux7::before {
   position: absolute;
   content: "";
@@ -485,6 +510,7 @@ h3 {
   transition: 1s;
 }
 
+// Partie droite de la carte avec l'image de Caroline
 .rideaux7::after {
   position: absolute;
   content: "";
@@ -507,9 +533,11 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Denis
 =============================================================*/
 
+// Partie gauche de la carte avec l'image de Denis
 .rideaux8::before {
   position: absolute;
   content: "";
@@ -522,6 +550,7 @@ h3 {
   transition: 1s;
 }
 
+// Partie gauche de la carte avec l'image de Denis
 .rideaux8::after {
   position: absolute;
   content: "";
@@ -544,9 +573,11 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Mathieu
 =============================================================*/
 
+// Partie gauche de la carte avec l'image de Mathieu
 .rideaux9::before {
   position: absolute;
   content: "";
@@ -559,6 +590,7 @@ h3 {
   transition: 1s;
 }
 
+// Partie droite de la carte avec l'image Mathieu
 .rideaux9::after {
   position: absolute;
   content: "";
@@ -581,9 +613,11 @@ h3 {
 }
 
 /*=============================================================
+                    Section professeurs
                     Manon
 =============================================================*/
 
+// Partie gauche de la carte avec l'image de Manon
 .rideaux10::before {
   position: absolute;
   content: "";
@@ -596,6 +630,7 @@ h3 {
   transition: 1s;
 }
 
+// Partie droite de la carte avec l'image de Manon
 .rideaux10::after {
   position: absolute;
   content: "";
@@ -621,17 +656,75 @@ h3 {
                     Grille de cheminement
 =============================================================*/
 
+// Mettre le bouton centré dans la page
 .conteneurBtn
 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/12/Sabrine_MicroControleurs-scaled.jpg);
+  background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/12/20211208_140923-scaled.jpg);
   background-repeat: no-repeat;
   min-height: 30vh;
-  background-position: 0% 90%;
+  background-position: 0% 60%;
 }
 
 /*=============================================================
-                    Media queries
+                    Media queries - Tablette
+                    Section Présentation
 =============================================================*/
+
+@media only screen and (min-device-width : 834px) and (max-device-width : 1024px){
+
+  #primary h2
+{
+    font-size: 6em;
+}
+
+  .titrePresentation{
+    font-size: 0.8rem;
+  }
+
+  .txtPresentation{
+    font-size: 0.8rem;
+  }
+
+  .conteneurTrois{
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+    
+    .titreCondAdmin
+    {
+      text-align: center;
+      color: #FFF;
+      font-size: 0.8rem;
+    }
+    
+    // Effet d'un tableau
+    .condAdmin{
+      border: 3px solid white;
+      border-radius: 5%;
+      text-decoration: none;
+      min-height: 35vh;
+      height: 40vh;
+      font-size: 0.8rem;
+    }
+    
+    .listeCondAdmin{
+      border: 1px solid white;
+      margin: 20px;
+      padding: 10px;
+      color: #FFF;
+      font-size: 0.8rem;
+    }
+}
+
+/*=============================================================
+                    Media queries - Mobile
+                    Bloc des colonnes
+=============================================================*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 833px){
+
+
+}
