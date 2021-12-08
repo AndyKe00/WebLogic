@@ -23,6 +23,7 @@
   position: absolute;
   z-index: -1;
   top: -10vh;
+  height: 110vh;
 }
 
 .conteneurHeaderAccueil{
@@ -35,12 +36,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 100vw;
 }
 
 .txtPresentation{
   color:white;
 }
 
+.imgPresentation{
+  display: flex;
+  object-fit: cover;
+  height: 800px;
+  align-items: center;
+}
 /*=============================================================
                         Cours Offerts
 =============================================================*/
@@ -202,8 +210,8 @@ margin-top: 5%;
 
 .carteProf  {
   position: relative;
-  height: 400px;
-  width: 600px;
+  min-height: 400px;
+  min-width: 600px;
   background: #f2f2f2;
   overflow: hidden;
   cursor: pointer;
@@ -246,8 +254,8 @@ h3 {
 .rideaux::before {
   position: absolute;
   content: "";
-  height: 100%;
-  width: 50%;
+  min-height: 100%;
+  min-width: 50%;
   background: url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Martin-1-e1636566428251-1-e1638387711990.jpg) #292929;
   background-size: 320px 448px;
   background-position: 100px;
@@ -258,8 +266,8 @@ h3 {
 .rideaux::after {
   position: absolute;
   content: "";
-  height: 100%;
-  width: 50%;
+  min-height: 100%;
+  min-width: 50%;
   right: 0;
   background:  url(http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Martin-1-e1636566428251-1-e1638387711990.jpg) #292929;
   background-size: 320px 448px;
@@ -618,8 +626,12 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/12/Sabrine_MicroControleurs.jpg);
-  height: 500px;
-  width: 1000px;
+  background-image: url(http://eddym10.sg-host.com/wp-content/uploads/2021/12/Sabrine_MicroControleurs-scaled.jpg);
   background-repeat: no-repeat;
+  min-height: 30vh;
+  background-position: 0% 90%;
 }
+
+/*=============================================================
+                    Media queries
+=============================================================*/
