@@ -990,11 +990,20 @@ li:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 100vw;
 }
 
-.txtPresentation {
-  color: white;
+.txtBloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 999;
+  width: 50%;
+  height: 300px;
+  padding: 2%;
+  background-color: rgba(77, 77, 77, 0.5);
+  color: #FFF;
+  margin-top: 48.3vh;
 }
 
 /*=============================================================
@@ -1005,9 +1014,19 @@ li:hover {
 }
 
 .conteneurTrois {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;
+  margin-top: 3%;
+}
+
+.conteneurTrois:nth-child(1) {
+  margin-left: 1%;
+}
+
+.conteneurTrois:nth-child(2) {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .titreCondAdmin {
@@ -1016,23 +1035,58 @@ li:hover {
 }
 
 .condAdmin {
-  border: 3px solid white;
-  border-radius: 5%;
-  text-decoration: none;
   min-height: 35vh;
-  height: 40vh;
+  min-width: 25vw;
+  position: absolute;
 }
 
-.listeCondAdmin {
-  border: 1px solid white;
+.condAdminContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.condAdminContainer .carteCondAdmin {
+  position: relative;
+  width: 300px;
+  padding: 20px;
   margin: 20px;
-  padding: 10px;
+  background: #31313171;
+}
+
+.condAdminContainer .carteCondAdmin::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid #292929;
+  border-top: 20px solid #dc0084;
+  border-right: 20px solid #dc0084;
+}
+
+.condAdminContainer .carteCondAdmin .contentCondAdmin {
   color: #FFF;
+}
+
+.imgPresentation {
+  position: absolute;
+}
+
+.imgPresentation .wp-image-390 {
+  padding-right: 15%;
 }
 
 /*=============================================================
                         Cours Offerts
 =============================================================*/
+.titreCoursOfferts {
+  font-size: 2rem;
+  text-align: center;
+  color: #FFF;
+}
+
 .titreSession {
   font-size: 2rem;
   color: #FFF;
@@ -1570,7 +1624,6 @@ h3 {
 
 /*=============================================================
                     Media queries - Tablette
-                    Section Présentation
 =============================================================*/
 @media only screen and (min-device-width: 834px) and (max-device-width: 1024px) {
   #primary h2 {
@@ -1605,6 +1658,9 @@ h3 {
     padding: 10px;
     color: #FFF;
     font-size: 0.8rem;
+  }
+  .imgPresentation {
+    display: none;
   }
 }
 
