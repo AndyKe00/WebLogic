@@ -1037,7 +1037,6 @@ li:hover {
 .condAdmin {
   min-height: 35vh;
   min-width: 25vw;
-  position: absolute;
 }
 
 .condAdminContainer {
@@ -1072,10 +1071,13 @@ li:hover {
 
 .imgPresentation {
   position: absolute;
+  margin-left: 1%;
+  margin-top: 0.1%;
 }
 
-.imgPresentation .wp-image-390 {
-  padding-right: 15%;
+.imgPres2 {
+  position: absolute;
+  margin-left: 85%;
 }
 
 /*=============================================================
@@ -1625,7 +1627,7 @@ h3 {
 /*=============================================================
                     Media queries - Tablette
 =============================================================*/
-@media only screen and (min-device-width: 834px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 834px) and (max-width: 1919px) {
   #primary h2 {
     font-size: 6em;
   }
@@ -1633,7 +1635,7 @@ h3 {
     font-size: 0.8rem;
   }
   .txtPresentation {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
   .conteneurTrois {
     margin-left: 5%;
@@ -1644,22 +1646,16 @@ h3 {
     color: #FFF;
     font-size: 0.8rem;
   }
-  .condAdmin {
-    border: 3px solid white;
-    border-radius: 5%;
-    text-decoration: none;
-    min-height: 35vh;
-    height: 40vh;
-    font-size: 0.8rem;
-  }
-  .listeCondAdmin {
-    border: 1px solid white;
-    margin: 20px;
-    padding: 10px;
-    color: #FFF;
-    font-size: 0.8rem;
-  }
   .imgPresentation {
+    display: none;
+  }
+  .imgPresentation .wp-image-390 {
+    display: none;
+  }
+  .imgPres2 {
+    display: none;
+  }
+  .imgPres2 .wp-image-446 {
     display: none;
   }
 }
@@ -1668,6 +1664,27 @@ h3 {
                     Media queries - Mobile
                     Bloc des colonnes
 =============================================================*/
+@media only screen and (min-width: 320px) and (max-width: 833px) {
+  #primary h2 {
+    font-size: 6em;
+  }
+  .txtBloc {
+    visibility: hidden;
+  }
+  .imgPresentation {
+    display: none;
+  }
+  .imgPresentation .wp-image-390 {
+    display: none;
+  }
+  .imgPres2 {
+    display: none;
+  }
+  .imgPres2 .wp-image-446 {
+    display: none;
+  }
+}
+
 footer {
   margin-bottom: 0;
   background-color: white;
