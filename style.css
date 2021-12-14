@@ -2260,16 +2260,19 @@ h3.has-text-align-left {
   }
 }
 
-.page-id-44 {
-  /*Temp*/
+.img-entete-avenir {
+  position: absolute;
+  z-index: -1;
+  top: 00px;
+  width: 100%;
+}
+
+.page-id-44 .wp-block-code {
+  display: none;
 }
 
 .page-id-44 .page-avenir {
   width: 100vw;
-}
-
-.page-id-44 img {
-  background-color: white;
 }
 
 .page-id-44 div {
@@ -2289,6 +2292,8 @@ h3.has-text-align-left {
   background-color: #292929;
   padding-left: 5%;
   align-items: center;
+  margin-top: 290px;
+  margin-bottom: 0px;
 }
 
 .page-id-44 .header_avenir .header_avenir_title {
@@ -2311,6 +2316,7 @@ h3.has-text-align-left {
 .page-id-44 .sectionStages {
   margin: 7%;
   margin-bottom: 3%;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
 }
@@ -2334,6 +2340,7 @@ h3.has-text-align-left {
 .page-id-44 .sectionStages .conteneurStages div {
   width: 40%;
   margin: auto;
+  margin-top: 0;
 }
 
 .page-id-44 .sectionStages .conteneurStages div .conteneurTitreStages {
@@ -2617,7 +2624,6 @@ h3.has-text-align-left {
   display: flex;
   justify-content: space-between;
   height: 100%;
-  margin-bottom: 5%;
   padding: 0 5% 0 5%;
   transform-origin: top center;
   animation: animMeilleurProfessions 0.2s both ease-out;
@@ -2737,6 +2743,22 @@ h3.has-text-align-left {
   width: 100vw;
 }
 
+.page-id-44 .banniereAvenir1 {
+  display: block;
+}
+
+.page-id-44 .banniereAvenir1Mobile {
+  display: none;
+}
+
+.page-id-44 .banniereAvenir2 {
+  display: block;
+}
+
+.page-id-44 .banniereAvenir2Mobile {
+  display: none;
+}
+
 .page-id-44 .wp-block-gallery {
   width: 100vw;
 }
@@ -2811,6 +2833,12 @@ h3.has-text-align-left {
 }
 
 @media only screen and (max-width: 833px) {
+  .page-id-44 .blocks-gallery-item {
+    width: 25% !important;
+  }
+  .page-id-44 .wp-block-gallery {
+    max-height: none;
+  }
   .page-id-44 .sectionStages, .page-id-44 .sectionProfessions, .page-id-44 .sectionUni {
     margin-top: 20px !important;
   }
@@ -2823,6 +2851,7 @@ h3.has-text-align-left {
   .page-id-44 .header_avenir {
     flex-direction: column;
     padding: 0;
+    margin-top: 0;
   }
   .page-id-44 .header_avenir h2 {
     font-size: 70px !important;
@@ -2834,6 +2863,7 @@ h3.has-text-align-left {
     min-height: 0;
     height: 100%;
     margin: auto;
+    display: none;
   }
   .page-id-44 h3 {
     font-size: 1.5rem !important;
@@ -2852,7 +2882,9 @@ h3.has-text-align-left {
   .page-id-44 .sectionStages p {
     line-height: 20px !important;
     font-size: 18px !important;
-    padding: 15px;
+    padding: 10%;
+    padding-top: 15px;
+    padding-bottom: 0;
   }
   .page-id-44 .sectionStages .conteneurStages {
     flex-direction: column;
@@ -2868,6 +2900,7 @@ h3.has-text-align-left {
   }
   .page-id-44 .sectionStages .conteneurStages h4 {
     margin: 0px;
+    font-size: 2rem;
   }
   .page-id-44 .sectionProfessions {
     width: 100vw;
@@ -2896,6 +2929,7 @@ h3.has-text-align-left {
     padding: 0;
     width: 95vw !important;
     max-width: none !important;
+    margin-bottom: 30px !important;
   }
   .page-id-44 .meilleuresProfessions input {
     display: block !important;
@@ -2959,6 +2993,21 @@ h3.has-text-align-left {
   }
   .page-id-44 .conteneurUni {
     width: 100% !important;
+  }
+  .page-id-44 .banniereAvenir1 {
+    display: none;
+  }
+  .page-id-44 .banniereAvenir1Mobile {
+    display: block;
+  }
+  .page-id-44 .banniereAvenir2 {
+    display: none;
+  }
+  .page-id-44 .banniereAvenir2Mobile {
+    display: block;
+  }
+  .page-id-44 .img-entete-avenir {
+    display: none;
   }
 }
 
