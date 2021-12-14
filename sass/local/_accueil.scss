@@ -50,27 +50,13 @@
 .titrePresentation{
   color: #FFF;
 }
-
-.conteneurTrois{
-  margin-top: 3%;
-}
-
-.conteneurTrois:nth-child(1){
-  margin-left: 1%;
-}
-
-.conteneurTrois:nth-child(2){
-  margin-top: 10%;
-  margin-bottom: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
   
   .titreCondAdmin
   {
     text-align: center;
     color: #FFF;
+    margin-top: 5%;
+    font-size: 2rem;
   }
   
   // Effet d'un tableau
@@ -86,6 +72,7 @@
     //flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
   }
 
   .condAdminContainer .carteCondAdmin{
@@ -114,11 +101,19 @@
     position: absolute;
     margin-left: 1%;
     margin-top: 0.1%;
+
+    .wp-image-390{
+      padding-right: 10%;
+    }
   }
 
   .imgPres2{
     position: absolute;
     margin-left: 85%;
+
+    .wp-image-446{
+      padding-left: 10%;
+    }
   }
 
 /*=============================================================
@@ -128,6 +123,7 @@
 .titreCoursOfferts{
   font-size: 2rem;
   text-align: center;
+  margin-right: 45.5vw;
   color: #FFF;
 }
 
@@ -263,8 +259,8 @@
 // Le bloc pour chaque carte de prof individuelle
 .carteProf  {
   position: relative;
-  min-height: 400px;
-  min-width: 600px;
+  height: 400px;
+  width: 600px;
   background: #f2f2f2;
   overflow: hidden;
   cursor: pointer;
@@ -729,31 +725,22 @@ h3 {
                     Media queries - Tablette
 =============================================================*/
 
-@media only screen and (min-width : 834px) and (max-width : 1919px){
+@media only screen and (min-width : 970px) and (max-width : 1919px){
 
   #primary h2
 {
     font-size: 6em;
 }
-
-  .titrePresentation{
-    font-size: 0.8rem;
-  }
-
-  .txtPresentation{
-    font-size: 0.5rem;
-  }
-
-  .conteneurTrois{
-    margin-left: 5%;
-    margin-right: 5%;
-    }
     
     .titreCondAdmin
     {
       text-align: center;
       color: #FFF;
       font-size: 0.8rem;
+    }
+
+    .txtBloc{
+      font-size: 1vw;
     }
 
     .imgPresentation{
@@ -775,13 +762,12 @@ h3 {
 
 /*=============================================================
                     Media queries - Mobile
-                    Bloc des colonnes
 =============================================================*/
 
-@media only screen and (min-width : 320px) and (max-width : 833px){
+@media only screen and (min-width : 320px) and (max-width : 969px){
 
   #primary h2{
-    font-size: 6em;
+    font-size: 2em;
   }
 
   .txtBloc{
@@ -802,5 +788,119 @@ h3 {
     .wp-image-446{
       display: none;
     }
+  }
+
+  .imgEnteteAccueil{
+    display: none;
+  }
+
+  .container .carte .content{
+    height: 10vh;
+  }
+
+  .container .carte .content h4,
+  .container .carte .content p{
+    display: none;
+  }
+
+  .container .carte .plus{
+    display: none;
+  }
+
+.rideaux,
+.rideaux2,
+.rideaux3,
+.rideaux4,
+.rideaux5,
+.rideaux6,
+.rideaux7,
+.rideaux8,
+.rideaux9,
+.rideaux10
+ {
+  display: none;
+}
+ .carteProf .contentProf{
+   display: none;
+ }
+
+ /* Martin*/
+ .carteProf:nth-child(1)
+ {
+   background:url("http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Martin-1-e1636566428251-1-e1638387711990.jpg") no-repeat #292929;
+   margin-left: 20vw;
+   cursor: default;
+ }
+
+  /* Dominic*/
+  .carteProf:nth-child(2)
+  {
+    background:url("http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Dom-e1636567894898-1.jpg") no-repeat #292929;
+    margin-left: 20vw;
+    cursor: default;
+  }
+
+   /* Eddy*/
+ .carteProf:nth-child(3)
+ {
+   background:url("http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Eddy-1-e1636567864415-1.jpg") no-repeat #292929;
+   margin-left: 20vw;
+   cursor: default;
+ }
+
+  /* Johanne*/
+  .carteProf:nth-child(4)
+  {
+    background:url("http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-johanne-gd-1-e1636567357699-1.jpg") no-repeat #292929;
+    margin-left: 20vw;
+    cursor: default;
+  }
+
+   /* Ahmed*/
+ .carteProf:nth-child(5)
+ {
+   background:url("http://eddym10.sg-host.com/wp-content/uploads/2021/11/Ahmed-photo-e1636567932614-1.jpeg") no-repeat #292929;
+   margin-left: 20vw;
+   cursor: default;
+ }
+
+  /* Camille*/
+  .carteProf:nth-child(6)
+  {
+    background:url("http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-camille-e1636567921700-1.jpg") no-repeat #292929;
+    margin-left: 20vw;
+    cursor: default;
+  }
+
+   /* Caroline*/
+ .carteProf:nth-child(7)
+ {
+   background:url("http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Caroline-e1636567914536-1.jpg") no-repeat #292929;
+   margin-left: 20vw;
+   cursor: default;
+ }
+
+  /* Denis*/
+  .carteProf:nth-child(8)
+  {
+    background:url("http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Denis-e1636567902202-1.jpg") no-repeat #292929;
+    margin-left: 20vw;
+    cursor: default;
+  }
+
+   /* Mathieu*/
+ .carteProf:nth-child(9)
+ {
+   background:url("http://eddym10.sg-host.com/wp-content/uploads/2021/11/Copie-de-Mathieu-1-e1636567532615-1.jpg") no-repeat #292929;
+   margin-left: 20vw;
+   cursor: default;
+ }
+
+  /* Manon*/
+  .carteProf:nth-child(10)
+  {
+    background:url("http://eddym10.sg-host.com/wp-content/uploads/2021/11/Manon-1-e1636567855222-1.jpg") no-repeat #292929;
+    margin-left: 20vw;
+    cursor: default;
   }
 }
