@@ -3,6 +3,7 @@
     z-index: -1;
     top: 00px;
     width: 100%;
+    margin: auto;
 }
 
 .page-id-44 {
@@ -34,6 +35,7 @@
         align-items: center;
         margin-top: 290px;
         margin-bottom: 0px;
+        padding-bottom: 100px;
             
         .header_avenir_title {
             justify-content: center;
@@ -52,6 +54,7 @@
         padding: 2%;;
         background-color: rgba(130,130,130,0.10);
         color:white;
+        line-height: 2;
     }
 
     .sectionStages {
@@ -64,7 +67,7 @@
         .conteneurStages {
             display: flex;
             flex-direction: row;
-            align-items: center;
+            align-items: left;
             background-color: rgba(130,130,130,0.10);
             width: 100%;
             padding: 3% 2% 3% 2%;
@@ -94,7 +97,8 @@
                 min-width: 100%;
                 margin: auto;
                 font-size: 1rem;
-                line-height: 30px;
+                line-height: 2;
+                text-align: left;
             }
 
             span {
@@ -506,16 +510,20 @@
 
     .banniereAvenir1 {
         display: block;
+        margin: auto;
     }
     .banniereAvenir1Mobile {
         display: none;
+        margin: auto;
     }
 
     .banniereAvenir2 {
         display: block;
+        margin: auto;
     }
     .banniereAvenir2Mobile {
         display: none;
+        margin: auto;
     }
 
     .wp-block-gallery {
@@ -672,7 +680,7 @@
             }
 
             p {
-                line-height: 20px !important;
+                line-height: 1.7 !important;
                 font-size: 18px !important;
                 padding: 10%;
                 padding-top: 15px;

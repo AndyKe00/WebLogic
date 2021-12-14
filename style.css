@@ -2040,6 +2040,9 @@ h3.has-text-align-left {
 }
 
 @media only screen and (min-width: 375px) and (max-width: 812px) {
+  .page-etudiante h2 {
+    font-size: 70px !important;
+  }
   .page-etudiante h3.has-text-align-left {
     color: white;
     margin: auto;
@@ -2085,6 +2088,9 @@ h3.has-text-align-left {
   .page-etudiante .bloc-texte {
     display: none;
     visibility: hidden;
+  }
+  .page-etudiante .bloc-texte p {
+    line-height: 2;
   }
   .page-etudiante .header_etudiante_title {
     font-size: 0.2rem;
@@ -2265,6 +2271,7 @@ h3.has-text-align-left {
   z-index: -1;
   top: 00px;
   width: 100%;
+  margin: auto;
 }
 
 .page-id-44 .wp-block-code {
@@ -2294,6 +2301,7 @@ h3.has-text-align-left {
   align-items: center;
   margin-top: 290px;
   margin-bottom: 0px;
+  padding-bottom: 100px;
 }
 
 .page-id-44 .header_avenir .header_avenir_title {
@@ -2311,6 +2319,7 @@ h3.has-text-align-left {
   padding: 2%;
   background-color: rgba(130, 130, 130, 0.1);
   color: white;
+  line-height: 2;
 }
 
 .page-id-44 .sectionStages {
@@ -2324,7 +2333,7 @@ h3.has-text-align-left {
 .page-id-44 .sectionStages .conteneurStages {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: left;
   background-color: rgba(130, 130, 130, 0.1);
   width: 100%;
   padding: 3% 2% 3% 2%;
@@ -2354,7 +2363,8 @@ h3.has-text-align-left {
   min-width: 100%;
   margin: auto;
   font-size: 1rem;
-  line-height: 30px;
+  line-height: 2;
+  text-align: left;
 }
 
 .page-id-44 .sectionStages .conteneurStages span {
@@ -2745,18 +2755,22 @@ h3.has-text-align-left {
 
 .page-id-44 .banniereAvenir1 {
   display: block;
+  margin: auto;
 }
 
 .page-id-44 .banniereAvenir1Mobile {
   display: none;
+  margin: auto;
 }
 
 .page-id-44 .banniereAvenir2 {
   display: block;
+  margin: auto;
 }
 
 .page-id-44 .banniereAvenir2Mobile {
   display: none;
+  margin: auto;
 }
 
 .page-id-44 .wp-block-gallery {
@@ -2880,7 +2894,7 @@ h3.has-text-align-left {
     display: none;
   }
   .page-id-44 .sectionStages p {
-    line-height: 20px !important;
+    line-height: 1.7 !important;
     font-size: 18px !important;
     padding: 10%;
     padding-top: 15px;
