@@ -253,6 +253,9 @@ box-shadow: 5px 5px 15px -2px #000000;
   and (min-width: 375px) 
   and (max-width: 812px) 
    { 
+       h2{
+           font-size:70px !important ;
+       }
   //Ajustement taille du titre de la galerie projet
     h3.has-text-align-left
     {
@@ -319,6 +322,9 @@ box-shadow: 5px 5px 15px -2px #000000;
 {
     display: none;
     visibility: hidden;
+    p {
+        line-height: 2;
+    }
 }
 //centrer le titre vie etudiante
 .header_etudiante_title
