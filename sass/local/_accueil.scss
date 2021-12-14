@@ -41,6 +41,7 @@
   background-color: rgba(77, 77, 77, 0.5);
   color: #FFF;
   margin-top: 48.3vh;
+  line-height: 2;
 }
 
 /*=============================================================
@@ -132,6 +133,7 @@
   font-size: 2rem;
   color: #FFF;
   text-align: center;
+  margin-bottom: -0.5%;
 }
 
 // Faire que le contenu soit adaptable à l'aide de flex-wrap
@@ -245,6 +247,13 @@
 /*=============================================================
                     Section professeurs
 =============================================================*/
+
+.titreProfs{
+  font-size: 2rem;
+  text-align: center;
+  margin-right: 45.5vw;
+  color: #FFF;
+}
 
 // Faire en sorte que le contenu s'adapte facilement avec flex-wrap
 .containerProf{
