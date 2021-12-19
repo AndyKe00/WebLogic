@@ -1,4 +1,4 @@
-#primary h2
+.timAcc
 {
     font-size: 8em;
     margin: 0;
@@ -14,7 +14,8 @@
   position: absolute;
   z-index: -1;
   top: -10vh;
-  min-height: 110vh;
+  width: 100vw;
+  height: 110vh;
 }
 
 .conteneurHeaderAccueil{
@@ -82,6 +83,12 @@
     padding: 20px;
     margin: 20px;
     background: #31313171;
+  }
+
+  .condAdminContainer .carteCondAdmin .iconeCondAdmin{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: rgba(173, 173, 173, 0.692);
   }
 
   .condAdminContainer .carteCondAdmin::before{
@@ -170,6 +177,7 @@
 .container .carte .icone{
   margin-bottom: 10px;
   font-size: 2rem;
+  color: rgba(173, 173, 173, 0.692);
 }
 
 // Carte lorsqu'elle n'est pas en extension
@@ -179,10 +187,61 @@
   overflow: hidden;
 }
 
+// Description du cours
+.container .carte .content p{
+  color: #FFF;
+  position: fixed;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  //height: 100%;
+  transition: all .5s;
+  top: 25%;
+  left: 15%;
+  transform: scale(0);
+}
+
+// Description du cours
+/*.container .carte .content:hover p{
+  opacity: 1;
+  width: 60vw;
+  height: 40vh;
+  z-index: 99;
+  line-height: 2rem;
+  padding: 1%;
+  background-color: #313131;
+  box-shadow: 1px 2px 1px black;
+  transform: scale(1);
+}*/
+
+.container .carte.active .content p{
+  opacity: 1;
+  width: 70vw;
+  height: auto;
+  z-index: 99;
+  line-height: 2rem;
+  padding: 1%;
+  background-color: #313131;
+  box-shadow: 0px 5px 5px 5px #292929;
+  transform: scale(1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+
+/*.container .carte .content:hover{
+
+}*/
+
 // Carte lorsqu'elle est en extension
 .container .carte.active .content{
   height: auto;
 }
+
+
 
 // Petit effet
 .container .carte .content::before{
@@ -211,13 +270,15 @@
   margin-bottom: 10px;
 }
 
-// Description du cours
-.container .carte .content p{
-  color: #FFF;
+.container .carte .content h4{
+  color: rgba(173, 173, 173, 0.692);
 }
 
+
+
 // Conteneur pour le bouton lire plus
-.container .carte .plus{
+.container .carte .plus,
+.container .carte .moins{
   position: relative;
   padding: 10px;
   background: #dc0084;
@@ -734,9 +795,9 @@ h3 {
                     Media queries - Tablette
 =============================================================*/
 
-@media only screen and (min-width : 970px) and (max-width : 1919px){
+@media only screen and (min-width : 970px) and (max-width : 1512px){
 
-  #primary h2
+.timAcc
 {
     font-size: 6em;
 }
@@ -745,7 +806,7 @@ h3 {
     {
       text-align: center;
       color: #FFF;
-      font-size: 0.8rem;
+      font-size: 2rem;
     }
 
     .txtBloc{
@@ -775,12 +836,19 @@ h3 {
 
 @media only screen and (min-width : 320px) and (max-width : 969px){
 
-  #primary h2{
+
+  .conteneurHeaderAccueil{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+
+  .timAcc{
     font-size: 2em;
   }
 
   .txtBloc{
-    visibility: hidden;
+    display: none;
   }
 
   .imgPresentation{
