@@ -1,14 +1,20 @@
-.page-id-44 {
+.img-entete-avenir {
+    position: absolute;
+    z-index: -1;
+    top: 00px;
+    width: 100%;
+    margin: auto;
+}
 
+.page-id-44 {
    // overflow-x: hidden;
    
-    .page-avenir {
-        width: 100vw;
+    .wp-block-code {
+        display: none;
     }
 
-    /*Temp*/
-    img {
-        background-color: white;
+    .page-avenir {
+        width: 100vw;
     }
 
     div {
@@ -27,6 +33,9 @@
         background-color: rgb(41,41,41);
         padding-left: 5%;
         align-items: center;
+        margin-top: 290px;
+        margin-bottom: 0px;
+        padding-bottom: 100px;
             
         .header_avenir_title {
             justify-content: center;
@@ -45,18 +54,20 @@
         padding: 2%;;
         background-color: rgba(130,130,130,0.10);
         color:white;
+        line-height: 2;
     }
 
     .sectionStages {
         margin: 7%;
         margin-bottom: 3%;
+        margin-top: 0;
         display: flex;
         flex-direction: column;
 
         .conteneurStages {
             display: flex;
             flex-direction: row;
-            align-items: center;
+            align-items: left;
             background-color: rgba(130,130,130,0.10);
             width: 100%;
             padding: 3% 2% 3% 2%;
@@ -64,13 +75,15 @@
             color: #fff;
             margin: auto;
 
+
             h4 {
                 margin: 0 0 42px 0;
             }
 
             div {
                 width: 40%;
-                margin: auto;
+                margin:auto;
+                margin-top: 0;
 
                 .conteneurTitreStages {
                     background-color: #dc0084;
@@ -84,7 +97,8 @@
                 min-width: 100%;
                 margin: auto;
                 font-size: 1rem;
-                line-height: 30px;
+                line-height: 2;
+                text-align: left;
             }
 
             span {
@@ -363,7 +377,6 @@
                     display: flex;
                     justify-content: space-between;
                     height: 100%;
-                    margin-bottom: 5%;
                     padding: 0 5% 0 5%;
                     transform-origin: top center;
                     animation: animMeilleurProfessions 0.2s both ease-out;
@@ -496,7 +509,21 @@
     }
 
     .banniereAvenir1 {
-        
+        display: block;
+        margin: auto;
+    }
+    .banniereAvenir1Mobile {
+        display: none;
+        margin: auto;
+    }
+
+    .banniereAvenir2 {
+        display: block;
+        margin: auto;
+    }
+    .banniereAvenir2Mobile {
+        display: none;
+        margin: auto;
     }
 
     .wp-block-gallery {
@@ -515,6 +542,14 @@
         }
     }
 
+    .blocks-gallery-grid {
+        padding: 4% 10% 4% 10%;
+    }
+
+    .wp-block-gallery {
+        margin-bottom: 10%;
+    }
+    
     //Typographie
     p {
         color: #fff;
@@ -590,12 +625,18 @@
             
         }
 
-        //.se 
-
     }
 
     @media only screen and (max-width: 833px) { //Mobile
         
+        .blocks-gallery-item {
+            width: 25% !important;
+        }
+
+        .wp-block-gallery {
+            max-height: none;
+        }
+
         .sectionStages, .sectionProfessions, .sectionUni {
             margin-top: 20px !important;
         }
@@ -612,6 +653,7 @@
 
             flex-direction: column;
             padding: 0;
+            margin-top: 0;
 
             h2 {
                 font-size: 70px !important;
@@ -624,6 +666,7 @@
                 min-height: 0;
                 height: 100%;
                 margin: auto;
+                display: none;
             }
         }
 
@@ -645,9 +688,11 @@
             }
 
             p {
-                line-height: 20px !important;
+                line-height: 1.7 !important;
                 font-size: 18px !important;
-                padding: 15px;
+                padding: 10%;
+                padding-top: 15px;
+                padding-bottom: 0;
             }
 
 
@@ -667,6 +712,7 @@
 
                 h4 {
                     margin: 0px;
+                    font-size: 2rem;
                 }
             }
         }
@@ -705,6 +751,7 @@
             padding: 0;
             width: 95vw !important;
             max-width: none !important;
+            margin-bottom: 30px !important;
 
             input {
                 display: block !important;
@@ -791,6 +838,24 @@
             width: 100% !important;
         }
 
+        .banniereAvenir1 {
+            display: none;
+        }
+        .banniereAvenir1Mobile {
+            display: block;
+        }
+
+        .banniereAvenir2 {
+            display: none;
+        }
+        .banniereAvenir2Mobile {
+            display: block;
+        }
+
+        .img-entete-avenir {
+            display: none;
+        }
+
     }
 
     //Section Animations
@@ -837,6 +902,13 @@
     @keyframes animMeilleurProfessions {
         from {transform: scaleY(0); border-radius: 30px;}
         to {transform: scaleY(1);}
+    }
+    
+     footer {
+        h3 {
+            font-size: 18.72px;
+            color: #404040;
+        }
     }
 
 }
