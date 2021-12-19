@@ -2821,22 +2821,26 @@ h3.has-text-align-left {
 
 .page-id-44 .banniereAvenir1 {
   display: block;
-  margin: auto;
+  margin: 0;
+  min-width: 100vw;
 }
 
 .page-id-44 .banniereAvenir1Mobile {
   display: none;
-  margin: auto;
+  margin: 0;
+  min-width: 100vw;
 }
 
 .page-id-44 .banniereAvenir2 {
   display: block;
-  margin: auto;
+  margin: 0;
+  width: 100vw;
 }
 
 .page-id-44 .banniereAvenir2Mobile {
   display: none;
-  margin: auto;
+  margin: 0;
+  width: 100vw;
 }
 
 .page-id-44 .wp-block-gallery {
@@ -2856,7 +2860,12 @@ h3.has-text-align-left {
 }
 
 .page-id-44 .blocks-gallery-grid {
-  padding: 4% 10% 4% 10%;
+  padding: 2% 7% 2% 7%;
+  transform: translatey(-100px);
+}
+
+.page-id-44 .blocks-gallery-grid li {
+  margin: auto;
 }
 
 .page-id-44 .wp-block-gallery {

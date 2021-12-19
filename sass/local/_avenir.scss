@@ -510,20 +510,24 @@
 
     .banniereAvenir1 {
         display: block;
-        margin: auto;
+        margin: 0;
+        min-width: 100vw;
     }
     .banniereAvenir1Mobile {
         display: none;
-        margin: auto;
+        margin: 0;
+        min-width: 100vw;
     }
 
     .banniereAvenir2 {
         display: block;
-        margin: auto;
+        margin: 0;
+        width: 100vw;
     }
     .banniereAvenir2Mobile {
         display: none;
-        margin: auto;
+        margin: 0;
+        width: 100vw;
     }
 
     .wp-block-gallery {
@@ -543,7 +547,13 @@
     }
 
     .blocks-gallery-grid {
-        padding: 4% 10% 4% 10%;
+        padding: 2% 7% 2% 7%;
+        transform: translatey(-100px);
+        
+        li {
+            margin: auto;
+        }
+
     }
 
     .wp-block-gallery {
